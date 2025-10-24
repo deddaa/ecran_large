@@ -11,14 +11,29 @@ header {
   align-items: center;
   padding: 0 1em;
 }
+header #boiteHeaderL {
+  width: 33vw;
+  display: flex;
+  justify-content: start;
+}
+header #boiteHeaderC {
+  width: 33vw;
+  display: flex;
+  justify-content: center;
+}
+header #boiteHeaderR {
+  width: 33vw;
+  display: flex;
+  justify-content: end;
+}
 header button {
   background-color: #C7B7E5;
   color: #49306B;
   border: none;
   padding: 0.5em 1.5em;
 }
-header button button:hover {
-  background-color: #49306B;
+header button:hover {
+  background-color: #C21BFF;
   color: #C7B7E5;
 }
 header h1 {
@@ -32,6 +47,9 @@ header #searchMenu {
   width: 12em;
 }
 
+main h3 {
+  padding: 0 2em;
+}
 main #imageHolder {
   width: 100%;
   height: 80vh;
@@ -48,13 +66,43 @@ main #imageHolder button {
   color: #C7B7E5;
   border: none;
   padding: 0.5em 1.5em;
+  margin-bottom: 5em;
 }
-main #imageHolder button button:hover {
+main #imageHolder button:hover {
   background-color: #C7B7E5;
   color: #49306B;
 }
-main #imageHolder button {
-  margin-bottom: 5em;
+main #bigPoster {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  height: 50vh;
+  margin: 2em;
+  padding: 1em;
+}
+main #smallPoster {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  height: 20vh;
+  margin: 2em;
+  padding: 1em;
+}
+main #actu {
+  background-color: #49306B;
+  color: #C7B7E5;
+  padding-bottom: 1em;
+}
+main #actu .actuPoster {
+  background-color: #C7B7E5;
+  color: #49306B;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 2em;
+  padding: 1em;
+}
+main #actu .actuPoster .actuText {
+  padding: 0 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

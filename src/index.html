@@ -10,9 +10,15 @@
 
 <body>
   <header>
-    <button id="btnMenu">Tous les films</button>
-    <h1>ecran large</h1>
-    <input type="search" id="searchMenu" placeholder="rechercher un film..." />
+    <div id="boiteHeaderL">
+      <button id="btnMenu">Tous les films</button>
+    </div>
+    <div id="boiteHeaderC">
+      <h1>ecran large</h1>
+    </div>
+    <div id="boiteHeaderR">
+      <input type="search" id="searchMenu" placeholder="rechercher un film..." />
+    </div>
   </header>
   <main id="mainContent">
     <!--div principal avec la grande image et le btn-->
@@ -37,8 +43,8 @@
       </div>
     </div>
     <!--div avec les petites affiches-->
+    <h3>Tendance</h3>
     <div id="smallPoster">
-      <h3>Tendance</h3>
       <!--libre a vous de changer les class si besoin-->
       <div class="s-PosterItem">
         <img class="s-posterImage" src="" alt="Poster 1" />

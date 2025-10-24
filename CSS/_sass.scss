@@ -10,12 +10,8 @@ $emphasis-color: #C21BFF;
     color: $couleur;
     border: none;
     padding: 0.5em 1.5em;
-
-    button:hover {
-        background-color: $couleur;
-        color: $couleurBg;
-    }
 }
+
 
 body {
     padding: 0;
@@ -30,8 +26,31 @@ header {
     align-items: center;
     padding: 0 1em;
 
+    #boiteHeaderL {
+        width: 33vw;
+        display: flex;
+        justify-content: start;
+    }
+
+    #boiteHeaderC {
+        width: 33vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    #boiteHeaderR {
+        width: 33vw;
+        display: flex;
+        justify-content: end;
+    }
+
     button {
         @include button($secondary-color, $primary-color);
+    }
+
+    button:hover {
+        background-color: $emphasis-color;
+        color: $secondary-color ;
     }
 
     h1 {
@@ -48,6 +67,10 @@ header {
 }
 
 main {
+    h3 {
+        padding: 0 2em;
+    }
+
     #imageHolder {
         width: 100%;
         height: 80vh;
@@ -63,6 +86,47 @@ main {
             @include button($primary-color, $secondary-color);
             margin-bottom: 5em;
         }
+
+        button:hover {
+            background-color: $secondary-color;
+            color: $primary-color;
+        }
     }
-    
+
+    #bigPoster {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        height: 50vh;
+        margin: 2em;
+        padding: 1em;
+    }
+
+    #smallPoster {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        height: 20vh;
+        margin: 2em;
+        padding: 1em;
+    }
+
+    #actu {
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding-bottom: 1em;
+
+        .actuPoster {
+            background-color: $secondary-color;
+            color: $primary-color;
+            display: flex;
+            flex-flow: row nowrap;
+            margin: 2em;
+            padding: 1em;
+
+            .actuText {
+                padding: 0 2em;
+            }
+        }
+    }
 }
