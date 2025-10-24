@@ -1,0 +1,17 @@
+header {
+  background-color: #49306B;
+  display: flex;
+  justify-content: space-around;
+}
+header button {
+  background-color: #C7B7E5;
+  color: #49306B;
+  border: none;
+  height: 2em;
+  width: 8em;
+}
+header h1 {
+  color: #C7B7E5;
+}
+
+/*# sourceMappingURL=style.css.map */

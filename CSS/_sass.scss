@@ -1,0 +1,23 @@
+// Variables
+$bg-color : #C8B6C6;
+$primary-color: #49306B;
+$secondary-color: #C7B7E5;
+$emphasis-color: #C21BFF;
+
+//Classes
+header {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-around;
+
+    button {
+        background-color: $secondary-color;
+        color: $primary-color;
+        border: none;
+        height: 2em;
+        width: 8em;
+    }
+    h1 {
+        color: $secondary-color;
+    }
+}
