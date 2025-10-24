@@ -5,19 +5,64 @@ $secondary-color: #C7B7E5;
 $emphasis-color: #C21BFF;
 
 //Classes
+@mixin button($couleurBg, $couleur) {
+    background-color: $couleurBg;
+    color: $couleur;
+    border: none;
+    padding: 0.5em 1.5em;
+
+    button:hover {
+        background-color: $couleur;
+        color: $couleurBg;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $bg-color;
+}
+
 header {
     background-color: $primary-color;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
 
     button {
-        background-color: $secondary-color;
-        color: $primary-color;
-        border: none;
-        height: 2em;
-        width: 8em;
+        @include button($secondary-color, $primary-color);
     }
+
     h1 {
         color: $secondary-color;
     }
+
+    #searchMenu {
+        background-color: $secondary-color;
+        border: none;
+        border-radius: 5em;
+        height: 2em;
+        width: 12em;
+    }
+}
+
+main {
+    #imageHolder {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: end;
+        align-items: center;
+        background-image: url(https://picsum.photos/1200/500);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        button {
+            @include button($primary-color, $secondary-color);
+            margin-bottom: 5em;
+        }
+    }
+    
 }
