@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ecran large</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="all_movies.html"><button id="btnMenu">Tous les films</button></a>
+      <a href="index.html"><h1>ecran large</h1></a>
+    </header>
+    <main id="mainContent">
+      <div id="carouselAllMovie">
+        <div id="searchAndFilter">
+          <input
+            type="search"
+            id="searchMenu"
+            placeholder="rechercher un film..."
+          />
+          <label for="filterMenu">🎬 Filtrer par genres :</label><br />
+
+          <select id="filterMenu" name="genres" multiple size="5">
+            <option disabled>Sélectionne un ou plusieurs genres</option>
+            <option value="sf">Science-Fiction</option>
+            <option value="action">Action</option>
+            <option value="horreur">Horreur</option>
+            <option value="drame">Drame</option>
+            <option value="comedie">Comédie</option>
+            <option value="thriller">Thriller</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="aventure">Aventure</option>
+          </select>
+          <label for="Date">Date de sortie : </label>
+          <input
+            class="date"
+            type="date"
+            id="Date"
+            name="Sortie du film"
+            value="1895-12-28"
+            min="1895-12-28"
+            max="2025-12-31"
+          />
+          <input
+            id="Realisateur"
+            type="search"
+            name="#"
+            placeholder="Realisateur :"
+          />
+        </div>
+        <div class="carousel">
+          <!--je réutilise tendanceImage du index.html , il me semble qu'ils seront pareils-->
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 1" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 2" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 3" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 4" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 5" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 6" /></a>
+          </div>
+        </div>
+        <div class="carousel">
+          <!--je réutilise tendanceImage du index.html , il me semble qu'ils seront pareils-->
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 1" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 2" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 3" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 4" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 5" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 6" /></a>
+          </div>
+        </div>
+      </div>
+      <div id="SearchResult">
+        <h3>resutat de la recherche :</h3>
+        <div class="ResultLinkToMovie">
+          <div class="LinkToMovie">
+            <a href="page du film">
+              <div class="tendancePoster">
+                <img class="tendanceImage" src="" alt="Poster du film" /></div
+            ></a>
+            <div class="movieInfo">
+              <h4>Titre du film</h4>
+              <p>Année - Réalisateur</p>
+            </div>
+          </div>
+          <div class="LinkToMovie">
+            <a href="page du film">
+              <div class="tendancePoster">
+                <img class="tendanceImage" src="" alt="Poster du film" /></div
+            ></a>
+            <div class="movieInfo">
+              <h4>Titre du film</h4>
+              <p>Année - Réalisateur</p>
+            </div>
+          </div>
+          <div class="LinkToMovie">
+            <a href="page du film">
+              <div class="tendancePoster">
+                <img class="tendanceImage" src="" alt="Poster du film" /></div
+            ></a>
+            <div class="movieInfo">
+              <h4>Titre du film</h4>
+              <p>Année - Réalisateur</p>
+            </div>
+          </div>
+          <div class="LinkToMovie">
+            <a href="page du film">
+              <div class="tendancePoster">
+                <img class="tendanceImage" src="" alt="Poster du film" /></div
+            ></a>
+            <div class="movieInfo">
+              <h4>Titre du film</h4>
+              <p>Année - Réalisateur</p>
+            </div>
+          </div>
+          <div class="LinkToMovie">
+            <a href="page du film">
+              <div class="tendancePoster">
+                <img class="tendanceImage" src="" alt="Poster du film" /></div
+            ></a>
+            <div class="movieInfo">
+              <h4>Titre du film</h4>
+              <p>Année - Réalisateur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

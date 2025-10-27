@@ -10,95 +10,151 @@
 
 <body>
   <header>
-    <div id="boiteHeaderL">
-      <button id="btnMenu">Tous les films</button>
-    </div>
-    <div id="boiteHeaderC">
-      <h1>ecran large</h1>
-    </div>
-    <div id="boiteHeaderR">
-      <input type="search" id="searchMenu" placeholder="rechercher un film..." />
-    </div>
+    <a href="all_movies.html"><button id="btnMenu">Tous les films</button></a>
+    <h1>ecran large</h1>
+    <input type="search" id="searchMenu" placeholder="rechercher un film..." />
   </header>
   <main id="mainContent">
     <!--div principal avec la grande image et le btn-->
     <div id="imageHolder">
       <!-- image en bg de la div -->
-      <!--J'ai retirer l'image car elle sera en bg dans le css-->
-      <button id="discoverBtn">Découvrir ce film</button>
+      <a href="#"><button id="discoverBtn">Découvrir ce film</button></a>
     </div>
     <!--div avec les 4 grandes affiches-->
     <div id="bigPoster">
       <div class="posterItem">
-        <img class="posterImage" src="" alt="Poster 1" />
+        <a href="#"><img class="posterImage" src="" alt="Poster 1" /></a>
       </div>
       <div class="posterItem">
-        <img class="posterImage" src="" alt="Poster 2" />
+        <a href="#"><img class="posterImage" src="" alt="Poster 2" /></a>
       </div>
       <div class="posterItem">
-        <img class="posterImage" src="" alt="Poster 3" />
+        <a href="#"><img class="posterImage" src="" alt="Poster 3" /></a>
       </div>
       <div class="posterItem">
-        <img class="posterImage" src="" alt="Poster 4" />
+        <a href="#"><img class="posterImage" src="" alt="Poster 4" /></a>
       </div>
     </div>
-    <!--div avec les petites affiches-->
-    <h3>Tendance</h3>
+
     <div id="smallPoster">
-      <!--libre a vous de changer les class si besoin-->
+      <h3>Tendance</h3>
       <div class="s-PosterItem">
-        <img class="s-posterImage" src="" alt="Poster 1" />
+        <a href="#"><img class="s-posterImage" src="" alt="Poster 1" /></a>
       </div>
       <div class="s-PosterItem">
-        <img class="s-posterImage" src="" alt="Poster 2" />
+        <a href="#"><img class="s-posterImage" src="" alt="Poster 2" /></a>
       </div>
       <div class="s-PosterItem">
-        <img class="s-posterImage" src="" alt="Poster 3" />
+        <a href="#"><img class="s-posterImage" src="" alt="Poster 3" /></a>
       </div>
       <div class="s-PosterItem">
-        <img class="s-posterImage" src="" alt="Poster 4" />
+        <a href="#"><img class="s-posterImage" src="" alt="Poster 4" /></a>
       </div>
       <div class="s-PosterItem">
-        <img class="s-posterImage" src="" alt="Poster 5" />
+        <a href="#"><img class="s-posterImage" src="" alt="Poster 5" /></a>
       </div>
       <div class="s-PosterItem">
-        <img class="s-posterImage" src="" alt="Poster 6" />
+        <a href="#"><img class="s-posterImage" src="" alt="Poster 6" /></a>
       </div>
       <div class="s-PosterItem">
-        <img class="s-posterImage" src="" alt="Poster 7" />
+        <a href="#"><img class="s-posterImage" src="" alt="Poster 7" /></a>
       </div>
     </div>
-    <!--parti en bas a gauche avec les deux affiches-->
-    <div id="actu">
-      <h3>Derniers avis/Actu</h3>
-      <div class="actuPoster">
-        <img class="actuImage" src="" alt="Poster 1" />
-        <div class="actuText">
-          <h4>Titre de l'article</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-            esse consectetur, dolor eligendi saepe ipsa iste illum nisi earum
-            impedit, nobis quae possimus animi error dignissimos quo
-            praesentium maxime quaerat!
-          </p>
+
+    <div id="flex-actuCategorie">
+      <div id="actu">
+        <h3>Derniers avis/Actu</h3>
+        <div class="actuPoster">
+          <a href="#"><img class="actuImage" src="" alt="Poster 1" /></a>
+          <div class="actuText">
+            <h4>Titre de l'article</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              esse consectetur, dolor eligendi saepe ipsa iste illum nisi earum
+              impedit, nobis quae possimus animi error dignissimos quo
+              praesentium maxime quaerat!
+            </p>
+          </div>
+        </div>
+        <div class="actuPoster">
+          <a href="#"><img class="actuImage" src="" alt="Poster 2" /></a>
+          <div class="actuText">
+            <h4>Titre de l'article</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              esse consectetur, dolor eligendi saepe ipsa iste illum nisi earum
+              impedit, nobis quae possimus animi error dignissimos quo
+              praesentium maxime quaerat!
+            </p>
+          </div>
         </div>
       </div>
-      <div class="actuPoster">
-        <!--image de l'article-->
-        <img class="actuImage" src="" alt="Poster 2" />
-        <!--paragraphe de preésentation de l'article-->
-        <div class="actuText">
-          <h4>Titre de l'article</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-            esse consectetur, dolor eligendi saepe ipsa iste illum nisi earum
-            impedit, nobis quae possimus animi error dignissimos quo
-            praesentium maxime quaerat!
-          </p>
+
+      <div id="tendance">
+        <h3>Catégories tendances</h3>
+        <div class="tendanceCat">
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 1" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 2" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 3" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 4" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 5" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 6" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 7" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 8" /></a>
+          </div>
+          <div class="catTitle">
+            <h4>Titre de la catégorie</h4>
+            <p>Description de la catégorie</p>
+          </div>
+        </div>
+
+        <div class="tendanceCat">
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 1" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 2" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 3" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 4" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 5" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 6" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 7" /></a>
+          </div>
+          <div class="tendancePoster">
+            <a href="#"><img class="tendanceImage" src="" alt="Poster 8" /></a>
+          </div>
+          <div class="catTitle">
+            <h4>Titre de la catégorie</h4>
+            <p>Description de la catégorie</p>
+          </div>
         </div>
       </div>
     </div>
-    <!--je passe a la suite dans l'aprem-->
   </main>
 </body>
 
