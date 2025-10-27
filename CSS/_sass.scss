@@ -111,21 +111,26 @@ main {
         padding: 1em;
     }
 
-    #actu {
+    #flex-actuCategorie {
         background-color: $primary-color;
         color: $secondary-color;
-        padding-bottom: 1em;
+        display: flex;
+        flex-flow: row nowrap;
 
-        .actuPoster {
-            background-color: $secondary-color;
-            color: $primary-color;
-            display: flex;
-            flex-flow: row nowrap;
-            margin: 2em;
-            padding: 1em;
+        #actu {
+            padding-bottom: 1em;
 
-            .actuText {
-                padding: 0 2em;
+            .actuPoster {
+                background-color: $secondary-color;
+                color: $primary-color;
+                display: flex;
+                flex-flow: row nowrap;
+                margin: 2em;
+                padding: 1em;
+
+                .actuText {
+                    padding: 0 2em;
+                }
             }
         }
     }

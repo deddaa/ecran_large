@@ -88,12 +88,16 @@ main #smallPoster {
   margin: 2em;
   padding: 1em;
 }
-main #actu {
+main #flex-actuCategorie {
   background-color: #49306B;
   color: #C7B7E5;
+  display: flex;
+  flex-flow: row nowrap;
+}
+main #flex-actuCategorie #actu {
   padding-bottom: 1em;
 }
-main #actu .actuPoster {
+main #flex-actuCategorie #actu .actuPoster {
   background-color: #C7B7E5;
   color: #49306B;
   display: flex;
@@ -101,7 +105,7 @@ main #actu .actuPoster {
   margin: 2em;
   padding: 1em;
 }
-main #actu .actuPoster .actuText {
+main #flex-actuCategorie #actu .actuPoster .actuText {
   padding: 0 2em;
 }
 
