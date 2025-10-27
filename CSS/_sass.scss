@@ -12,214 +12,250 @@ $emphasis-color: #C21BFF;
     padding: 0.5em 1.5em;
 }
 
+@media (max-width: 2000px) {
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: $bg-color;
+    }
 
-body {
-    padding: 0;
-    margin: 0;
-    background-color: $bg-color;
-}
-
-header {
-    background-color: $primary-color;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1em;
-
-    #boiteHeaderL {
-        width: 33vw;
+    header {
+        background-color: $primary-color;
         display: flex;
-        justify-content: start;
-    }
-
-    #boiteHeaderC {
-        width: 33vw;
-        display: flex;
-        justify-content: center;
-    }
-
-    #boiteHeaderR {
-        width: 33vw;
-        display: flex;
-        justify-content: end;
-    }
-
-    button {
-        @include button($secondary-color, $primary-color);
-    }
-
-    button:hover {
-        background-color: $emphasis-color;
-        color: $secondary-color ;
-    }
-
-    h1 {
-        color: $secondary-color;
-    }
-
-    #searchMenu {
-        background-color: $secondary-color;
-        border: none;
-        border-radius: 5em;
-        height: 2em;
-        width: 12em;
-    }
-}
-
-main {
-    color: $primary-color;
-
-    h3 {
-        padding: 0 2em;
-    }
-
-    #imageHolder {
-        width: 100%;
-        height: 80vh;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: end;
+        justify-content: space-between;
         align-items: center;
-        background-image: url(https://picsum.photos/1200/500);
-        background-repeat: no-repeat;
-        background-size: cover;
+        padding: 0 1em;
+
+        #boiteHeaderL {
+            width: 33vw;
+            display: flex;
+            justify-content: start;
+        }
+
+        #boiteHeaderC {
+            width: 33vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        #boiteHeaderR {
+            width: 33vw;
+            display: flex;
+            justify-content: end;
+        }
 
         button {
-            @include button($primary-color, $secondary-color);
-            margin-bottom: 5em;
+            @include button($secondary-color, $primary-color);
         }
 
         button:hover {
+            background-color: $emphasis-color;
+            color: $secondary-color ;
+        }
+
+        h1 {
+            color: $secondary-color;
+        }
+
+        #searchMenu {
             background-color: $secondary-color;
-            color: $primary-color;
+            border: none;
+            border-radius: 5em;
+            height: 2em;
+            width: 12em;
         }
-    }
 
-    #bigPoster {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        height: 50vh;
-        margin: 2em;
-        padding: 1em;
-    }
-
-    #smallPoster {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        height: 20vh;
-        margin: 2em;
-        padding: 1em;
-    }
-
-    #flex-actuCategorie {
-        background-color: $primary-color;
-        color: $secondary-color;
-        display: flex;
-        flex-flow: row nowrap;
-
-        #actu {
-            padding-bottom: 1em;
-
-            .actuPoster {
-                background-color: $secondary-color;
-                color: $primary-color;
-                display: flex;
-                flex-flow: row nowrap;
-                margin: 2em;
-                padding: 1em;
-
-                .actuText {
-                    padding: 0 2em;
-                }
-            }
-        }
-    }
-
-
-    #carouselAllMovie {
-        margin: 2em;
-
-        #searchAndFilter {
-            text-align: center;
-
-            #searchMenu {
-                background-color: white;
-                border: none;
-                border-radius: 5em;
-                height: 2em;
-                width: 30em;
-            }
-        }
-    }
-
-    #SearchResult {
-        background-color: $primary-color;
-        color: $secondary-color;
-        padding: 2em;
-
-        .ResultLinkToMovie {
-            display: flex;
-            flex-flow: row wrap;
-
-            .LinkToMovie {
-                display: flex;
-                flex-flow: column nowrap;
-                width: 25%;
-                height: 20em;
-                align-items: center;
-                justify-content: center;
-            }
-        }
-    }
-
-    #moviePresentation {
-        background-color: $primary-color;
-        color: $secondary-color;
-        display: flex;
-        flex-flow: row nowrap;
-        padding: 2em 10em;
-
-        #presImage {
+        .logo {
             width: 100%;
         }
     }
 
-    #popularReview,
-    #otherReview {
-        background-color: $primary-color;
-        padding: 1px 10em;
+    main {
+        color: $primary-color;
 
         h3 {
+            padding: 0 2em;
+        }
+
+        #imageHolder {
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: end;
+            align-items: center;
+            background-image: url(https://picsum.photos/1200/500);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            button {
+                @include button($primary-color, $secondary-color);
+                margin-bottom: 5em;
+            }
+
+            button:hover {
+                background-color: $secondary-color;
+                color: $primary-color;
+            }
+        }
+
+        #bigPoster {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            height: 50vh;
+            margin: 2em;
+            padding: 1em;
+        }
+
+        #smallPoster {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            height: 20vh;
+            margin: 2em;
+            padding: 1em;
+        }
+
+        #flex-actuCategorie {
+            background-color: $primary-color;
             color: $secondary-color;
-            padding: 0;
-            margin: 0;
+            display: flex;
+            flex-flow: row nowrap;
+
+            #actu {
+                padding-bottom: 1em;
+
+                .actuPoster {
+                    background-color: $secondary-color;
+                    color: $primary-color;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    margin: 2em;
+                    padding: 1em;
+
+                    .actuText {
+                        padding: 0 2em;
+                    }
+                }
+            }
+        }
+
+// all movies css
+        #carouselAllMovie {
+            margin: 2em;
+
+            #searchAndFilter {
+                text-align: center;
+
+                #searchMenu {
+                    background-color: white;
+                    border: none;
+                    border-radius: 5em;
+                    height: 2em;
+                    width: 30em;
+                }
+            }
+        }
+
+        #SearchResult {
+            background-color: $primary-color;
+            color: $secondary-color;
+            padding: 2em;
+
+            .ResultLinkToMovie {
+                display: flex;
+                flex-flow: row wrap;
+
+                .LinkToMovie {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    width: 25%;
+                    height: 20em;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+// one movie css
+        #moviePresentation {
+            background-color: $primary-color;
+            color: $secondary-color;
+            display: flex;
+            flex-flow: row nowrap;
+            padding: 2em 10em;
+
+            #presImage {
+                width: 100%;
+            }
+        }
+
+        #popularReview,
+        #otherReview {
+            background-color: $primary-color;
+            padding: 1px 10em;
+
+            h3 {
+                color: $secondary-color;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        .reviewItem {
+            background-color: $secondary-color;
+            color: $primary-color;
+            display: flex;
+            flex-flow: row nowrap;
+            margin: 2em;
+            padding: 1em;
+
+            .reviewText {
+                padding: 0 2em;
+            }
         }
     }
 
-    .reviewItem {
-        background-color: $secondary-color;
-        color: $primary-color;
-        display: flex;
-        flex-flow: row nowrap;
-        margin: 2em;
-        padding: 1em;
 
-        .reviewText {
-            padding: 0 2em;
+    footer {
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding: 5em;
+
+        p {
+            padding: 0;
+            margin: 0;
+            text-align: center;
         }
     }
 }
 
-
-footer {
-    background-color: $primary-color;
-    color: $secondary-color;
-
-    p {
-        padding: 0;
-        margin: 0;
-        text-align: center;
+@media (max-width:600px) {
+    header {
+        height: 3em;
+        #searchMenu {
+            width: 9em;
+        }
+    }
+    main {
+        #flex-actuCategorie {
+            display: block;
+            padding: 1em 0;
+        }
+        .ResultLinkToMovie {
+            display: block;
+            width: 100%;
+        }
+        .LinkToMovie {
+            display: block;
+            width: 100%;
+        }
+        #moviePresentation {
+            padding: 2em 2em;
+            display: block;
+        }
+        #popularReview, #otherReview {
+            padding: 1px 2em;
+        }
     }
 }
