@@ -47,6 +47,9 @@ header #searchMenu {
   width: 12em;
 }
 
+main {
+  color: #49306B;
+}
 main h3 {
   padding: 0 2em;
 }
@@ -107,6 +110,78 @@ main #flex-actuCategorie #actu .actuPoster {
 }
 main #flex-actuCategorie #actu .actuPoster .actuText {
   padding: 0 2em;
+}
+main #carouselAllMovie {
+  margin: 2em;
+}
+main #carouselAllMovie #searchAndFilter {
+  text-align: center;
+}
+main #carouselAllMovie #searchAndFilter #searchMenu {
+  background-color: white;
+  border: none;
+  border-radius: 5em;
+  height: 2em;
+  width: 30em;
+}
+main #SearchResult {
+  background-color: #49306B;
+  color: #C7B7E5;
+  padding: 2em;
+}
+main #SearchResult .ResultLinkToMovie {
+  display: flex;
+  flex-flow: row wrap;
+}
+main #SearchResult .ResultLinkToMovie .LinkToMovie {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 25%;
+  height: 20em;
+  align-items: center;
+  justify-content: center;
+}
+main #moviePresentation {
+  background-color: #49306B;
+  color: #C7B7E5;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 2em 10em;
+}
+main #moviePresentation #presImage {
+  width: 100%;
+}
+main #popularReview,
+main #otherReview {
+  background-color: #49306B;
+  padding: 1px 10em;
+}
+main #popularReview h3,
+main #otherReview h3 {
+  color: #C7B7E5;
+  padding: 0;
+  margin: 0;
+}
+main .reviewItem {
+  background-color: #C7B7E5;
+  color: #49306B;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 2em;
+  padding: 1em;
+}
+main .reviewItem .reviewText {
+  padding: 0 2em;
+}
+
+footer {
+  background-color: #49306B;
+  color: #C7B7E5;
+}
+footer p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

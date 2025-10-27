@@ -67,6 +67,8 @@ header {
 }
 
 main {
+    color: $primary-color;
+
     h3 {
         padding: 0 2em;
     }
@@ -133,5 +135,91 @@ main {
                 }
             }
         }
+    }
+
+
+    #carouselAllMovie {
+        margin: 2em;
+
+        #searchAndFilter {
+            text-align: center;
+
+            #searchMenu {
+                background-color: white;
+                border: none;
+                border-radius: 5em;
+                height: 2em;
+                width: 30em;
+            }
+        }
+    }
+
+    #SearchResult {
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding: 2em;
+
+        .ResultLinkToMovie {
+            display: flex;
+            flex-flow: row wrap;
+
+            .LinkToMovie {
+                display: flex;
+                flex-flow: column nowrap;
+                width: 25%;
+                height: 20em;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    #moviePresentation {
+        background-color: $primary-color;
+        color: $secondary-color;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 2em 10em;
+
+        #presImage {
+            width: 100%;
+        }
+    }
+
+    #popularReview,
+    #otherReview {
+        background-color: $primary-color;
+        padding: 1px 10em;
+
+        h3 {
+            color: $secondary-color;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .reviewItem {
+        background-color: $secondary-color;
+        color: $primary-color;
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 2em;
+        padding: 1em;
+
+        .reviewText {
+            padding: 0 2em;
+        }
+    }
+}
+
+
+footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+
+    p {
+        padding: 0;
+        margin: 0;
+        text-align: center;
     }
 }
