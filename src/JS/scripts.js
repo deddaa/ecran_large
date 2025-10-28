@@ -151,55 +151,6 @@ function card(movie) {
     return newCard
 }
 
-// function carrouselPosition() {
-//   // const container = document.getElementById('carrousel')
-//   // const viewportWidth = container.offsetWidth
-//   // const cards = container.querySelectorAll('.card')
-//   // let previousWidth = 0
-
-//   for (let i = 0; i < cards.length; i++) {
-//     if (currentIndex == i) {
-//       cards[i].classList.add("active");
-//     } else {
-//       cards[i].classList.remove("active");
-//       if (i < currentIndex) {
-//         let width =
-//           parseFloat(window.getComputedStyle(cards[i]).marginRight) +
-//           cards[i].offsetWidth +
-//           parseFloat(window.getComputedStyle(cards[i]).marginLeft);
-//         previousWidth += width;
-//       }
-//     }
-//   }
-
-//   const activeWidth =
-//     cards[currentIndex].offsetWidth +
-//     parseFloat(window.getComputedStyle(cards[currentIndex]).marginLeft) +
-//     parseFloat(window.getComputedStyle(cards[currentIndex]).marginRight);
-//   const centering = viewportWidth / 2 - activeWidth / 2;
-//   const translate = previousWidth - centering;
-
-//   container.style.transform = "translateX(-" + translate + "px)";
-// }
-
-// function right() {
-//   if (currentIndex < movies.length - 1) {
-//     currentIndex++;
-//     carrouselPosition();
-//   } else {
-//     return;
-//   }
-// }
-
-// function left() {
-//   if (currentIndex > 0) {
-//     currentIndex--;
-//     carrouselPosition();
-//   } else {
-//     return;
-//   }
-// }
-
 function addActorFunction() {
   const maxActors = 10;
   const inputs = document.querySelectorAll('input[name="actorInput"]');
