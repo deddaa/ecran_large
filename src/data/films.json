@@ -1,0 +1,22 @@
+[
+    {
+        "titre": "Les Évadés",
+        "description": "Le banquier Andy Dufresne est arrêté pour avoir tué sa femme et son amant. Après une dure adaptation, il tente d'améliorer les conditions de la prison et de redonner de l'espoir à ses compagnons.",
+        "genre": "drame",
+        "acteurs": [
+            "Tim Robbins",
+            "Morgan Freeman",
+            "Bob Gunton"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/medias/nmedia/18/63/30/68/18686447.jpg"
+    },
+    {
+        "titre": "Une bataille après l'autre",
+        "description": "Ancien révolutionnaire désabusé et paranoïaque, Bob vit en marge de la société, avec sa fille Willa, indépendante et pleine de ressources. Quand son ennemi juré refait surface après 16 ans et que Willa disparaît, Bob remue ciel et terre pour la retrouver, affrontant pour la première fois les conséquences de son passé…",
+        "genre": "action",
+        "acteurs": [
+             "Leonardo DiCaprio", "Benicio Del Toro", "Teyana Taylor"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/img/61/0d/610dc2fcd83afe3717f771b889b979c2.jpg"
+    }
+]
