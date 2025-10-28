@@ -18,5 +18,50 @@
              "Leonardo DiCaprio", "Benicio Del Toro", "Teyana Taylor"
         ],
         "image": "https://fr.web.img6.acsta.net/c_310_420/img/61/0d/610dc2fcd83afe3717f771b889b979c2.jpg"
+    },
+    {
+        "titre": "La Vengeance de Monte Cristo",
+        "description": "En 1815, à leur arrivée sur l'île d'Elbe où est emprisonné Napoléon Bonaparte, les marins Edmond Dantès et Fernand Mondego, deux proches amis, cherchent de l'aide pour leur capitaine blessé. Edmond rêve d'épouser Mercedès, sa bien-aimée. Mais Fernand, qui a les mêmes ambitions que lui, n'hésite pas à l'accuser de contribuer à l'évasion de l'empereur. Le préfet de police Villefort arrête aussitôt Edmond.",
+        "genre": "aventure",
+        "acteurs": [
+             "Jim Caviezel", "Guy Pearce", "Dagmara Dominczyk"
+        ],
+        "image": "https://fr.web.img2.acsta.net/medias/nmedia/00/02/43/26/affcristo.jpg"
+    },
+    {
+        "titre": "Les Trois Frères : Le Retour",
+        "description": "Ils sont trois. Ils sont frères. Ils sont de retour. 15 ans après, Didier, Bernard et Pascal sont enfin réunis... par leur mère... Cette fois sera peut-être la bonne.",
+        "genre": "comedie",
+        "acteurs": [
+             "Didier Bourdon", "Bernard Campan", "Pascal Légitimus"
+        ],
+        "image": "https://fr.web.img3.acsta.net/c_310_420/pictures/13/12/26/10/26/068920.jpg"
+    },
+    {
+        "titre": "ROBOTS",
+        "description": "Rodney est un jeune robot plein d'idées, mais son village est trop petit pour ses rêves. Il décide de partir à Robot Ville rencontrer Bigweld, le plus génial inventeur et bienfaiteur de tous les robots, pour lui proposer ses services. Mais de nombreuses surprises l'attendent...",
+        "genre": "animation",
+        "acteurs": [
+             "Ewan McGregor", "Halle Berry", "Greg Kinnear"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/medias/nmedia/18/35/46/07/18408708.jpg"
+    },
+    {
+        "titre": "The Flash",
+        "description": "Les réalités s’affrontent dans THE FLASH lorsque Barry se sert de ses super-pouvoirs pour remonter le temps et modifier son passé. Mais ses efforts pour sauver sa famille ne sont pas sans conséquences sur l’avenir, et Barry se retrouve pris au piège d’une réalité où le général Zod est de retour, menaçant d’anéantir la planète, et où les super-héros ont disparu. À moins que Barry ne réussisse à tirer de sa retraite un Batman bien changé et à venir en aide à un Kryptonien incarcéré, qui n’est pas forcément celui qu’il recherche. Barry s’engage alors dans une terrible course contre la montre pour protéger le monde dans lequel il est et retrouver le futur qu’il connaît. Mais son sacrifice ultime suffira-t-il à sauver l’univers ?",
+        "genre": "action",
+        "acteurs": [
+             "Ezra Miller", "Sasha Calle", "Michael Shannon"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/medias/nmedia/18/35/46/07/18408708.jpg"
+    },
+    {
+        "titre": "Dragons",
+        "description": "Sur l'île escarpée de Beurk, où depuis des générations Vikings et dragons s’affrontent sans merci, Harold fait figure d’exception. Effacé, écrasé par la stature de son père, le chef de la tribu, Stoïk, ce jeune rêveur défie des siècles de tradition en se liant d'amitié avec un dragon nommé Krokmou. Leur lien improbable va révéler la vraie nature des dragons et remettre en question les fondements mêmes de la société viking.",
+        "genre": "action",
+        "acteurs": [
+             "Mason Thames", "Gerard Butler", "Nico Parker"
+        ],
+        "image": "https://fr.web.img2.acsta.net/c_310_420/img/e8/20/e820c5f3bfaf56d2eee911834bf46955.jpg"
     }
 ]

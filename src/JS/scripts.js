@@ -1,6 +1,6 @@
 const movies = [];
 
-class carrousel {
+class carousel {
   constructor(containerElement) {
     this.container = containerElement;
     this.currentIndex = 0;
@@ -81,8 +81,8 @@ function displayMovies(filmsArray, container) {
   }
 }
 
-function carrouselContainer (groupeMovies) {
-  const container = document.getElementById("carrousels")
+function carouselContainer (groupeMovies) {
+  const container = document.getElementById("carousels")
 
   for (let gender in groupeMovies) {
     const newContainer = document.createElement("div")
@@ -94,14 +94,14 @@ function carrouselContainer (groupeMovies) {
     title.innerHTML = gender
     newContainer.appendChild(title)
 
-    const newCarrousel = document.createElement("div")
-    newCarrousel.className = "carrousel"
-    newContainer.appendChild(newCarrousel)
+    const newCarousel = document.createElement("div")
+    newCarousel.className = "carousel"
+    newContainer.appendChild(newCarousel)
 
-    displayMovies(groupeMovies[gender], newCarrousel)
+    displayMovies(groupeMovies[gender], newCarousel)
 
-    const instanceCarrousel = new carrousel(newCarrousel)
-    instanceCarrousel.updatePosition()
+    const instanceCarousel = new carousel(newCarousel)
+    instanceCarousel.updatePosition()
 
 
     const btnLeft = document.createElement("button")
@@ -116,15 +116,15 @@ function carrouselContainer (groupeMovies) {
     btnRight.innerHTML = ">"
     newContainer.appendChild(btnRight)
 
-    btnLeft.addEventListener("click", () => instanceCarrousel.moveLeft())
-    btnRight.addEventListener("click", () => instanceCarrousel.moveRight())
+    btnLeft.addEventListener("click", () => instanceCarousel.moveLeft())
+    btnRight.addEventListener("click", () => instanceCarousel.moveRight())
   }
 }
 
 function initApp() {
   const groupeMovies = triGender()
 
-  carrouselContainer(groupeMovies)
+  carouselContainer(groupeMovies)
 }
 
 fetch("../data/films.json")
@@ -172,10 +172,11 @@ function newMovie(e) {
   const title = document.getElementById("titre").value.trim();
   const description = document.getElementById("description").value.trim();
   const genre = document.getElementById("genre").value.trim();
+  const date = document.getElementById("date").value.trim();
+  const real = document.getElementById("realisateur").value.trim();
   const picture = document.getElementById("image").value;
   const actorsListe = document.querySelectorAll('input[name="actorInput"]');
   const actorsArray = [];
-  const id = Date.now();
 
   for (let actor of actorsListe) {
     const actorValue = actor.value.trim();
@@ -188,11 +189,13 @@ function newMovie(e) {
 
   const movie = {
     titre: title,
+    date: date,
+    realisateur: real,
     description: description,
     genre: genre,
     acteurs: actorsArray,
     image: picture,
-    id: id,
+    id: `${title}-${date}`,
   };
 
   if (movie.titre == "" || movie.genre == "") {
@@ -205,6 +208,77 @@ function newMovie(e) {
 
 }
 
+function infos() {
+  const titleContainer = document.getElementById("titleContainer");
+  const dateContainer = document.getElementById("dateContainer");
+  const realContainer = document.getElementById("realContainer");
+  const descriptionContainer = document.getElementById("descriptionContainer");
+  const genreContainer = document.getElementById("genreContainer");
+  const actorsContainer = document.getElementById("actorsContainer");
+  const imageContainer = document.getElementById("imageContainer");
+  const imageContainerTop = document.getElementById("imageContainerTop");
+
+
+  titleContainer.innerHTML = movies[0].titre;
+  dateContainer.innerHTML = movies[0].date;
+  realContainer.innerHTML = movies[0].realisateur;
+  descriptionContainer.innerHTML = movies[0].description;
+  genreContainer.innerHTML = movies[0].genre;
+  actorsContainer.innerHTML = movies[0].acteurs;
+  imageContainer.innerHTML = `<img src="${movies[0].image}" alt="${movies[0].titre}" class="">`;
+  imageContainerTop.innerHTML = `<img src="${movies[0].image}" alt="${movies[0].titre}" class="">`;
+
+}
+
+function slideDown () {
+  const container = document.getElementById("carouselAllMovie")
+  container.classList.add("slideDown")
+}
+
+function allMovies() {
+  const container = document.getElementById("ResultLinkToMovie")
+
+  for (let movie of movies) {
+    const linkContainer = document.createElement("div")
+    linkContainer.className = "LinkToMovie"
+  
+    container.appendChild(linkContainer)
+
+    const newLink = document.createElement("a")
+    newLink.href = "#"
+    newLink.className = "tendencePoster"
+
+    linkContainer.appendChild(newLink)
+  
+    const linkImg = document.createElement("img")
+    linkImg.src = movie.image
+    linkImg.alt = movie.titre
+    linkImg.className = "tendanceImage"
+
+    newLink.appendChild(linkImg)
+
+    const infosContaine = document.createElement("div")
+    infosContaine.className = "movieInfo"
+
+    linkContainer.appendChild(infosContaine)
+
+    const title = document.createElement("h4")
+    title.innerHTML = movie.titre
+
+    infosContaine.appendChild(title)
+
+    const infos = document.createElement("p")
+    infos.innerHTML = `${movie.date} - ${movie.realisateur}`
+
+    infosContaine.appendChild(infos)
+  }
+}
+
+infos()
+
+allMovies()
+
+const slide = document.getElementById("slideBtn");
 const add = document.getElementById("addActorBtn");
 const form = document.getElementById("addCard");
 
@@ -214,4 +288,8 @@ if (add) {
 
 if (form) {
   form.addEventListener("submit", newMovie);
+}
+
+if (slide) {
+  slide.addEventListener("click", slideDown);
 }
