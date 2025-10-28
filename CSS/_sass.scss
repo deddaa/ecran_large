@@ -1,18 +1,17 @@
-// Variables
+// Variables ------------------------------------------------
 $bg-color : #C8B6C6;
 $primary-color: #49306B;
 $secondary-color: #C7B7E5;
 $emphasis-color: #C21BFF;
 
-//Classes
+//Classes ---------------------------------------------------
 @mixin button($couleurBg, $couleur) {
     background-color: $couleurBg;
     color: $couleur;
-    border: none;
+    border: 2px solid $couleurBg;
     padding: 0.5em 1.5em;
 }
-
-@media (max-width: 2000px) {
+//Version PC ------------------------------------------------
     body {
         padding: 0;
         margin: 0;
@@ -25,6 +24,7 @@ $emphasis-color: #C21BFF;
         justify-content: space-between;
         align-items: center;
         padding: 0 1em;
+        min-height: 3em;
 
         #boiteHeaderL {
             width: 33vw;
@@ -49,7 +49,8 @@ $emphasis-color: #C21BFF;
         }
 
         button:hover {
-            background-color: $emphasis-color;
+            background-color: $primary-color;
+            border: 2px solid $secondary-color;
             color: $secondary-color ;
         }
 
@@ -63,6 +64,9 @@ $emphasis-color: #C21BFF;
             border-radius: 5em;
             height: 2em;
             width: 12em;
+            ::placeholder {
+                color: $primary-color;
+            }
         }
 
         .logo {
@@ -76,7 +80,7 @@ $emphasis-color: #C21BFF;
         h3 {
             padding: 0 2em;
         }
-
+// img bg --------------------------------------------------
         #imageHolder {
             width: 100%;
             height: 80vh;
@@ -87,6 +91,7 @@ $emphasis-color: #C21BFF;
             background-image: url(https://picsum.photos/1200/500);
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
 
             button {
                 @include button($primary-color, $secondary-color);
@@ -96,9 +101,10 @@ $emphasis-color: #C21BFF;
             button:hover {
                 background-color: $secondary-color;
                 color: $primary-color;
+                border: 2px solid $secondary-color;
             }
         }
-
+// index css ------------------------------------------------
         #bigPoster {
             display: flex;
             flex-flow: row nowrap;
@@ -141,7 +147,7 @@ $emphasis-color: #C21BFF;
             }
         }
 
-// all movies css
+// all movies css --------------------------------------------
         #carouselAllMovie {
             margin: 2em;
 
@@ -177,7 +183,7 @@ $emphasis-color: #C21BFF;
                 }
             }
         }
-// one movie css
+// one movie css --------------------------------------------
         #moviePresentation {
             background-color: $primary-color;
             color: $secondary-color;
@@ -187,6 +193,14 @@ $emphasis-color: #C21BFF;
 
             #presImage {
                 width: 100%;
+            }
+            #synopsis {
+                padding: 2em;
+            }
+            #castingAndNote {
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 5em;
             }
         }
 
@@ -228,8 +242,7 @@ $emphasis-color: #C21BFF;
             text-align: center;
         }
     }
-}
-
+// version telephone ----------------------------------------
 @media (max-width:600px) {
     header {
         height: 3em;
@@ -238,10 +251,24 @@ $emphasis-color: #C21BFF;
         }
     }
     main {
+        // img bg ------------------------------------------
+        #imageHolder {
+            height: 40vh;
+        }
+        // index css -----------------------------------------
+        #bigPoster {
+            flex-flow: column;
+            align-items: center;
+        }
+        #smallPoster {
+            flex-flow: column;
+            align-items: center;
+        }
         #flex-actuCategorie {
             display: block;
             padding: 1em 0;
         }
+        // all movies css -----------------------------------
         .ResultLinkToMovie {
             display: block;
             width: 100%;
@@ -250,6 +277,7 @@ $emphasis-color: #C21BFF;
             display: block;
             width: 100%;
         }
+        // one movie css --------------------------------------
         #moviePresentation {
             padding: 2em 2em;
             display: block;
