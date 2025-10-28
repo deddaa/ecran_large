@@ -217,6 +217,8 @@ function infos() {
   const actorsContainer = document.getElementById("actorsContainer");
   const imageContainer = document.getElementById("imageContainer");
   const imageContainerTop = document.getElementById("imageContainerTop");
+  
+  const actorsHTML = movies[0].acteurs.map((actor) => `<li>${actor}</li>`).join();
 
 
   titleContainer.innerHTML = movies[0].titre;
@@ -224,7 +226,7 @@ function infos() {
   realContainer.innerHTML = movies[0].realisateur;
   descriptionContainer.innerHTML = movies[0].description;
   genreContainer.innerHTML = movies[0].genre;
-  actorsContainer.innerHTML = movies[0].acteurs;
+  actorsContainer.innerHTML = `<ul>${actorsHTML}</ul>`;
   imageContainer.innerHTML = `<img src="${movies[0].image}" alt="${movies[0].titre}" class="">`;
   imageContainerTop.innerHTML = `<img src="${movies[0].image}" alt="${movies[0].titre}" class="">`;
 
