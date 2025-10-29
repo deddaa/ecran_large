@@ -1,6 +1,4 @@
-
-
-fetch("./src/data/films.json")
+fetch("./data/films.json")
   .then((res) => res.json())
   .then((data) => {
     data.forEach((movie) => {
@@ -19,5 +17,3 @@ function initApp() {
 
     banner()
 }
-
-

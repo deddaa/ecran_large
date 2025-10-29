@@ -151,12 +151,12 @@ function addActorFunction() {
 
 function newMovie(e) {
   e.preventDefault();
-  const title = document.getElementById("titre").value.trim();
+  const title = document.getElementById("title").value.trim();
   const description = document.getElementById("description").value.trim();
-  const genre = document.getElementById("genre").value.trim();
-  const date = document.getElementById("date").value.trim();
-  const real = document.getElementById("realisateur").value.trim();
-  const picture = document.getElementById("image").value;
+  const genre = document.getElementById("gender").value.trim();
+  const date = Number(document.getElementById("date").value.trim());
+  const real = document.getElementById("real").value.trim();
+  const picture = document.getElementById("posterUrl").value;
   const actorsListe = document.querySelectorAll('input[name="actorInput"]');
   const actorsArray = [];
 
@@ -187,6 +187,9 @@ function newMovie(e) {
     initApp()
     e.target.reset();
   }
+
+  const form = document.getElementById("addMovieForm");
+  form.style.display = "none";
 
 }
 
@@ -237,7 +240,7 @@ function allMovies() {
     container.appendChild(linkContainer)
 
     const newLink = document.createElement("a")
-    newLink.href = "#"
+    newLink.href = "./one_movie.html"
     newLink.className = "tendencePoster"
 
     linkContainer.appendChild(newLink)
@@ -266,9 +269,16 @@ function allMovies() {
   }
 }
 
+function displayForm () {
+  const form = document.getElementById("addMovieForm")
+
+  form.style.display = "block"
+}
+
 const slide = document.getElementById("slideBtn");
 const add = document.getElementById("addActorBtn");
 const form = document.getElementById("addCard");
+const btnForm = document.getElementById("addMovie")
 
 if (add) {
   add.addEventListener("click", addActorFunction);
@@ -280,4 +290,8 @@ if (form) {
 
 if (slide) {
   slide.addEventListener("click", slideDown);
+}
+
+if (btnForm) {
+  btnForm.addEventListener("click", displayForm);
 }

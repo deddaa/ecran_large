@@ -296,7 +296,7 @@
         "date": "1998",
         "realisateur": "Francis Veber",
         "description": "Chaque mercredi, Pierre Brochant et ses amis organisent un dîner de cons. Le principe est simple : chaque participant doit amener un 'con', et celui qui a déniché le plus spectaculaire est déclaré vainqueur. Ce soir, Pierre est ravi, il a trouvé la perle rare : François Pignon, un comptable passionné de modèles réduits en allumettes. Mais rien ne se passera comme prévu.",
-        "genre": "Comédie",
+        "genre": "Comedie",
         "acteurs": [
             "Jacques Villeret", 
             "Thierry Lhermitte", 
@@ -426,7 +426,7 @@
         "date": "2011",
         "realisateur": "Olivier Nakache, Éric Toledano",
         "description": "À la suite d'un accident de parapente, Philippe, riche aristocrate, engage Driss, un jeune de banlieue tout juste sorti de prison, comme aide à domicile. Les deux hommes, venant de mondes que tout oppose, vont apprendre à se connaître et lier une amitié inattendue et forte, basée sur l'humour et le respect mutuel.",
-        "genre": "Comédie",
+        "genre": "Comedie",
         "acteurs": [
             "François Cluzet", 
             "Omar Sy", 
@@ -539,24 +539,24 @@
         "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/22/04/06/14/34/3532106.jpg"
     },
     {
-        "titre": "https://fr.web.img3.acsta.net/c_310_420/medias/nmedia/18/35/95/94/18602611.jpg",
+        "titre": "OSS 117, Le Caire nid d'espions",
         "date": "2006",
         "realisateur": "Michel Hazanavicius",
         "description": "En 1955, le gouvernement français envoie son meilleur agent secret, Hubert Bonisseur de La Bath, alias OSS 117, au Caire pour enquêter sur la mystérieuse disparition de son ami et collègue Jack Jefferson. Sous couvert d'une mission de routine, OSS 117 devra désamorcer une crise internationale et rétablir l'ordre, à sa manière maladroite et décalée.",
-        "genre": "Comédie",
+        "genre": "Comedie",
         "acteurs": [
             "Jean Dujardin", 
             "Bérénice Bejo", 
             "Aure Atika"
         ],
-        "image": "https://fr.web.img2.acsta.net/c_310_420/medias/nmedia/images/showtime/DVD/13401569.jpg"
+        "image": "https://fr.web.img3.acsta.net/c_310_420/medias/nmedia/18/35/95/94/18602611.jpg"
     },
     {
         "titre": "Douze Hommes en Colère",
         "date": "1957",
         "realisateur": "Sidney Lumet",
         "description": "Un jury composé de douze hommes doit délibérer du sort d'un adolescent accusé de meurtre. Alors que la culpabilité semble évidente pour onze d'entre eux, un juré s'interroge et sème le doute, forçant chacun à revoir les preuves et leurs propres préjugés, dans une pièce où la tension monte en huis clos.",
-        "genre": "Judiciaire",
+        "genre": "Policier",
         "acteurs": [
             "Henry Fonda",
             "Lee J. Cobb",
@@ -582,7 +582,7 @@
         "date": "2000",
         "realisateur": "Guy Ritchie",
         "description": "Deux histoires s'entremêlent : une bande de truands se lance à la recherche d'un diamant d'une valeur inestimable, tandis qu'un promoteur de combat clandestin se retrouve en mauvaise posture avec un dangereux chef de la mafia russe. Le tout est raconté dans un style très rapide et décalé.",
-        "genre": "Comédie Noire",
+        "genre": "Comedie",
         "acteurs": [
             "Jason Statham",
             "Brad Pitt",
@@ -634,7 +634,7 @@
         "date": "2016",
         "realisateur": "Damien Chazelle",
         "description": "À Los Angeles, une actrice en devenir, Mia, et un musicien de jazz passionné, Sebastian, luttent pour joindre les deux bouts tout en poursuivant leurs rêves. Le film retrace leur histoire d'amour et leurs carrières, explorant les joies et les peines inhérentes à la poursuite de l'art dans la Cité des Anges.",
-        "genre": "Musical",
+        "genre": "Comedie",
         "acteurs": [
             "Ryan Gosling",
             "Emma Stone",
@@ -660,7 +660,7 @@
         "date": "1998",
         "realisateur": "Peter Weir",
         "description": "Truman Burbank mène une vie paisible, mais ignore que toute son existence est filmée à son insu et retransmise 24h/24 dans le monde entier. Le jour où de petits incidents étranges se multiplient, il commence à se poser des questions sur la nature de son monde et décide de chercher la vérité, au risque de tout perdre.",
-        "genre": "Comédie Dramatique",
+        "genre": "Comedie",
         "acteurs": [
             "Jim Carrey",
             "Laura Linney",
@@ -777,7 +777,7 @@
         "date": "2006",
         "realisateur": "Jonathan Dayton, Valerie Faris",
         "description": "La famille Hoover, dysfonctionnelle mais aimante, entreprend un voyage déjanté à travers les États-Unis pour emmener leur plus jeune fille, la petite Olive, concourir à un concours de beauté en Californie. Ce 'road movie' est une critique satirique et émouvante de l'idéal américain.",
-        "genre": "Comédie Dramatique",
+        "genre": "Comedie",
         "acteurs": [
             "Abigail Breslin", 
             "Greg Kinnear", 
