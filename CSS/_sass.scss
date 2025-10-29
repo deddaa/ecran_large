@@ -154,6 +154,11 @@ $emphasis-color: #C21BFF;
             #searchAndFilter {
                 text-align: center;
 
+                input {
+                    background-color: $bg-color;
+                    border: none;
+                    color: $primary-color;
+                }
                 #searchMenu {
                     background-color: white;
                     border: none;

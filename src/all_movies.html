@@ -15,141 +15,140 @@
     </div>
     <div id="boiteHeaderC">
       <a href="index.html"><img class="logo" src="../img/title.png" alt="Ecran Large Logo" /></a>
-    </header>
-    <main id="mainContent">
-      <section id="carouselAllMovie">
-        <div id="searchAndFilter">
-          <input
-            type="search"
-            id="searchMenu"
-            placeholder="rechercher un film..."
-          />
-          <label for="filterMenu">🎬 Filtrer par genres :</label><br />
+    </div>
+    <div id="boiteHeaderR"></div>
+  </header>
+  <main id="mainContent">
+    <section id="carouselAllMovie">
+      <div id="searchAndFilter">
+        <input type="search" id="searchMenu" placeholder="rechercher un film..." />
+        <label for="filterMenu">🎬 Filtrer par genres :</label><br />
 
-          <select id="filterMenu" name="genres" multiple size="5">
-            <option disabled>Sélectionne un ou plusieurs genres</option>
-            <option value="sf">Science-Fiction</option>
-            <option value="action">Action</option>
-            <option value="horreur">Horreur</option>
-            <option value="drame">Drame</option>
-            <option value="comedie">Comédie</option>
-            <option value="thriller">Thriller</option>
-            <option value="fantasy">Fantasy</option>
-            <option value="aventure">Aventure</option>
-          </select>
-          <label for="Date">Date de sortie : </label>
-          <input class="date" type="date" id="Date" name="Sortie du film" value="1895-12-28" min="1895-12-28"
-            max="2025-12-31" />
-          <input id="Realisateur" type="search" name="#" placeholder="Realisateur :" />
+        <select id="filterMenu" name="genres" multiple size="5">
+          <option disabled>Sélectionne un ou plusieurs genres</option>
+          <option value="sf">Science-Fiction</option>
+          <option value="action">Action</option>
+          <option value="horreur">Horreur</option>
+          <option value="drame">Drame</option>
+          <option value="comedie">Comédie</option>
+          <option value="thriller">Thriller</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="aventure">Aventure</option>
+        </select>
+        <label for="Date">Date de sortie : </label>
+        <input class="date" type="date" id="Date" name="Sortie du film" value="1895-12-28" min="1895-12-28"
+          max="2025-12-31" />
+        <input id="Realisateur" type="search" name="#" placeholder="Realisateur :" />
+      </div>
+      <div class="carousel">
+        <!--je réutilise tendanceImage du index.html , il me semble qu'ils seront pareils-->
+        <div class="tendancePoster">
+          <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 1" /></a>
         </div>
-        <div class="carousel">
-          <!--je réutilise tendanceImage du index.html , il me semble qu'ils seront pareils-->
-          <div class="tendancePoster">
-            <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 1" /></a>
-          </div>
-          <div class="tendancePoster">
-            <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 2" /></a>
-          </div>
-          <div class="tendancePoster">
-            <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 3" /></a>
-          </div>
-          <div class="tendancePoster">
-            <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 4" /></a>
-          </div>
-          <div class="tendancePoster">
-            <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 5" /></a>
-          </div>
-          <div class="tendancePoster">
-            <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 6" /></a>
+        <div class="tendancePoster">
+          <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 2" /></a>
+        </div>
+        <div class="tendancePoster">
+          <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 3" /></a>
+        </div>
+        <div class="tendancePoster">
+          <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 4" /></a>
+        </div>
+        <div class="tendancePoster">
+          <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 5" /></a>
+        </div>
+        <div class="tendancePoster">
+          <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 6" /></a>
+        </div>
+      </div>
+      <div class="carousel">
+        <!--je réutilise tendanceImage du index.html , il me semble qu'ils seront pareils-->
+        <div class="tendancePoster">
+          <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 1" /></a>
+        </div>
+        <div class="tendancePoster">
+          <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 2" /></a>
+        </div>
+        <div class="tendancePoster">
+          <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 3" /></a>
+        </div>
+        <div class="tendancePoster">
+          <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 4" /></a>
+        </div>
+        <div class="tendancePoster">
+          <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 5" /></a>
+        </div>
+        <div class="tendancePoster">
+          <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 6" /></a>
+        </div>
+      </div>
+      <button type="button" id="slideBtn"></button>
+    </section>
+    <div id="SearchResult">
+      <h3>resutat de la recherche :</h3>
+      <div class="ResultLinkToMovie">
+        <div class="LinkToMovie">
+          <a href="#">
+            <div class="tendancePoster">
+              <img class="tendanceImage" src="" alt="Poster du film" />
+            </div>
+          </a>
+          <div class="movieInfo">
+            <h4>Titre du film</h4>
+            <p>Année - Réalisateur</p>
           </div>
         </div>
-        <div class="carousel">
-          <!--je réutilise tendanceImage du index.html , il me semble qu'ils seront pareils-->
-          <div class="tendancePoster">
-            <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 1" /></a>
-          </div>
-          <div class="tendancePoster">
-            <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 2" /></a>
-          </div>
-          <div class="tendancePoster">
-            <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 3" /></a>
-          </div>
-          <div class="tendancePoster">
-            <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 4" /></a>
-          </div>
-          <div class="tendancePoster">
-            <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 5" /></a>
-          </div>
-          <div class="tendancePoster">
-            <a href="one_movie.html"><img class="tendanceImage" src="" alt="Poster 6" /></a>
+        <div class="LinkToMovie">
+          <a href="#">
+            <div class="tendancePoster">
+              <img class="tendanceImage" src="" alt="Poster du film" />
+            </div>
+          </a>
+          <div class="movieInfo">
+            <h4>Titre du film</h4>
+            <p>Année - Réalisateur</p>
           </div>
         </div>
-        <button type="button" id="slideBtn"></button>
-      </section>
-      <div id="SearchResult">
-        <h3>resutat de la recherche :</h3>
-        <div class="ResultLinkToMovie">
-          <div class="LinkToMovie">
-            <a href="#">
-              <div class="tendancePoster">
-                <img class="tendanceImage" src="" alt="Poster du film" />
-              </div>
-            </a>
-            <div class="movieInfo">
-              <h4>Titre du film</h4>
-              <p>Année - Réalisateur</p>
+        <div class="LinkToMovie">
+          <a href="#">
+            <div class="tendancePoster">
+              <img class="tendanceImage" src="" alt="Poster du film" />
             </div>
+          </a>
+          <div class="movieInfo">
+            <h4>Titre du film</h4>
+            <p>Année - Réalisateur</p>
           </div>
-          <div class="LinkToMovie">
-            <a href="#">
-              <div class="tendancePoster">
-                <img class="tendanceImage" src="" alt="Poster du film" />
-              </div>
-            </a>
-            <div class="movieInfo">
-              <h4>Titre du film</h4>
-              <p>Année - Réalisateur</p>
+        </div>
+        <div class="LinkToMovie">
+          <a href="#">
+            <div class="tendancePoster">
+              <img class="tendanceImage" src="" alt="Poster du film" />
             </div>
+          </a>
+          <div class="movieInfo">
+            <h4>Titre du film</h4>
+            <p>Année - Réalisateur</p>
           </div>
-          <div class="LinkToMovie">
-            <a href="#">
-              <div class="tendancePoster">
-                <img class="tendanceImage" src="" alt="Poster du film" />
-              </div>
-            </a>
-            <div class="movieInfo">
-              <h4>Titre du film</h4>
-              <p>Année - Réalisateur</p>
+        </div>
+        <div class="LinkToMovie">
+          <a href="#">
+            <div class="tendancePoster">
+              <img class="tendanceImage" src="" alt="Poster du film" />
             </div>
-          </div>
-          <div class="LinkToMovie">
-            <a href="#">
-              <div class="tendancePoster">
-                <img class="tendanceImage" src="" alt="Poster du film" />
-              </div>
-            </a>
-            <div class="movieInfo">
-              <h4>Titre du film</h4>
-              <p>Année - Réalisateur</p>
-            </div>
-          </div>
-          <div class="LinkToMovie">
-            <a href="#">
-              <div class="tendancePoster">
-                <img class="tendanceImage" src="" alt="Poster du film" />
-              </div>
-            </a>
-            <div class="movieInfo">
-              <h4>Titre du film</h4>
-              <p>Année - Réalisateur</p>
-            </div>
+          </a>
+          <div class="movieInfo">
+            <h4>Titre du film</h4>
+            <p>Année - Réalisateur</p>
           </div>
         </div>
       </div>
-    </main>
-    <footer>
-        <p>© 2024 Ecran Large. Tous droits réservés.</p>
-        </footer>
-    <script src="./JS/scripts.js"></script>
-  </body>
+    </div>
+  </main>
+  <footer>
+    <p>© 2024 Ecran Large. Tous droits réservés.</p>
+  </footer>
+  <script src="./JS/scripts.js"></script>
+</body>
+
 </html>

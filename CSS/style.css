@@ -123,6 +123,11 @@ main #carouselAllMovie {
 main #carouselAllMovie #searchAndFilter {
   text-align: center;
 }
+main #carouselAllMovie #searchAndFilter input {
+  background-color: #C8B6C6;
+  border: none;
+  color: #49306B;
+}
 main #carouselAllMovie #searchAndFilter #searchMenu {
   background-color: white;
   border: none;
