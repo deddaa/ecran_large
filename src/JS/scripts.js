@@ -136,7 +136,7 @@ function card(movie) {
 function addActorFunction() {
   const maxActors = 10;
   const inputs = document.querySelectorAll('input[name="actorInput"]');
-  const container = document.getElementById("FormActor");
+  const container = document.getElementById("formActor");
 
   if (inputs.length < maxActors) {
     const newInput = document.createElement("input");
