@@ -264,5 +264,564 @@
              "Christian Bale", "Philippe Valmont", "Heath Ledger"
         ],
         "image": "https://fr.web.img6.acsta.net/c_310_420/medias/nmedia/18/63/97/89/18949761.jpg"
+    },
+    {
+        "titre": "Inception",
+        "date": "2010",
+        "réalisateur": "Christopher Nolan",
+        "description": "Dom Cobb est un voleur expérimenté, le meilleur dans l’art périlleux de l’extraction : subtiliser les secrets les plus précieux d’un individu au plus profond de son subconscient pendant qu’il rêve et que son esprit est le plus vulnérable. Les talents de Cobb ont fait de lui un acteur incontournable de ce nouvel univers d’espionnage industriel, mais ont aussi fait de lui un fugitif traqué dans le monde entier et lui ont valu de perdre tout ce qu’il a jamais aimé.",
+        "genre": "Science-Fiction",
+        "acteurs": [
+            "Leonardo DiCaprio", 
+            "Joseph Gordon-Levitt", 
+            "Elliot Page"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/medias/nmedia/18/73/45/63/19478796.jpg"
+    },
+    {
+        "titre": "Forrest Gump",
+        "date": "1994",
+        "réalisateur": "Robert Zemeckis",
+        "description": "Quelques décennies d'histoire américaine, des années 40 à la fin du XXème siècle, vues à travers le regard et le récit de Forrest Gump, un homme simple et gentil. Sa candeur et sa bonté le mènent à des situations inattendues, de la guerre du Viêt Nam à la rencontre de présidents. Au final, Forrest n'aura qu'une seule véritable obsession : Jenny, son amour de jeunesse.",
+        "genre": "Drame",
+        "acteurs": [
+            "Tom Hanks", 
+            "Robin Wright", 
+            "Gary Sinise"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/15/10/13/15/51/410636.jpg"
+    },
+    {
+        "titre": "Pulp Fiction",
+        "date": "1994",
+        "réalisateur": "Quentin Tarantino",
+        "description": "Des truands aux destins croisés. Leurs histoires, pleines de violences et d'humour noir, s'entremêlent autour d'un mystérieux \"MacGuffin\" (un objet dont l'importance est donnée mais non expliquée) et de figures emblématiques du crime organisé de Los Angeles.",
+        "genre": "Policier",
+        "acteurs": [
+            "John Travolta", 
+            "Uma Thurman", 
+            "Samuel L. Jackson"
+        ],
+        "image": "https://fr.web.img5.acsta.net/c_310_420/medias/nmedia/images/showtime/DVD/20054701.jpg"
+    },
+    {
+        "titre": "Le Dîner de Cons",
+        "date": "1998",
+        "réalisateur": "Francis Veber",
+        "description": "Chaque mercredi, Pierre Brochant et ses amis organisent un dîner de cons. Le principe est simple : chaque participant doit amener un 'con', et celui qui a déniché le plus spectaculaire est déclaré vainqueur. Ce soir, Pierre est ravi, il a trouvé la perle rare : François Pignon, un comptable passionné de modèles réduits en allumettes. Mais rien ne se passera comme prévu.",
+        "genre": "Comédie",
+        "acteurs": [
+            "Jacques Villeret", 
+            "Thierry Lhermitte", 
+            "Francis Huster"
+        ],
+        "image": "https://fr.web.img2.acsta.net/c_310_420/medias/nmedia/images/showtime/DVD/13309623.jpg"
+    },
+    {
+        "titre": "Alien, le huitième passager",
+        "date": "1979",
+        "réalisateur": "Ridley Scott",
+        "description": "Le vaisseau commercial Nostromo et son équipage sont déroutés pour enquêter sur un signal non identifié provenant d'une planète isolée. L'équipage découvre un nid d'œufs extraterrestres. L'un d'eux éclot, et une créature s'accroche au visage d'un membre de l'équipage. C'est le début d'un cauchemar, d'autant que le vaisseau contient un 'huitième passager' : l'Alien.",
+        "genre": "Horreur",
+        "acteurs": [
+            "Sigourney Weaver", 
+            "Tom Skerritt", 
+            "John Hurt"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/15/10/21/11/44/222137.jpg"
+    },
+    {
+        "titre": "Amélie Poulain",
+        "date": "2001",
+        "réalisateur": "Jean-Pierre Jeunet",
+        "description": "À Paris, dans un quartier de Montmartre qui revit sous l'effet de l'imagination d'Amélie, une jeune serveuse découvre sa vocation : elle décide de faire le bien autour d'elle, avec des petites actions discrètes mais décisives pour le bonheur des autres.",
+        "genre": "Romance",
+        "acteurs": [
+            "Audrey Tautou", 
+            "Mathieu Kassovitz", 
+            "Jamel Debbouze"
+        ],
+        "image": "https://fr.web.img2.acsta.net/c_310_420/pictures/15/10/16/16/04/396695.jpg"
+    },
+    {
+        "titre": "Parasite",
+        "date": "2019",
+        "réalisateur": "Bong Joon-ho",
+        "description": "Toute la famille de Ki-taek est au chômage et s’intéresse fortement au train de vie de la richissime famille Park. Un jour, leur fils réussit à se faire recommander pour donner des cours particuliers d'anglais chez les Park. C’est le début d’un engrenage incontrôlable, dont personne ne sortira indemne.",
+        "genre": "Thriller",
+        "acteurs": [
+            "Song Kang-ho", 
+            "Choi Woo-shik", 
+            "Park So-dam"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/pictures/19/05/29/10/37/1049286.jpg"
+    },
+    {
+        "titre": "La Ligne Verte",
+        "date": "1999",
+        "réalisateur": "Frank Darabont",
+        "description": "Paul Edgecomb, ancien gardien-chef du pénitencier de Cold Mountain, se remémore l'affaire John Coffey, un colosse noir accusé d'avoir violé et assassiné deux fillettes au début des années trente. Intrigué par l'attitude de cet homme simple et enfantin, Paul découvre que Coffey possède un don d'une autre nature.",
+        "genre": "Drame",
+        "acteurs": [
+            "Tom Hanks", 
+            "Michael Clarke Duncan", 
+            "David Morse"
+        ],
+        "image": "https://fr.web.img5.acsta.net/c_310_420/pictures/15/10/14/15/22/076241.jpg"
+    },
+    {
+        "titre": "Jurassic Park",
+        "date": "1993",
+        "réalisateur": "Steven Spielberg",
+        "description": "Le milliardaire John Hammond parvient à donner vie à de véritables dinosaures, grâce à des manipulations génétiques. Il les installe dans un parc zoologique sur une île qu'il a achetée. Mais juste avant l'ouverture, un problème technique survient et libère les animaux, mettant en danger la vie des visiteurs.",
+        "genre": "Aventure",
+        "acteurs": [
+            "Sam Neill", 
+            "Laura Dern", 
+            "Jeff Goldblum"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/210/117/21011707_m.jpg"
+    },
+    {
+        "titre": "Le Voyage de Chihiro",
+        "date": "2001",
+        "réalisateur": "Hayao Miyazaki",
+        "description": "Chihiro, une fillette de dix ans, s'apprête à emménager avec ses parents dans une nouvelle ville. Sur le chemin, la famille se perd et découvre un tunnel menant à un monde étrange, peuplé d'esprits et de dieux. Ses parents transformés en porcs, Chihiro doit travailler dans une maison de bains pour les esprits pour espérer les sauver et retrouver le monde des humains.",
+        "genre": "Animation",
+        "acteurs": [
+            "Rumi Hiiragi (voix)", 
+            "Miyu Irino (voix)", 
+            "Mari Natsuki (voix)"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/17/08/21/11/17/005284.jpg"
+    },
+    {
+        "titre": "Eternal Sunshine of the Spotless Mind",
+        "date": "2004",
+        "réalisateur": "Michel Gondry",
+        "description": "Joel, dévasté par la décision de son ex-petite amie Clementine de gommer de sa mémoire tous leurs souvenirs communs, décide de subir la même opération. Mais à mesure que ses souvenirs s'effacent, il réalise à quel point il l'aime, et tente désespérément d'interrompre le processus pour préserver les moments précieux qu'il lui reste d'elle.",
+        "genre": "Romance",
+        "acteurs": [
+            "Jim Carrey", 
+            "Kate Winslet", 
+            "Kirsten Dunst"
+        ],
+        "image": "https://fr.web.img3.acsta.net/c_310_420/pictures/18/02/13/11/48/2085797.jpg"
+    },
+    {
+        "titre": "Matrix",
+        "date": "1999",
+        "réalisateur": "Lana Wachowski, Lilly Wachowski",
+        "description": "Thomas Anderson, un jeune informaticien, mène une double vie : le jour, il est programmeur, la nuit, il est hacker sous le nom de Neo. Constamment assailli par d'étranges rêves, il est contacté par de mystérieux individus qui lui révèlent l'incroyable vérité : le monde tel qu'il le connaît n'est qu'une illusion virtuelle, la Matrice, créée par des machines intelligentes.",
+        "genre": "Science-Fiction",
+        "acteurs": [
+            "Keanu Reeves", 
+            "Laurence Fishburne", 
+            "Carrie-Anne Moss"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/18/06/13/11/47/0644026.jpg"
+    },
+    {
+        "titre": "Shining",
+        "date": "1980",
+        "réalisateur": "Stanley Kubrick",
+        "description": "Jack Torrance, un écrivain en panne d'inspiration, accepte un poste de gardien dans un hôtel isolé du Colorado, l'Overlook, pendant la morte-saison. Il s'y installe avec sa femme et son fils, Danny. L'isolement, combiné aux forces maléfiques de l'hôtel, le pousse lentement vers la folie. Danny, qui a un don de prémonition ('le Shining'), perçoit les horreurs passées et futures du lieu.",
+        "genre": "Horreur",
+        "acteurs": [
+            "Jack Nicholson", 
+            "Shelley Duvall", 
+            "Danny Lloyd"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/15/09/10/10/28/542031.jpg"
+    },
+    {
+        "titre": "Intouchables",
+        "date": "2011",
+        "réalisateur": "Olivier Nakache, Éric Toledano",
+        "description": "À la suite d'un accident de parapente, Philippe, riche aristocrate, engage Driss, un jeune de banlieue tout juste sorti de prison, comme aide à domicile. Les deux hommes, venant de mondes que tout oppose, vont apprendre à se connaître et lier une amitié inattendue et forte, basée sur l'humour et le respect mutuel.",
+        "genre": "Comédie",
+        "acteurs": [
+            "François Cluzet", 
+            "Omar Sy", 
+            "Anne Le Ny"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/pictures/210/117/21011749_m.jpg"
+    },
+    {
+        "titre": "Mon Voisin Totoro",
+        "date": "1988",
+        "réalisateur": "Hayao Miyazaki",
+        "description": "Deux jeunes sœurs, Satsuki et Mei, s'installent à la campagne avec leur père pour se rapprocher de l'hôpital où séjourne leur mère. Elles découvrent rapidement que leur nouvelle maison et la forêt environnante sont habitées par d'étranges et merveilleuses créatures, dont Totoro, l'esprit de la forêt.",
+        "genre": "Animation",
+        "acteurs": [
+            "Chika Sakamoto (voix)", 
+            "Noriko Hidaka (voix)", 
+            "Shigesato Itoi (voix)"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/pictures/21/04/09/16/06/1715423.jpg"
+    },
+    {
+        "titre": "Retour vers le futur",
+        "date": "1985",
+        "réalisateur": "Robert Zemeckis",
+        "description": "Marty McFly, un adolescent, est accidentellement envoyé en 1955 à bord d'une DeLorean transformée en machine à voyager dans le temps par son ami, le scientifique excentrique Doc Brown. Il doit s'assurer que ses parents, encore adolescents, se rencontrent et tombent amoureux, sans quoi il cessera d'exister.",
+        "genre": "Science-Fiction",
+        "acteurs": [
+            "Michael J. Fox",
+            "Christopher Lloyd",
+            "Lea Thompson"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/pictures/15/10/16/17/57/027589.jpg"
+    },
+    {
+        "titre": "Gladiator",
+        "date": "2000",
+        "réalisateur": "Ridley Scott",
+        "description": "Le général romain Maximus est le plus fidèle soutien de l'empereur Marc Aurèle, qu'il a mené de victoire en victoire. Jaloux du prestige de Maximus, et horrifié de le voir désigné comme successeur, le fils de l'empereur, Commode, ordonne de l'exécuter. Maximus parvient à s'échapper mais ne peut empêcher le massacre de sa famille. Capturé, il devient esclave et est entraîné pour devenir gladiateur, avec l'idée fixe de venger les siens.",
+        "genre": "Péplum",
+        "acteurs": [
+            "Russell Crowe",
+            "Joaquin Phoenix",
+            "Connie Nielsen"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/pictures/15/10/22/15/45/547569.jpg"
+    },
+    {
+        "titre": "Whiplash",
+        "date": "2014",
+        "réalisateur": "Damien Chazelle",
+        "description": "Andrew, un jeune batteur de jazz talentueux, rêve de s'élever au sommet du conservatoire. Il est repéré par Terence Fletcher, un professeur de musique réputé pour ses méthodes d'enseignement terrifiantes. La relation entre l'élève et son mentor devient rapidement un duel psychologique intense où la quête de la perfection frôle la destruction personnelle.",
+        "genre": "Drame",
+        "acteurs": [
+            "Miles Teller",
+            "J.K. Simmons",
+            "Paul Reiser"
+        ],
+        "image": "https://fr.web.img2.acsta.net/c_310_420/pictures/14/12/11/11/24/499691.jpg"
+    },
+    {
+        "titre": "Seven",
+        "date": "1995",
+        "réalisateur": "David Fincher",
+        "description": "À quelques jours de la retraite, le détective Sommerset fait équipe avec le jeune et impétueux David Mills pour enquêter sur une série de meurtres macabres. Ils découvrent rapidement que le tueur en série s'inspire des sept péchés capitaux pour orchestrer ses crimes.",
+        "genre": "Thriller",
+        "acteurs": [
+            "Brad Pitt", 
+            "Morgan Freeman", 
+            "Gwyneth Paltrow"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/medias/nmedia/images/showtime/DVD/20076230.jpg"
+    },
+    {
+        "titre": "La Cité de Dieu",
+        "date": "2002",
+        "réalisateur": "Fernando Meirelles, Kátia Lund",
+        "description": "Dans les années 60, dans la favela Cidade de Deus, au Brésil, deux jeunes hommes prennent des chemins différents. Fusée veut devenir photographe, tandis que Zé Pequeno choisit une vie de criminalité et de violence pour devenir le parrain de la favela.",
+        "genre": "Drame",
+        "acteurs": [
+            "Alexandre Rodrigues", 
+            "Leandro Firmino", 
+            "Matheus Nachtergaele"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/medias/nmedia/images/showtime/DVD/13017290.jpg"
+    },
+    {
+        "titre": "Mad Max: Fury Road",
+        "date": "2015",
+        "réalisateur": "George Miller",
+        "description": "Tourmenté par son passé, Max est capturé par les hommes du tyran Immortan Joe. Il s'échappe avec l'Impératrice Furiosa et un groupe de captives lors d'une course-poursuite incessante dans le désert post-apocalyptique. Le film est une longue et spectaculaire séquence de survie et d'action.",
+        "genre": "Action",
+        "acteurs": [
+            "Tom Hardy", 
+            "Charlize Theron", 
+            "Nicholas Hoult"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/pictures/15/03/17/12/35/330528.jpg"
+    },
+    {
+        "titre": "Psychose",
+        "date": "1960",
+        "réalisateur": "Alfred Hitchcock",
+        "description": "Marion Crane, une employée de bureau, s'enfuit avec 40 000 dollars volés à son patron. Épuisée, elle s'arrête dans un motel isolé, tenu par le timide et étrange Norman Bates, sous l'œil vigilant de sa mère. Ce qui devait être une simple halte tourne rapidement au cauchemar.",
+        "genre": "Horreur",
+        "acteurs": [
+            "Anthony Perkins", 
+            "Janet Leigh", 
+            "Vera Miles"
+        ],
+        "image": "https://fr.web.img5.acsta.net/c_310_420/pictures/19/08/20/11/49/5267078.jpg"
+    },
+    {
+        "titre": "OSS 117 : Le Caire, nid d'espions",
+        "date": "2006",
+        "réalisateur": "Michel Hazanavicius",
+        "description": "En 1955, le gouvernement français envoie son meilleur agent secret, Hubert Bonisseur de La Bath, alias OSS 117, au Caire pour enquêter sur la mystérieuse disparition de son ami et collègue Jack Jefferson. Sous couvert d'une mission de routine, OSS 117 devra désamorcer une crise internationale et rétablir l'ordre, à sa manière maladroite et décalée.",
+        "genre": "Comédie",
+        "acteurs": [
+            "Jean Dujardin", 
+            "Bérénice Bejo", 
+            "Aure Atika"
+        ],
+        "image": "https://fr.web.img2.acsta.net/c_310_420/medias/nmedia/images/showtime/DVD/13401569.jpg"
+    },
+    {
+        "titre": "Douze Hommes en Colère",
+        "date": "1957",
+        "réalisateur": "Sidney Lumet",
+        "description": "Un jury composé de douze hommes doit délibérer du sort d'un adolescent accusé de meurtre. Alors que la culpabilité semble évidente pour onze d'entre eux, un juré s'interroge et sème le doute, forçant chacun à revoir les preuves et leurs propres préjugés, dans une pièce où la tension monte en huis clos.",
+        "genre": "Judiciaire",
+        "acteurs": [
+            "Henry Fonda",
+            "Lee J. Cobb",
+            "Martin Balsam"
+        ],
+        "image": "https://fr.web.img3.acsta.net/c_310_420/pictures/14/08/21/16/32/388277.jpg"
+    },
+    {
+        "titre": "Blade Runner 2049",
+        "date": "2017",
+        "réalisateur": "Denis Villeneuve",
+        "description": "Trente ans après les événements du premier film, un nouveau 'Blade Runner', l'Officier K, découvre un secret enfoui depuis longtemps qui pourrait plonger ce qu’il reste de la société dans le chaos. La découverte de K l’emmène dans une quête pour retrouver Rick Deckard, un ancien Blade Runner disparu depuis trente ans.",
+        "genre": "Science-Fiction",
+        "acteurs": [
+            "Ryan Gosling",
+            "Harrison Ford",
+            "Ana de Armas"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/17/08/01/17/28/055088.jpg"
+    },
+    {
+        "titre": "Snatch : Tu braques ou tu raques",
+        "date": "2000",
+        "réalisateur": "Guy Ritchie",
+        "description": "Deux histoires s'entremêlent : une bande de truands se lance à la recherche d'un diamant d'une valeur inestimable, tandis qu'un promoteur de combat clandestin se retrouve en mauvaise posture avec un dangereux chef de la mafia russe. Le tout est raconté dans un style très rapide et décalé.",
+        "genre": "Comédie Noire",
+        "acteurs": [
+            "Jason Statham",
+            "Brad Pitt",
+            "Benicio Del Toro"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/15/10/16/16/04/185854.jpg"
+    },
+    {
+        "titre": "Coco",
+        "date": "2017",
+        "réalisateur": "Lee Unkrich, Adrian Molina",
+        "description": "Malgré l'interdiction de la musique dans sa famille, Miguel rêve de devenir un musicien accompli comme son idole. Pour prouver son talent, il se retrouve mystérieusement propulsé au Pays des Morts, où il se lance dans un voyage extraordinaire pour découvrir la véritable histoire de sa famille.",
+        "genre": "Animation",
+        "acteurs": [
+            "Anthony Gonzalez (voix)",
+            "Gael García Bernal (voix)",
+            "Benjamin Bratt (voix)"
+        ],
+        "image": "https://fr.web.img2.acsta.net/c_310_420/pictures/17/09/25/11/49/5602758.jpg"
+    },
+    {
+        "titre": "Django Unchained",
+        "date": "2012",
+        "réalisateur": "Quentin Tarantino",
+        "description": "Dans le Sud des États-Unis deux ans avant la guerre de Sécession, Django, un esclave affranchi, fait équipe avec le Dr King Schultz, un chasseur de primes allemand. Leur but : traquer les criminels les plus recherchés contre une récompense, puis libérer l'épouse de Django des mains d'un cruel propriétaire de plantation.",
+        "genre": "Western",
+        "acteurs": [
+            "Jamie Foxx",
+            "Christoph Waltz",
+            "Leonardo DiCaprio"
+        ],
+        "image": "https://fr.web.img5.acsta.net/c_310_420/pictures/210/583/21058310_m.jpg"
+    },
+    {
+        "titre": "Le Cinquième Élément",
+        "date": "1997",
+        "réalisateur": "Luc Besson",
+        "description": "Au XXIIIe siècle, la Terre est menacée par une entité maléfique. Le seul espoir de l'humanité repose sur le Cinquième Élément, incarné par une jeune femme mystérieuse nommée Leeloo. Elle est accidentellement sauvée par Korben Dallas, un chauffeur de taxi ex-militaire, qui se retrouve embarqué dans une course contre la montre pour sauver le monde.",
+        "genre": "Science-Fiction",
+        "acteurs": [
+            "Bruce Willis",
+            "Milla Jovovich",
+            "Gary Oldman"
+        ],
+        "image": "https://fr.web.img2.acsta.net/c_310_420/pictures/15/05/20/12/37/102035.jpg"
+    },
+    {
+        "titre": "La La Land",
+        "date": "2016",
+        "réalisateur": "Damien Chazelle",
+        "description": "À Los Angeles, une actrice en devenir, Mia, et un musicien de jazz passionné, Sebastian, luttent pour joindre les deux bouts tout en poursuivant leurs rêves. Le film retrace leur histoire d'amour et leurs carrières, explorant les joies et les peines inhérentes à la poursuite de l'art dans la Cité des Anges.",
+        "genre": "Musical",
+        "acteurs": [
+            "Ryan Gosling",
+            "Emma Stone",
+            "John Legend"
+        ],
+        "image": "https://fr.web.img3.acsta.net/c_310_420/pictures/16/11/17/14/08/425575.jpg"
+    },
+    {
+        "titre": "Vol au-dessus d'un nid de coucou",
+        "date": "1975",
+        "réalisateur": "Miloš Forman",
+        "description": "R.P. McMurphy, un escroc grande gueule, plaide la folie pour échapper aux travaux forcés et est transféré dans un hôpital psychiatrique. Il y découvre un univers régi par la tyrannie de l'infirmière en chef Ratched. McMurphy tente d'insuffler un esprit de rébellion aux patients, mais il réalise rapidement le danger que représente son combat.",
+        "genre": "Drame",
+        "acteurs": [
+            "Jack Nicholson",
+            "Louise Fletcher",
+            "Will Sampson"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/14/09/23/10/28/087961.jpg"
+    },
+    {
+        "titre": "The Truman Show",
+        "date": "1998",
+        "réalisateur": "Peter Weir",
+        "description": "Truman Burbank mène une vie paisible, mais ignore que toute son existence est filmée à son insu et retransmise 24h/24 dans le monde entier. Le jour où de petits incidents étranges se multiplient, il commence à se poser des questions sur la nature de son monde et décide de chercher la vérité, au risque de tout perdre.",
+        "genre": "Comédie Dramatique",
+        "acteurs": [
+            "Jim Carrey",
+            "Laura Linney",
+            "Ed Harris"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/pictures/15/10/27/10/58/060799.jpg"
+    },
+    {
+        "titre": "Casino Royale",
+        "date": "2006",
+        "réalisateur": "Martin Campbell",
+        "description": "Pour sa première mission en tant qu'agent 007, James Bond doit affronter Le Chiffre, le banquier des organisations terroristes internationales. Pour le démasquer, Bond doit le battre au poker dans un tournoi à hauts enjeux au Casino Royale. Il est assisté de Vesper Lynd, une séduisante agente du Trésor Britannique.",
+        "genre": "Action",
+        "acteurs": [
+            "Daniel Craig",
+            "Eva Green",
+            "Mads Mikkelsen"
+        ],
+        "image": "https://fr.web.img2.acsta.net/c_310_420/pictures/15/10/19/14/23/430155.jpg"
+    },
+    {
+        "titre": "Eternal Sunshine of the Spotless Mind",
+        "date": "2004",
+        "réalisateur": "Michel Gondry",
+        "description": "Joel, dévasté par la décision de son ex-petite amie Clementine de gommer de sa mémoire tous leurs souvenirs communs, décide de subir la même opération. Mais à mesure que ses souvenirs s'effacent, il réalise à quel point il l'aime, et tente désespérément d'interrompre le processus pour préserver les moments précieux qu'il lui reste d'elle.",
+        "genre": "Science-Fiction",
+        "acteurs": [
+            "Jim Carrey", 
+            "Kate Winslet", 
+            "Kirsten Dunst"
+        ],
+        "image": "https://fr.web.img3.acsta.net/c_310_420/pictures/18/02/13/11/48/2085797.jpg"
+    },
+    {
+        "titre": "Titanic",
+        "date": "1997",
+        "réalisateur": "James Cameron",
+        "description": "En 1912, la jeune Rose, issue de la haute société, doit épouser un riche homme d'affaires. Lors de la traversée inaugurale du Titanic, elle tombe amoureuse de Jack, un artiste pauvre. Leur amour passionné est mis à l'épreuve lorsque le paquebot frappe un iceberg.",
+        "genre": "Romance",
+        "acteurs": [
+            "Leonardo DiCaprio", 
+            "Kate Winslet", 
+            "Billy Zane"
+        ],
+        "image": "https://fr.web.img3.acsta.net/c_310_420/pictures/15/09/23/10/33/214300.jpg"
+    },
+    {
+        "titre": "American History X",
+        "date": "1998",
+        "réalisateur": "Tony Kaye",
+        "description": "Ancien leader néo-nazi, Derek Vinyard sort de prison, déterminé à changer de vie après avoir purgé sa peine pour homicide. Il doit maintenant empêcher son jeune frère, Daniel, de suivre le même chemin et de tomber dans l'extrémisme.",
+        "genre": "Drame",
+        "acteurs": [
+            "Edward Norton", 
+            "Edward Furlong", 
+            "Beverly D'Angelo"
+        ],
+        "image": "https://fr.web.img3.acsta.net/c_310_420/medias/nmedia/images/showtime/DVD/20065798.jpg"
+    },
+    {
+        "titre": "Les Sept Mercenaires",
+        "date": "1960",
+        "réalisateur": "John Sturges",
+        "description": "Des paysans mexicains, harcelés par un bandit et sa bande, engagent sept tireurs américains pour les défendre. Ces mercenaires acceptent la mission, sachant qu'ils ne seront payés qu'en nourriture et qu'ils devront faire face à une menace écrasante.",
+        "genre": "Western",
+        "acteurs": [
+            "Yul Brynner", 
+            "Steve McQueen", 
+            "Charles Bronson"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/pictures/15/10/05/17/02/131580.jpg"
+    },
+    {
+        "titre": "Get Out",
+        "date": "2017",
+        "réalisateur": "Jordan Peele",
+        "description": "Chris, un jeune homme noir, est invité par sa petite amie, Rose, à passer le week-end dans la maison familiale de ses parents blancs, dans une banlieue isolée. L'accueil, d'abord excessivement aimable, devient rapidement étrange et inquiétant, le plongeant dans un cauchemar psychologique.",
+        "genre": "Horreur",
+        "acteurs": [
+            "Daniel Kaluuya", 
+            "Allison Williams", 
+            "Catherine Keener"
+        ],
+        "image": "https://fr.web.img5.acsta.net/c_310_420/pictures/17/04/26/16/23/433722.jpg"
+    },
+    {
+        "titre": "Zootopie",
+        "date": "2016",
+        "réalisateur": "Byron Howard, Rich Moore",
+        "description": "Dans la métropole de Zootopie, une ville où cohabitent animaux prédateurs et proies, l'optimiste Judy Hopps devient la première lapine à intégrer la police. Pour prouver sa valeur, elle se lance dans une enquête difficile, forçant une collaboration avec Nick Wilde, un renard roublard.",
+        "genre": "Animation",
+        "acteurs": [
+            "Ginnifer Goodwin (voix)", 
+            "Jason Bateman (voix)", 
+            "Idris Elba (voix)"
+        ],
+        "image": "https://fr.web.img5.acsta.net/c_310_420/pictures/16/01/21/10/39/102073.jpg"
+    },
+    {
+        "titre": "Minority Report",
+        "date": "2002",
+        "réalisateur": "Steven Spielberg",
+        "description": "En 2054, à Washington D.C., une unité de police spéciale appelée 'Pré-Crime' utilise les visions de mutants 'précogs' pour identifier et arrêter les meurtriers avant qu'ils ne commettent leurs crimes. Le chef de l'unité, John Anderton, est lui-même accusé d'un futur meurtre qu'il jure de ne pas commettre et doit fuir son propre système.",
+        "genre": "Science-Fiction",
+        "acteurs": [
+            "Tom Cruise", 
+            "Max von Sydow", 
+            "Colin Farrell"
+        ],
+        "image": "https://fr.web.img5.acsta.net/c_310_420/pictures/15/10/16/17/57/068252.jpg"
+    },
+    {
+        "titre": "Little Miss Sunshine",
+        "date": "2006",
+        "réalisateur": "Jonathan Dayton, Valerie Faris",
+        "description": "La famille Hoover, dysfonctionnelle mais aimante, entreprend un voyage déjanté à travers les États-Unis pour emmener leur plus jeune fille, la petite Olive, concourir à un concours de beauté en Californie. Ce 'road movie' est une critique satirique et émouvante de l'idéal américain.",
+        "genre": "Comédie Dramatique",
+        "acteurs": [
+            "Abigail Breslin", 
+            "Greg Kinnear", 
+            "Paul Dano"
+        ],
+        "image": "https://fr.web.img3.acsta.net/c_310_420/pictures/15/09/29/10/33/178523.jpg"
+    },
+    {
+        "titre": "Parasite",
+        "date": "2019",
+        "réalisateur": "Bong Joon-ho",
+        "description": "Toute la famille de Ki-taek est au chômage et s’intéresse fortement au train de vie de la richissime famille Park. Un jour, leur fils réussit à se faire recommander pour donner des cours particuliers d'anglais chez les Park. C’est le début d’un engrenage incontrôlable, dont personne ne sortira indemne.",
+        "genre": "Thriller",
+        "acteurs": [
+            "Song Kang-ho", 
+            "Choi Woo-shik", 
+            "Park So-dam"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/pictures/19/05/29/10/37/1049286.jpg"
+    },
+    {
+        "titre": "Arrête-moi si tu peux",
+        "date": "2002",
+        "réalisateur": "Steven Spielberg",
+        "description": "Inspiré de faits réels, le film retrace l'histoire de Frank Abagnale Jr., un jeune homme qui, avant l'âge de 21 ans, a réussi à se faire passer pour un pilote de ligne, un médecin, et un avocat. L'agent du FBI Carl Hanratty passe son temps à traquer l'escroc, développant une relation complexe avec lui.",
+        "genre": "Biopic",
+        "acteurs": [
+            "Leonardo DiCaprio", 
+            "Tom Hanks", 
+            "Christopher Walken"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/15/10/16/17/57/027582.jpg"
     }
 ]
