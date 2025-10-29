@@ -121,29 +121,6 @@ function carouselContainer (groupeMovies) {
   }
 }
 
-function initApp() {
-  const groupeMovies = triGender()
-
-  carouselContainer(groupeMovies)
-
-  infos()
-
-  allMovies()
-
-}
-
-fetch("../data/films.json")
-  .then((res) => res.json())
-  .then((data) => {
-    data.forEach((movie) => {
-      addArr(movie);
-    });
-    initApp()
-  })
-  .catch((error) => {
-    console.error("Erreur de chargement du fichier JSON :", error);
-  });
-
 function card(movie) {
   const newCard = document.createElement("div");
   newCard.className = "card";
@@ -213,6 +190,15 @@ function newMovie(e) {
 
 }
 
+function banner () {  
+  const imageContainerTop = document.getElementById("imageContainerTop");  
+  const index = Math.floor(Math.random() * movies.length);
+  
+  imageContainerTop.style.backgroundImage = `url(${movies[index].image})`;
+  imageContainerTop.style.backgroundSize = "cover";
+  imageContainerTop.style.backgroundPosition = "center";
+} 
+
 function infos() {
   const titleContainer = document.getElementById("titleContainer");
   const dateContainer = document.getElementById("dateContainer");
@@ -221,7 +207,7 @@ function infos() {
   const genreContainer = document.getElementById("genreContainer");
   const actorsContainer = document.getElementById("actorsContainer");
   const imageContainer = document.getElementById("imageContainer");
-  const imageContainerTop = document.getElementById("imageContainerTop");
+
   const index = Math.floor(Math.random() * movies.length);
 
   const actorsHTML = movies[index].acteurs.map((actor) => `<li>${actor}</li>`).join("");
@@ -233,8 +219,7 @@ function infos() {
   descriptionContainer.innerHTML = movies[index].description;
   genreContainer.innerHTML = movies[index].genre;
   actorsContainer.innerHTML = `<ul>${actorsHTML}</ul>`;
-  imageContainer.style.backgroundImage = `url(${movies[index].image})`;
-  imageContainerTop.innerHTML = `<img src="${movies[index].image}" alt="${movies[index].titre}" class="">`;
+  imageContainer.innerHTML = `<img src="${movies[index].image}" alt="${movies[index].titre}" class="">`;
 }
 
 function slideDown () {
