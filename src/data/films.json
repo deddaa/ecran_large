@@ -1,8 +1,10 @@
 [
     {
         "titre": "Les Évadés",
+        "date": "1995",
+        "réalisateur": "Frank Darabont",        
         "description": "Le banquier Andy Dufresne est arrêté pour avoir tué sa femme et son amant. Après une dure adaptation, il tente d'améliorer les conditions de la prison et de redonner de l'espoir à ses compagnons.",
-        "genre": "drame",
+        "genre": "Drame",
         "acteurs": [
             "Tim Robbins",
             "Morgan Freeman",
@@ -12,11 +14,255 @@
     },
     {
         "titre": "Une bataille après l'autre",
+        "date": "2025",
+        "réalisateur": "Paul Thomas Andreson",
         "description": "Ancien révolutionnaire désabusé et paranoïaque, Bob vit en marge de la société, avec sa fille Willa, indépendante et pleine de ressources. Quand son ennemi juré refait surface après 16 ans et que Willa disparaît, Bob remue ciel et terre pour la retrouver, affrontant pour la première fois les conséquences de son passé…",
-        "genre": "action",
+        "genre": "Action",
         "acteurs": [
              "Leonardo DiCaprio", "Benicio Del Toro", "Teyana Taylor"
         ],
         "image": "https://fr.web.img6.acsta.net/c_310_420/img/61/0d/610dc2fcd83afe3717f771b889b979c2.jpg"
+    },
+    {
+        "titre": "La Vengeance de Monte Cristo",
+        "date": "2002",
+        "réalisateur": "Kevin Reynolds",
+        "description": "En 1815, à leur arrivée sur l'île d'Elbe où est emprisonné Napoléon Bonaparte, les marins Edmond Dantès et Fernand Mondego, deux proches amis, cherchent de l'aide pour leur capitaine blessé. Edmond rêve d'épouser Mercedès, sa bien-aimée. Mais Fernand, qui a les mêmes ambitions que lui, n'hésite pas à l'accuser de contribuer à l'évasion de l'empereur. Le préfet de police Villefort arrête aussitôt Edmond.",
+        "genre": "Aventure",
+        "acteurs": [
+             "Jim Caviezel", "Guy Pearce", "Dagmara Dominczyk"
+        ],
+        "image": "https://fr.web.img2.acsta.net/medias/nmedia/00/02/43/26/affcristo.jpg"
+    },
+    {
+        "titre": "Les Trois Frères : Le Retour",
+        "date": "2014",
+        "réalisateur": "Didier Bourdon, Bernard Campan, Pascal Légitimus",
+        "description": "Ils sont trois. Ils sont frères. Ils sont de retour. 15 ans après, Didier, Bernard et Pascal sont enfin réunis... par leur mère... Cette fois sera peut-être la bonne.",
+        "genre": "Comedie",
+        "acteurs": [
+             "Didier Bourdon", "Bernard Campan", "Pascal Légitimus"
+        ],
+        "image": "https://fr.web.img3.acsta.net/c_310_420/pictures/13/12/26/10/26/068920.jpg"
+    },
+    {
+        "titre": "ROBOTS",
+        "date": "2005",
+        "réalisateur": "Chris Wedge, Carlos Saldanha",
+        "description": "Rodney est un jeune robot plein d'idées, mais son village est trop petit pour ses rêves. Il décide de partir à Robot Ville rencontrer Bigweld, le plus génial inventeur et bienfaiteur de tous les robots, pour lui proposer ses services. Mais de nombreuses surprises l'attendent...",
+        "genre": "Animation",
+        "acteurs": [
+             "Ewan McGregor", "Halle Berry", "Greg Kinnear"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/medias/nmedia/18/35/46/07/18408708.jpg"
+    },
+    {
+        "titre": "The Flash",
+        "date": "2023",
+        "réalisateur": "Andy Muschietti",
+        "description": "Les réalités s’affrontent dans THE FLASH lorsque Barry se sert de ses super-pouvoirs pour remonter le temps et modifier son passé. Mais ses efforts pour sauver sa famille ne sont pas sans conséquences sur l’avenir, et Barry se retrouve pris au piège d’une réalité où le général Zod est de retour, menaçant d’anéantir la planète, et où les super-héros ont disparu. À moins que Barry ne réussisse à tirer de sa retraite un Batman bien changé et à venir en aide à un Kryptonien incarcéré, qui n’est pas forcément celui qu’il recherche. Barry s’engage alors dans une terrible course contre la montre pour protéger le monde dans lequel il est et retrouver le futur qu’il connaît. Mais son sacrifice ultime suffira-t-il à sauver l’univers ?",
+        "genre": "Action",
+        "acteurs": [
+             "Ezra Miller", "Sasha Calle", "Michael Shannon"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/medias/nmedia/18/35/46/07/18408708.jpg"
+    },
+    {
+        "titre": "Dragons",
+        "date": "2025",
+        "réalisateur": "Dean DeBlois",
+        "description": "Sur l'île escarpée de Beurk, où depuis des générations Vikings et dragons s’affrontent sans merci, Harold fait figure d’exception. Effacé, écrasé par la stature de son père, le chef de la tribu, Stoïk, ce jeune rêveur défie des siècles de tradition en se liant d'amitié avec un dragon nommé Krokmou. Leur lien improbable va révéler la vraie nature des dragons et remettre en question les fondements mêmes de la société viking.",
+        "genre": "Action",
+        "acteurs": [
+             "Mason Thames", "Gerard Butler", "Nico Parker"
+        ],
+        "image": "https://fr.web.img2.acsta.net/c_310_420/img/e8/20/e820c5f3bfaf56d2eee911834bf46955.jpg"
+    },
+    {
+        "titre": "Un Petit Miracle",
+        "date": "2023",
+        "réalisateur": "Sophie Boudre",
+        "description": "Rien ne va plus pour Juliette ! L’école dans laquelle elle enseignait a brulé, et sa classe unique va devoir être dispatchée aux quatre coins du département. Pour éviter cela, elle propose une solution surprenante : installer sa classe aux Platanes, la maison de retraite locale, seul endroit qui puisse les accueillir le temps des travaux. Pour les enfants comme pour les pensionnaires, la cohabitation ne sera pas de tout repos, mais va les transformer à jamais. Inspiré d'une histoire vraie.",
+        "genre": "Comedie",
+        "acteurs": [
+             "Alice Pol", "Jonathan Zaccaï", "Eddy Mitchell"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/pictures/22/12/12/16/52/4592723.jpg"
+    },
+    {
+        "titre": "Mine De Rien",
+        "date": "2020",
+        "réalisateur": "Mathias Mlekuz",
+        "description": "Dans une région qui fut le fleuron de l'industrie minière, deux chômeurs de longue durée, ont l'idée de construire un parc d'attraction \"artisanal\" sur une ancienne mine de charbon désaffectée. En sauvant la mine et sa mémoire, ils vont retrouver force et dignité.",
+        "genre": "Comedie",
+        "acteurs": [
+             "Arnaud Ducret", "Philippe Rebbot", "Mélanie Bernier"
+        ],
+        "image": "https://fr.web.img3.acsta.net/c_310_420/pictures/20/01/23/09/03/4377710.jpg"
+    },
+    {
+        "titre": "Valhalla",
+        "date": "2019",
+        "réalisateur": "Fenar Ahmad",
+        "description": "Le monstrueux loup Fenrir menace l'équilibre du monde. Au Valhalla, le royaume des Dieux, Thor et Loki vont tenter d'empêcher la prophétie apocalyptique de se réaliser. Mais pour cela, ils vont devoir affronter le redoutable peuple des géants.",
+        "genre": "Aventure",
+        "acteurs": [
+             "Roland Møller", "Jacob Lohmann", "Patricia Schumann"
+        ],
+        "image": "https://fr.web.img3.acsta.net/c_310_420/pictures/20/01/23/09/03/4377710.jpg"
+    },
+    {
+        "titre": "Le meilleur Reste A Venir",
+        "date": "2019",
+        "réalisateur": "Matthieu Delaporte, Alexandre De La Patellière",
+        "description": "Suite à un énorme malentendu, deux amis d’enfance, chacun persuadé que l’autre n’a plus que quelques mois à vivre, décident de tout plaquer pour rattraper le temps perdu.",
+        "genre": "Comedie",
+        "acteurs": [
+             "Fabrice Luchini", "Patrick Bruel", "Zineb Triki"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/19/09/20/11/23/0251944.jpg"
+    },
+    {
+        "titre": "Gabby et la maison magique",
+        "date": "2025",
+        "réalisateur": "Ryan Crego",
+        "description": "Gabby part pour une virée en voiture avec sa grand-mère Gigi vers la ville imaginaire de Chat Francisco. Mais lorsque sa précieuse maison de poupée tombe entre les mains de Véra, une femme excentrique dangereusement obsédée par les chats, Gabby va partir à l’aventure, cette fois dans le monde réel, afin de récupérer ses Gabby Chats et sauver leur maison avant qu'il ne soit trop tard.",
+        "genre": "Animation",
+        "acteurs": [
+             "Laila Lockhart Kraner", "Lior Chabbat", "Kristen Wiig"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/img/92/bc/92bc1bd9595b71eba3fefa597aaff4d6.jpg"
+    },
+    {
+        "titre": "Fight Club",
+        "date": "1999",
+        "réalisateur": "David Fincher",
+        "description": "Insomniaque, désillusionné par sa vie personnelle et professionnelle, un jeune cadre expert en assurances, mène une vie monotone et sans saveur. Face à la vacuité de son existence, son médecin lui conseille de suivre une thérapie afin de relativiser son mal-être. Lors d'un voyage d'affaires, il fait la connaissance de Tyler Durden, une sorte de gourou anarchiste et philosophe. Ensemble, ils fondent le Fight Club. Cercle très fermé, où ils organisent des combats clandestins et violents, destinés à évacuer l'ordre établi.",
+        "genre": "Drame",
+        "acteurs": [
+             "Brad Pitt", "Edward Norton", "Helena Bonham Carter"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/19/04/08/14/11/0688770.jpg"
+    },
+    {
+        "titre": "Pulpe Fiction",
+        "date": "1994",
+        "réalisateur": "Quentin Tarantino",
+        "description": "L'odyssée sanglante et burlesque de petits malfrats dans la jungle de Hollywood à travers trois histoires qui s'entremêlent.",
+        "genre": "Drame",
+        "acteurs": [
+             "John Travolta", "Samuel L. Jackson", "Uma Thurman"
+        ],
+        "image": "https://fr.web.img2.acsta.net/c_310_420/medias/nmedia/18/36/02/52/18846059.jpg"
+    },
+    {
+        "titre": "Interstellar",
+        "date": "2014",
+        "réalisateur": "Christopher Nolan",
+        "description": "Le film raconte les aventures d’un groupe d’explorateurs qui utilisent une faille récemment découverte dans l’espace-temps afin de repousser les limites humaines et partir à la conquête des distances astronomiques dans un voyage interstellaire.",
+        "genre": "Drame",
+        "acteurs": [
+             "Matthew McConaughey", "Anne Hathaway", "Michael Caine"
+        ],
+        "image": "https://fr.web.img5.acsta.net/c_310_420/pictures/14/09/24/12/08/158828.jpg"
+    },
+    {
+        "titre": "2001 : L'odyssée de l'espace",
+        "date": "1968",
+        "réalisateur": "Stanley Kubrick",
+        "description": "A l'aube de l'Humanité, dans le désert africain, une tribu de primates subit les assauts répétés d'une bande rivale, qui lui dispute un point d'eau. La découverte d'un monolithe noir inspire au chef des singes assiégés un geste inédit et décisif. Brandissant un os, il passe à l'attaque et massacre ses adversaires. Le premier instrument est né. En 2001, quatre millions d'années plus tard, un vaisseau spatial évolue en orbite lunaire au rythme langoureux du \"Beau Danube Bleu\". A son bord, le Dr. Heywood Floyd enquête secrètement sur la découverte d'un monolithe noir qui émet d'étranges signaux vers Jupiter.",
+        "genre": "Science-Fiction",
+        "acteurs": [
+             "Keir Dullea", "Gary Lockwood", "William Sylvester"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/18/05/04/14/53/4306860.jpg"
+    },
+    {
+        "titre": "Le Parrain",
+        "date": "1972",
+        "réalisateur": "Francis Ford Coppola",
+        "description": "En 1945, à New York, les Corleone sont une des cinq familles de la mafia. Don Vito Corleone, \"parrain\" de cette famille, marie sa fille à un bookmaker. Sollozzo, \"parrain\" de la famille Tattaglia, propose à Don Vito une association dans le trafic de drogue, mais celui-ci refuse. Sonny, un de ses fils, y est quant à lui favorable.",
+        "genre": "Drame",
+        "acteurs": [
+             "Marlon Brando", "Al Pacino", "James Caan"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/22/01/14/08/39/1848157.jpg"
+    },
+    {
+        "titre": "Le Parrain, 2e Partie",
+        "date": "1975",
+        "réalisateur": "Francis Ford Coppola",
+        "description": "Depuis la mort de Don Vito Corleone, son fils Michael règne sur la famille. Amené à négocier avec la mafia juive, il perd alors le soutien d'un de ses lieutenants, Frankie Pentageli. Echappant de justesse à un attentat, Michael tente de retrouver le coupable, soupçonnant Hyman Roth, le chef de la mafia juive.",
+        "genre": "Drame",
+        "acteurs": [
+             "Al Pacino", "Robert De Niro", "Diane Keaton"
+        ],
+        "image": "https://fr.web.img4.acsta.net/c_310_420/medias/nmedia/18/35/24/16/18861226.jpg"
+    },
+    {
+        "titre": "Le Parrain, 2e Partie",
+        "date": "1982",
+        "réalisateur": "Ridley Scott",
+        "description": "Dans les dernières années du 20ème siècle, des milliers d'hommes et de femmes partent à la conquête de l'espace, fuyant les mégalopoles devenues insalubres. Sur les colonies, une nouvelle race d'esclaves voit le jour : les répliquants, des androïdes que rien ne peut distinguer de l'être humain. Los Angeles, 2019. Après avoir massacré un équipage et pris le contrôle d'un vaisseau, les répliquants de type Nexus 6, le modèle le plus perfectionné, sont désormais déclarés \"hors la loi\". Quatre d'entre eux parviennent cependant à s'échapper et à s'introduire dans Los Angeles. Un agent d'une unité spéciale, un blade-runner, est chargé de les éliminer. Selon la terminologie officielle, on ne parle pas d'exécution, mais de retrait...",
+        "genre": "Science-Fiction",
+        "acteurs": [
+             "Harrison Ford", "Rutger Hauer", "Sean Young"
+        ],
+        "image": "https://fr.web.img2.acsta.net/c_310_420/pictures/15/09/23/11/37/330370.jpg"
+    },
+    {
+        "titre": "Forrest Gump",
+        "date": "1994",
+        "réalisateur": "Robert Zemeckis",
+        "description": "Quelques décennies d'histoire américaine, des années 1940 à la fin du XXème siècle, à travers le regard et l'étrange odyssée d'un homme simple et pur, Forrest Gump.",
+        "genre": "Comedie",
+        "acteurs": [
+             "Tom Hanks", "Gary Sinise", "Robin Wright"
+        ],
+        "image": "https://fr.web.img2.acsta.net/c_310_420/pictures/15/10/13/15/12/514297.jpg"
+    },
+    {
+        "titre": "Le Seigneur des Anneaux : Le Retour du Roi",
+        "date": "2003",
+        "réalisateur": "Peter Jackson",
+        "description": "Les armées de Sauron ont attaqué Minas Tirith, la capitale de Gondor. Jamais ce royaume autrefois puissant n'a eu autant besoin de son roi. Mais Aragorn trouvera-t-il en lui la volonté d'accomplir sa destinée ?",
+        "genre": "Aventure",
+        "acteurs": [
+             "Sean Astin", "Elijah Wood", "Viggo Mortensen"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/medias/nmedia/18/35/14/33/18366630.jpg"
+    },
+    {
+        "titre": "Le Bon, la Brute et le Truand",
+        "date": "1968",
+        "réalisateur": "Sergio Leone",
+        "description": "Pendant la Guerre de Sécession, trois hommes, préférant s'intéresser à leur profit personnel, se lancent à la recherche d'un coffre contenant 200 000 dollars en pièces d'or volés à l'armée sudiste. Tuco sait que le trésor se trouve dans un cimetière, tandis que Joe connaît le nom inscrit sur la pierre tombale qui sert de cache. Chacun a besoin de l'autre. Mais un troisième homme entre dans la course : Setenza, une brute qui n'hésite pas à massacrer femmes et enfants pour parvenir à ses fins.",
+        "genre": "Western",
+        "acteurs": [
+             "Clint Eastwood", "Eli Wallach", "Lee Van Cleef"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/pictures/14/09/23/10/28/237103.jpg"
+    },
+    {
+        "titre": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+        "date": "2001",
+        "réalisateur": "Peter Jackson",
+        "description": "Dans ce chapitre de la trilogie, le jeune et timide Hobbit, Frodon Sacquet, hérite d'un anneau. Bien loin d'être une simple babiole, il s'agit de l'Anneau Unique, un instrument de pouvoir absolu qui permettrait à Sauron, le Seigneur des ténèbres, de régner sur la Terre du Milieu et de réduire en esclavage ses peuples. À moins que Frodon, aidé d'une Compagnie constituée de Hobbits, d'Hommes, d'un Magicien, d'un Nain, et d'un Elfe, ne parvienne à emporter l'Anneau à travers la Terre du Milieu jusqu'à la Crevasse du Destin, lieu où il a été forgé, et à le détruire pour toujours. Un tel périple signifie s'aventurer très loin en Mordor, les terres du Seigneur des ténèbres, où est rassemblée son armée d'Orques maléfiques... La Compagnie doit non seulement combattre les forces extérieures du mal mais aussi les dissensions internes et l'influence corruptrice qu'exerce l'Anneau lui-même.",
+        "genre": "Aventure",
+        "acteurs": [
+             "Elijah Wood", "Sean Astin", "Ian McKellen"
+        ],
+        "image": "https://fr.web.img5.acsta.net/c_310_420/medias/nmedia/00/02/16/27/69218096_af.jpg"
+    },
+    {
+        "titre": "The Dark Knight - Le Chevalier noir",
+        "date": "2008",
+        "réalisateur": "Jonathan Nolan, Christopher Nolan",
+        "description": "Dans ce nouveau volet, Batman augmente les mises dans sa guerre contre le crime. Avec l'appui du lieutenant de police Jim Gordon et du procureur de Gotham, Harvey Dent, Batman vise à éradiquer le crime organisé qui pullule dans la ville. Leur association est très efficace mais elle sera bientôt bouleversée par le chaos déclenché par un criminel extraordinaire que les citoyens de Gotham connaissent sous le nom de Joker.",
+        "genre": "Action",
+        "acteurs": [
+             "Christian Bale", "Philippe Valmont", "Heath Ledger"
+        ],
+        "image": "https://fr.web.img6.acsta.net/c_310_420/medias/nmedia/18/63/97/89/18949761.jpg"
     }
 ]
