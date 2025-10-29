@@ -11,283 +11,324 @@ $emphasis-color: #C21BFF;
     border: 2px solid $couleurBg;
     padding: 0.5em 1.5em;
 }
+
 //Version PC ------------------------------------------------
-    body {
-        padding: 0;
-        margin: 0;
-        background-color: $bg-color;
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $bg-color;
+}
+
+header {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    min-height: 3em;
+
+    #boiteHeaderL {
+        width: 33vw;
+        display: flex;
+        justify-content: start;
     }
 
-    header {
-        background-color: $primary-color;
+    #boiteHeaderC {
+        width: 33vw;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+    }
+
+    #boiteHeaderR {
+        width: 33vw;
+        display: flex;
+        justify-content: end;
+    }
+
+    button {
+        @include button($secondary-color, $primary-color);
+    }
+
+    button:hover {
+        background-color: $primary-color;
+        border: 2px solid $secondary-color;
+        color: $secondary-color ;
+    }
+
+    h1 {
+        color: $secondary-color;
+    }
+
+    #searchMenu {
+        background-color: $secondary-color;
+        border: none;
+        border-radius: 5em;
+        height: 2em;
+        width: 12em;
+
+        ::placeholder {
+            color: $primary-color;
+        }
+    }
+
+    .logo {
+        width: 100%;
+    }
+}
+
+main {
+    color: $primary-color;
+
+    h3 {
+        padding: 0 2em;
+    }
+
+    // img bg --------------------------------------------------
+    #imageContainerTop {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: end;
         align-items: center;
-        padding: 0 1em;
-        min-height: 3em;
-
-        #boiteHeaderL {
-            width: 33vw;
-            display: flex;
-            justify-content: start;
-        }
-
-        #boiteHeaderC {
-            width: 33vw;
-            display: flex;
-            justify-content: center;
-        }
-
-        #boiteHeaderR {
-            width: 33vw;
-            display: flex;
-            justify-content: end;
-        }
 
         button {
-            @include button($secondary-color, $primary-color);
+            @include button($primary-color, $secondary-color);
+            margin-bottom: 5em;
         }
 
         button:hover {
-            background-color: $primary-color;
-            border: 2px solid $secondary-color;
-            color: $secondary-color ;
-        }
-
-        h1 {
-            color: $secondary-color;
-        }
-
-        #searchMenu {
-            background-color: $secondary-color;
-            border: none;
-            border-radius: 5em;
-            height: 2em;
-            width: 12em;
-            ::placeholder {
-                color: $primary-color;
-            }
-        }
-
-        .logo {
-            width: 100%;
-        }
-    }
-
-    main {
-        color: $primary-color;
-
-        h3 {
-            padding: 0 2em;
-        }
-// img bg --------------------------------------------------
-        #imageHolder {
-            width: 100%;
-            height: 80vh;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: end;
-            align-items: center;
-            // background-image: url(https://picsum.photos/1200/500);
-            // background-repeat: no-repeat;
-            // background-size: cover;
-            // background-position: center;
-
-            button {
-                @include button($primary-color, $secondary-color);
-                margin-bottom: 5em;
-            }
-
-            button:hover {
-                background-color: $secondary-color;
-                color: $primary-color;
-                border: 2px solid $secondary-color;
-            }
-        }
-// index css ------------------------------------------------
-        #bigPoster {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            height: 50vh;
-            margin: 2em;
-            padding: 1em;
-        }
-
-        #smallPoster {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            height: 20vh;
-            margin: 2em;
-            padding: 1em;
-        }
-
-        #flex-actuCategorie {
-            background-color: $primary-color;
-            color: $secondary-color;
-            display: flex;
-            flex-flow: row nowrap;
-
-            #actu {
-                padding-bottom: 1em;
-
-                .actuPoster {
-                    background-color: $secondary-color;
-                    color: $primary-color;
-                    display: flex;
-                    flex-flow: row nowrap;
-                    margin: 2em;
-                    padding: 1em;
-
-                    .actuText {
-                        padding: 0 2em;
-                    }
-                }
-            }
-        }
-
-// all movies css --------------------------------------------
-        #carouselAllMovie {
-            margin: 2em;
-
-            #searchAndFilter {
-                text-align: center;
-
-                input {
-                    background-color: $bg-color;
-                    border: none;
-                    color: $primary-color;
-                }
-                #searchMenu {
-                    background-color: white;
-                    border: none;
-                    border-radius: 5em;
-                    height: 2em;
-                    width: 30em;
-                }
-            }
-        }
-
-        #SearchResult {
-            background-color: $primary-color;
-            color: $secondary-color;
-            padding: 2em;
-
-            .ResultLinkToMovie {
-                display: flex;
-                flex-flow: row wrap;
-
-                .LinkToMovie {
-                    display: flex;
-                    flex-flow: column nowrap;
-                    width: 25%;
-                    height: 20em;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
-        }
-// one movie css --------------------------------------------
-        #moviePresentation {
-            background-color: $primary-color;
-            color: $secondary-color;
-            display: flex;
-            flex-flow: row nowrap;
-            padding: 2em 10em;
-
-            #presImage {
-                width: 100%;
-            }
-            #synopsis {
-                padding: 2em;
-            }
-            #castingAndNote {
-                display: flex;
-                flex-flow: row nowrap;
-                gap: 5em;
-            }
-        }
-
-        #popularReview,
-        #otherReview {
-            background-color: $primary-color;
-            padding: 1px 10em;
-
-            h3 {
-                color: $secondary-color;
-                padding: 0;
-                margin: 0;
-            }
-        }
-
-        .reviewItem {
             background-color: $secondary-color;
             color: $primary-color;
-            display: flex;
-            flex-flow: row nowrap;
-            margin: 2em;
-            padding: 1em;
+            border: 2px solid $secondary-color;
+        }
+    }
 
-            .reviewText {
-                padding: 0 2em;
+    // index css ------------------------------------------------
+    #bigPoster {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        height: 50vh;
+        margin: 2em;
+        padding: 1em;
+    }
+
+    #smallPoster {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        height: 20vh;
+        margin: 2em;
+        padding: 1em;
+    }
+
+    #flex-actuCategorie {
+        background-color: $primary-color;
+        color: $secondary-color;
+        display: flex;
+        flex-flow: row nowrap;
+
+        #actu {
+            padding-bottom: 1em;
+
+            .actuPoster {
+                background-color: $secondary-color;
+                color: $primary-color;
+                display: flex;
+                flex-flow: row nowrap;
+                margin: 2em;
+                padding: 1em;
+
+                .actuText {
+                    padding: 0 2em;
+                }
+            }
+        }
+
+
+        #tendance {
+            max-width: 35vw;
+        }
+    }
+
+    .carousel {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .card {
+        img {
+            height: 10em;
+
+        }
+
+        :active {
+            height: 11em;
+        }
+
+        h4 {
+            max-width: 5em;
+        }
+    }
+
+    // all movies css --------------------------------------------
+    #carouselAllMovie {
+        margin: 2em;
+
+        #searchAndFilter {
+            text-align: center;
+
+            input {
+                background-color: $bg-color;
+                border: none;
+                color: $primary-color;
+            }
+
+            #searchMenu {
+                background-color: white;
+                border: none;
+                border-radius: 5em;
+                height: 2em;
+                width: 30em;
             }
         }
     }
 
-
-    footer {
+    #SearchResult {
         background-color: $primary-color;
         color: $secondary-color;
-        padding: 5em;
+        padding: 2em;
 
-        p {
-            padding: 0;
-            margin: 0;
-            text-align: center;
+        .ResultLinkToMovie {
+            display: flex;
+            flex-flow: row wrap;
+
+            .LinkToMovie {
+                display: flex;
+                flex-flow: column nowrap;
+                width: 25%;
+                height: 20em;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
+
+    // one movie css --------------------------------------------
+    #moviePresentation {
+        background-color: $primary-color;
+        color: $secondary-color;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 2em 10em;
+
+        #presImage {
+            width: 100%;
+        }
+
+        #synopsis {
+            padding: 2em;
+        }
+
+        #castingAndNote {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 5em;
+        }
+    }
+
+    #popularReview,
+    #otherReview {
+        background-color: $primary-color;
+        padding: 1px 10em;
+
+        h3 {
+            color: $secondary-color;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .reviewItem {
+        background-color: $secondary-color;
+        color: $primary-color;
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 2em;
+        padding: 1em;
+
+        .reviewText {
+            padding: 0 2em;
+        }
+    }
+}
+
+
+footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 5em;
+
+    p {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+}
+
 // version telephone ----------------------------------------
 @media (max-width:600px) {
     header {
         height: 3em;
+
         #searchMenu {
             width: 9em;
         }
     }
+
     main {
+
         // img bg ------------------------------------------
         #imageHolder {
             height: 40vh;
         }
+
         // index css -----------------------------------------
         #bigPoster {
             flex-flow: column;
             align-items: center;
         }
+
         #smallPoster {
             flex-flow: column;
             align-items: center;
         }
+
         #flex-actuCategorie {
             display: block;
             padding: 1em 0;
         }
+
         // all movies css -----------------------------------
         .ResultLinkToMovie {
             display: block;
             width: 100%;
         }
+
         .LinkToMovie {
             display: block;
             width: 100%;
         }
+
         // one movie css --------------------------------------
         #moviePresentation {
             padding: 2em 2em;
             display: block;
         }
-        #popularReview, #otherReview {
+
+        #popularReview,
+        #otherReview {
             padding: 1px 2em;
         }
     }

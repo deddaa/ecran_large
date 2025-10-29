@@ -61,7 +61,7 @@ main {
 main h3 {
   padding: 0 2em;
 }
-main #imageHolder {
+main #imageContainerTop {
   width: 100%;
   height: 80vh;
   display: flex;
@@ -69,14 +69,14 @@ main #imageHolder {
   justify-content: end;
   align-items: center;
 }
-main #imageHolder button {
+main #imageContainerTop button {
   background-color: #49306B;
   color: #C7B7E5;
   border: 2px solid #49306B;
   padding: 0.5em 1.5em;
   margin-bottom: 5em;
 }
-main #imageHolder button:hover {
+main #imageContainerTop button:hover {
   background-color: #C7B7E5;
   color: #49306B;
   border: 2px solid #C7B7E5;
@@ -116,6 +116,22 @@ main #flex-actuCategorie #actu .actuPoster {
 }
 main #flex-actuCategorie #actu .actuPoster .actuText {
   padding: 0 2em;
+}
+main #flex-actuCategorie #tendance {
+  max-width: 35vw;
+}
+main .carousel {
+  display: flex;
+  flex-flow: row wrap;
+}
+main .card img {
+  height: 10em;
+}
+main .card :active {
+  height: 11em;
+}
+main .card h4 {
+  max-width: 5em;
 }
 main #carouselAllMovie {
   margin: 2em;
@@ -238,7 +254,8 @@ footer p {
     padding: 2em 2em;
     display: block;
   }
-  main #popularReview, main #otherReview {
+  main #popularReview,
+  main #otherReview {
     padding: 1px 2em;
   }
 }
