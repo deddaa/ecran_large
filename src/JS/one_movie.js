@@ -11,9 +11,6 @@ fetch("./data/films.json")
   });
 
   function initApp() {
-    const groupeMovies = triGender()
-
-    carouselContainer(groupeMovies)
 
     banner()
 

@@ -136,7 +136,7 @@ function card(movie) {
 function addActorFunction() {
   const maxActors = 10;
   const inputs = document.querySelectorAll('input[name="actorInput"]');
-  const container = document.getElementById("FormActor");
+  const container = document.getElementById("formActor");
 
   if (inputs.length < maxActors) {
     const newInput = document.createElement("input");
@@ -216,11 +216,11 @@ function infos() {
   const actorsHTML = movies[index].acteurs.map((actor) => `<li>${actor}</li>`).join("");
 
 
-  titleContainer.innerHTML = movies[index].titre;
-  dateContainer.innerHTML = movies[index].date;
-  realContainer.innerHTML = movies[index].realisateur;
-  descriptionContainer.innerHTML = movies[index].description;
-  genreContainer.innerHTML = movies[index].genre;
+  titleContainer.innerHTML = `<h3>${movies[index].titre}</h3>`;
+  dateContainer.innerHTML = `<h5>${movies[index].date}</h5>`;
+  realContainer.innerHTML = `<h5>${movies[index].realisateur}</h5>`;
+  descriptionContainer.innerHTML = `<p>${movies[index].description}</p>`;
+  genreContainer.innerHTML = `<h5>${movies[index].genre}</h5>`;
   actorsContainer.innerHTML = `<ul>${actorsHTML}</ul>`;
   imageContainer.innerHTML = `<img src="${movies[index].image}" alt="${movies[index].titre}" class="">`;
 }
