@@ -1,6 +1,6 @@
 const movies = [];
 
-class carousel {
+class Carousel {
   constructor(containerElement) {
     this.container = containerElement;
     this.currentIndex = 0;
@@ -100,7 +100,7 @@ function carouselContainer (groupeMovies) {
 
     displayMovies(groupeMovies[gender], newCarousel)
 
-    const instanceCarousel = new carousel(newCarousel)
+    const instanceCarousel = new Carousel(newCarousel)
     instanceCarousel.updatePosition()
 
 
@@ -217,19 +217,19 @@ function infos() {
   const actorsContainer = document.getElementById("actorsContainer");
   const imageContainer = document.getElementById("imageContainer");
   const imageContainerTop = document.getElementById("imageContainerTop");
-  
-  const actorsHTML = movies[0].acteurs.map((actor) => `<li>${actor}</li>`).join();
+  const index = Math.floor(Math.random() * movies.length);
+
+  const actorsHTML = movies[index].acteurs.map((actor) => `<li>${actor}</li>`).join("");
 
 
-  titleContainer.innerHTML = movies[0].titre;
-  dateContainer.innerHTML = movies[0].date;
-  realContainer.innerHTML = movies[0].realisateur;
-  descriptionContainer.innerHTML = movies[0].description;
-  genreContainer.innerHTML = movies[0].genre;
+  titleContainer.innerHTML = movies[index].titre;
+  dateContainer.innerHTML = movies[index].date;
+  realContainer.innerHTML = movies[index].realisateur;
+  descriptionContainer.innerHTML = movies[index].description;
+  genreContainer.innerHTML = movies[index].genre;
   actorsContainer.innerHTML = `<ul>${actorsHTML}</ul>`;
-  imageContainer.innerHTML = `<img src="${movies[0].image}" alt="${movies[0].titre}" class="">`;
-  imageContainerTop.innerHTML = `<img src="${movies[0].image}" alt="${movies[0].titre}" class="">`;
-
+  imageContainer.style.backgroundImage = `url(${movies[index].image})`;
+  imageContainerTop.innerHTML = `<img src="${movies[index].image}" alt="${movies[index].titre}" class="">`;
 }
 
 function slideDown () {
