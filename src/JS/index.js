@@ -1,6 +1,6 @@
 
 
-fetch("./data/films.json")
+fetch("./src/data/films.json")
   .then((res) => res.json())
   .then((data) => {
     data.forEach((movie) => {
