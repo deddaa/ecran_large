@@ -1,6 +1,6 @@
 const movies = [];
 
-class carousel {
+class Carousel {
   constructor(containerElement) {
     this.container = containerElement;
     this.currentIndex = 0;
@@ -100,7 +100,7 @@ function carouselContainer (groupeMovies) {
 
     displayMovies(groupeMovies[gender], newCarousel)
 
-    const instanceCarousel = new carousel(newCarousel)
+    const instanceCarousel = new Carousel(newCarousel)
     instanceCarousel.updatePosition()
 
 
@@ -121,24 +121,6 @@ function carouselContainer (groupeMovies) {
   }
 }
 
-function initApp() {
-  const groupeMovies = triGender()
-
-  carouselContainer(groupeMovies)
-}
-
-fetch("../data/films.json")
-  .then((res) => res.json())
-  .then((data) => {
-    data.forEach((movie) => {
-      addArr(movie);
-    });
-    initApp()
-  })
-  .catch((error) => {
-    console.error("Erreur de chargement du fichier JSON :", error);
-  });
-
 function card(movie) {
   const newCard = document.createElement("div");
   newCard.className = "card";
@@ -154,7 +136,7 @@ function card(movie) {
 function addActorFunction() {
   const maxActors = 10;
   const inputs = document.querySelectorAll('input[name="actorInput"]');
-  const container = document.getElementById("FormActor");
+  const container = document.getElementById("formActor");
 
   if (inputs.length < maxActors) {
     const newInput = document.createElement("input");
@@ -169,12 +151,12 @@ function addActorFunction() {
 
 function newMovie(e) {
   e.preventDefault();
-  const title = document.getElementById("titre").value.trim();
+  const title = document.getElementById("title").value.trim();
   const description = document.getElementById("description").value.trim();
-  const genre = document.getElementById("genre").value.trim();
-  const date = document.getElementById("date").value.trim();
-  const real = document.getElementById("realisateur").value.trim();
-  const picture = document.getElementById("image").value;
+  const genre = document.getElementById("gender").value.trim();
+  const date = Number(document.getElementById("date").value.trim());
+  const real = document.getElementById("real").value.trim();
+  const picture = document.getElementById("posterUrl").value;
   const actorsListe = document.querySelectorAll('input[name="actorInput"]');
   const actorsArray = [];
 
@@ -206,7 +188,19 @@ function newMovie(e) {
     e.target.reset();
   }
 
+  const form = document.getElementById("addMovieForm");
+  form.style.display = "none";
+
 }
+
+function banner () {  
+  const imageContainerTop = document.getElementById("imageContainerTop");  
+  const index = Math.floor(Math.random() * movies.length);
+  
+  imageContainerTop.style.backgroundImage = `url(${movies[index].image})`;
+  imageContainerTop.style.backgroundSize = "cover";
+  imageContainerTop.style.backgroundPosition = "center";
+} 
 
 function infos() {
   const titleContainer = document.getElementById("titleContainer");
@@ -216,20 +210,19 @@ function infos() {
   const genreContainer = document.getElementById("genreContainer");
   const actorsContainer = document.getElementById("actorsContainer");
   const imageContainer = document.getElementById("imageContainer");
-  const imageContainerTop = document.getElementById("imageContainerTop");
-  
-  const actorsHTML = movies[0].acteurs.map((actor) => `<li>${actor}</li>`).join();
+
+  const index = Math.floor(Math.random() * movies.length);
+
+  const actorsHTML = movies[index].acteurs.map((actor) => `<li>${actor}</li>`).join("");
 
 
-  titleContainer.innerHTML = movies[0].titre;
-  dateContainer.innerHTML = movies[0].date;
-  realContainer.innerHTML = movies[0].realisateur;
-  descriptionContainer.innerHTML = movies[0].description;
-  genreContainer.innerHTML = movies[0].genre;
+  titleContainer.innerHTML = movies[index].titre;
+  dateContainer.innerHTML = movies[index].date;
+  realContainer.innerHTML = movies[index].realisateur;
+  descriptionContainer.innerHTML = movies[index].description;
+  genreContainer.innerHTML = movies[index].genre;
   actorsContainer.innerHTML = `<ul>${actorsHTML}</ul>`;
-  imageContainer.innerHTML = `<img src="${movies[0].image}" alt="${movies[0].titre}" class="">`;
-  imageContainerTop.innerHTML = `<img src="${movies[0].image}" alt="${movies[0].titre}" class="">`;
-
+  imageContainer.innerHTML = `<img src="${movies[index].image}" alt="${movies[index].titre}" class="">`;
 }
 
 function slideDown () {
@@ -247,7 +240,7 @@ function allMovies() {
     container.appendChild(linkContainer)
 
     const newLink = document.createElement("a")
-    newLink.href = "#"
+    newLink.href = "./one_movie.html"
     newLink.className = "tendencePoster"
 
     linkContainer.appendChild(newLink)
@@ -276,13 +269,16 @@ function allMovies() {
   }
 }
 
-infos()
+function displayForm () {
+  const form = document.getElementById("addMovieForm")
 
-allMovies()
+  form.style.display = "block"
+}
 
 const slide = document.getElementById("slideBtn");
 const add = document.getElementById("addActorBtn");
 const form = document.getElementById("addCard");
+const btnForm = document.getElementById("addMovie")
 
 if (add) {
   add.addEventListener("click", addActorFunction);
@@ -294,4 +290,8 @@ if (form) {
 
 if (slide) {
   slide.addEventListener("click", slideDown);
+}
+
+if (btnForm) {
+  btnForm.addEventListener("click", displayForm);
 }
