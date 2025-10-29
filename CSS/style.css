@@ -68,10 +68,6 @@ main #imageHolder {
   flex-flow: column nowrap;
   justify-content: end;
   align-items: center;
-  background-image: url(https://picsum.photos/1200/500);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 main #imageHolder button {
   background-color: #49306B;
