@@ -18,19 +18,19 @@
     </header>
     <main id="mainContent">
       <div id="imageHolder">
-        <img id="mainImage" src="" alt="Main Movie Image" />
+        <img id="imageContainerTop" src="" alt="Main Movie Image" />
       </div>
       <div id="moviePresentation">
         <img id="presImage" src="" alt="presentation Movie Image" />
         <div id="synopsis">
           <div id="synopsisTitle">
-            <h3 id="title">Titre du film</h3>
+            <h3 id="titleContainer">Titre du film</h3>
             <div id="novieInfo">
-              <h4 id="dateRelease">Date de sortie :</h4>
-              <h4 id="real">Réalisé par :</h4>
+              <h4 id="dateContainer">Date de sortie :</h4>
+              <h4 id="realContainer">Réalisé par :</h4>
             </div>
             </div>
-            <p>
+            <p id="descriptionContainer">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               quae aliquid nostrum voluptas eveniet incidunt at nesciunt tempora
               iusto delectus aliquam impedit, magni ea, tempore quisquam
@@ -41,7 +41,7 @@
             </p>
             <div class="theme">
                 <h4>Genres :</h4>
-                <ul id="genreList">
+                <ul id="genreContainer">
                     <li>Genre 1</li>
                     <li>Genre 2</li>
                     <li>Genre 3</li>
@@ -50,7 +50,7 @@
             <div id="castingAndNote">
                 <h4 id="note">Note</h4>
                 <h4>Casting </h4>
-                <ul id="castingList">
+                <ul id="actorsContainer">
                     <li>Acteur 1</li>
                     <li>Acteur 2</li>
                     <li>Acteur 3</li>
@@ -61,7 +61,7 @@
         <div id="popularReview">
             <h3>Critiques populaires</h3>
             <div class="reviewItem">
-                <img src="" alt="image du film">
+                <img src="" alt="image du film" id="imageContainer">
                 <h4>Avis de User1</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
             </div>
@@ -90,10 +90,10 @@
             </div>
         </div>
       </div>
-      <footer>
+    </main>
+    <footer>
         <p>© 2024 Ecran Large. Tous droits réservés.</p>
         </footer>
-    </main>
     <script src="./JS/scripts.js"></script>
   </body>
 </html>
