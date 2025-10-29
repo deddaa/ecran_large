@@ -125,6 +125,11 @@ function initApp() {
   const groupeMovies = triGender()
 
   carouselContainer(groupeMovies)
+
+  infos()
+
+  allMovies()
+
 }
 
 fetch("../data/films.json")
@@ -275,10 +280,6 @@ function allMovies() {
     infosContaine.appendChild(infos)
   }
 }
-
-infos()
-
-allMovies()
 
 const slide = document.getElementById("slideBtn");
 const add = document.getElementById("addActorBtn");
