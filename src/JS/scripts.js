@@ -37,7 +37,11 @@ class Carousel {
     const centering = this.viewportWidth / 2 - activeWidth / 2;
     const translate = previousWidth - centering;
 
-    this.container.style.transform = "translateX(-" + translate + "px)";
+    if (this.cards[this.currentIndex] == this.cards[0]) {
+      this.container.style.transform = "undefined";
+    } else {    
+      this.container.style.transform = "translateX(-" + translate + "px)";
+    }
   }
 
   moveRight() {
@@ -107,12 +111,14 @@ function carouselContainer (groupeMovies) {
     const btnLeft = document.createElement("button")
     btnLeft.type = "button"
     btnLeft.id = `left${gender}`
+    btnLeft.className = "left"
     btnLeft.innerHTML = "<"
     newContainer.appendChild(btnLeft)
 
     const btnRight = document.createElement("button")
     btnRight.type = "button"
     btnRight.id = `right${gender}`
+    btnRight.className = "right"
     btnRight.innerHTML = ">"
     newContainer.appendChild(btnRight)
 
@@ -216,18 +222,24 @@ function infos() {
   const actorsHTML = movies[index].acteurs.map((actor) => `<li>${actor}</li>`).join("");
 
 
-  titleContainer.innerHTML = movies[index].titre;
-  dateContainer.innerHTML = movies[index].date;
-  realContainer.innerHTML = movies[index].realisateur;
-  descriptionContainer.innerHTML = movies[index].description;
-  genreContainer.innerHTML = movies[index].genre;
+  titleContainer.innerHTML = `<h3>${movies[index].titre}</h3>`;
+  dateContainer.innerHTML = `<h5>${movies[index].date}</h5>`;
+  realContainer.innerHTML = `<h5>${movies[index].realisateur}</h5>`;
+  descriptionContainer.innerHTML = `<p>${movies[index].description}</p>`;
+  genreContainer.innerHTML = `<h5>${movies[index].genre}</h5>`;
   actorsContainer.innerHTML = `<ul>${actorsHTML}</ul>`;
   imageContainer.innerHTML = `<img src="${movies[index].image}" alt="${movies[index].titre}" class="">`;
 }
 
 function slideDown () {
-  const container = document.getElementById("carouselAllMovie")
-  container.classList.add("slideDown")
+  const container = document.getElementById("carousels")
+  if (container.classList.contains("slideDown")){
+    container.classList.remove("slideDown")
+    container.style.height = "59vh"
+  } else {
+    container.classList.add("slideDown")
+    container.style.height = "auto"
+  }
 }
 
 function allMovies() {
