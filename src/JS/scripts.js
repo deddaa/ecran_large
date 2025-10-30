@@ -5,7 +5,7 @@ class Carousel {
     this.container = containerElement;
     this.currentIndex = 0;
     this.cards = this.container.querySelectorAll(".card");
-    this.viewportWidth = this.container.offsetWidth;
+    this.viewportWidth = this.container.parentElement.offsetWidth;
   }
 
   updatePosition() {
@@ -37,7 +37,11 @@ class Carousel {
     const centering = this.viewportWidth / 2 - activeWidth / 2;
     const translate = previousWidth - centering;
 
-    this.container.style.transform = "translateX(-" + translate + "px)";
+    if (this.cards[this.currentIndex] == this.cards[0]) {
+      this.container.style.transform = "translateX(0)";
+    } else {    
+      this.container.style.transform = "translateX(-" + translate + "px)";
+    }
   }
 
   moveRight() {
@@ -108,12 +112,14 @@ function carouselContainer (groupeMovies) {
     btnLeft.type = "button"
     btnLeft.id = `left${gender}`
     btnLeft.innerHTML = "<"
+    btnLeft.className ="left"
     newContainer.appendChild(btnLeft)
 
     const btnRight = document.createElement("button")
     btnRight.type = "button"
     btnRight.id = `right${gender}`
     btnRight.innerHTML = ">"
+    btnRight.className ="right"
     newContainer.appendChild(btnRight)
 
     btnLeft.addEventListener("click", () => instanceCarousel.moveLeft())
@@ -226,8 +232,14 @@ function infos() {
 }
 
 function slideDown () {
-  const container = document.getElementById("carouselAllMovie")
-  container.classList.add("slideDown")
+  const container = document.getElementById("carousels")
+  if (container.classList.contains("slideDown")){
+    container.classList.remove("slideDown")
+    container.style.height = "59vh"
+  } else {
+    container.classList.add("slideDown")
+    container.style.height = "auto"
+  }
 }
 
 function allMovies() {

@@ -119,19 +119,44 @@ main #flex-actuCategorie #actu .actuPoster .actuText {
 }
 main #flex-actuCategorie #tendance {
   max-width: 35vw;
+  padding: 0 1em;
+}
+main #carousels {
+  overflow: hidden;
+  height: 59vh;
+  width: 100%;
+}
+main #carousels .left {
+  position: relative;
+  bottom: 50%;
 }
 main .carousel {
-  display: flex;
-  flex-flow: row wrap;
+  display: inline-flex;
+  flex-flow: row nowrap;
+}
+main .card {
+  position: relative;
 }
 main .card img {
   height: 10em;
-}
-main .card :active {
-  height: 11em;
+  filter: brightness(50%);
 }
 main .card h4 {
+  position: absolute;
+  color: white;
+  top: 30%;
+  left: 50%;
+  translate: -50% -50%;
   max-width: 5em;
+  padding: 1em;
+}
+main .active img {
+  height: 11em;
+  filter: brightness(100%);
+  z-index: 1;
+}
+main .active h4 {
+  color: rgba(255, 255, 255, 0);
 }
 main #carouselAllMovie {
   margin: 2em;
@@ -156,17 +181,22 @@ main #SearchResult {
   color: #C7B7E5;
   padding: 2em;
 }
-main #SearchResult .ResultLinkToMovie {
+main #ResultLinkToMovie {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
-main #SearchResult .ResultLinkToMovie .LinkToMovie {
+main .LinkToMovie {
   display: flex;
   flex-flow: column nowrap;
   width: 25%;
   height: 20em;
   align-items: center;
   justify-content: center;
+  padding: 2em 0;
+}
+main .LinkToMovie img {
+  height: 15em;
 }
 main #moviePresentation {
   background-color: #49306B;

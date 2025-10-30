@@ -149,26 +149,58 @@ main {
 
         #tendance {
             max-width: 35vw;
+            padding: 0 1em;
         }
     }
+
+    // caroussels ----------------------------------------
+    #carousels {
+        overflow: hidden;
+        height: 59vh;
+        width: 100%;
+
+        .left {
+            position: relative;
+            bottom: 50%;
+        }
+
+        .right {}
+    }
+
+
 
     .carousel {
-        display: flex;
-        flex-flow: row wrap;
+        display: inline-flex;
+        flex-flow: row nowrap;
     }
 
+
     .card {
+        position: relative;
         img {
             height: 10em;
-
-        }
-
-        :active {
-            height: 11em;
+            filter: brightness(50%);
         }
 
         h4 {
+            position: absolute;
+            color: white;
+            top: 30%;
+            left: 50%;
+            translate: -50% -50%;
             max-width: 5em;
+            padding: 1em;
+        }
+    }
+
+    .active {
+        img {
+            height: 11em;
+            filter: brightness(100%);
+            z-index: 1;
+        }
+        h4 {
+            color: #ffffff00;
         }
     }
 
@@ -200,18 +232,25 @@ main {
         color: $secondary-color;
         padding: 2em;
 
-        .ResultLinkToMovie {
-            display: flex;
-            flex-flow: row wrap;
+    }
 
-            .LinkToMovie {
-                display: flex;
-                flex-flow: column nowrap;
-                width: 25%;
-                height: 20em;
-                align-items: center;
-                justify-content: center;
-            }
+    #ResultLinkToMovie {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .LinkToMovie {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 25%;
+        height: 20em;
+        align-items: center;
+        justify-content: center;
+        padding: 2em 0;
+
+        img {
+            height: 15em;
         }
     }
 

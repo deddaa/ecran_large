@@ -15,103 +15,91 @@
     </div>
     <div id="boiteHeaderC">
       <a href="index.html"><img class="logo" src="../img/title.png" alt="Ecran Large Logo" /></a>
+    </div>
+    <div id="boiteHeaderR">
       <button id="addMovie">+</button>
-    </header>
-    <main id="mainContent">
-      <section id="carouselAllMovie">
-        <div id="searchAndFilter">
-          <input
-            type="search"
-            id="searchMenu"
-            placeholder="rechercher un film..."
-          />
-          <label for="filterMenu">🎬 Filtrer par genres :</label><br />
+    </div>
+  </header>
+  <main id="mainContent">
+    <section id="carouselAllMovie">
+      <div id="searchAndFilter">
+        <input type="search" id="searchMenu" placeholder="rechercher un film..." />
+        <label for="filterMenu">🎬 Filtrer par genres :</label><br />
 
-          <select id="filterMenu" name="genres" multiple size="5">
-            <option disabled>Sélectionne un ou plusieurs genres</option>
-            <option value="sf">Science-Fiction</option>
-            <option value="action">Action</option>
-            <option value="horreur">Horreur</option>
-            <option value="drame">Drame</option>
-            <option value="comedie">Comédie</option>
-            <option value="thriller">Thriller</option>
-            <option value="fantasy">Fantasy</option>
-            <option value="aventure">Aventure</option>
-            <option value="western">Western</option>
-            <option value="policier">Policier</option>
-            <option value="romance">Romance</option>
-            <option value="peplum">Peplum</option>
-            <option value="biopic">Biopic</option>
-          </select>
-          <label for="Date">Date de sortie : </label>
-          <input
-            class="date"
-            type="date"
-            id="Date"
-            name="Sortie du film"
-            value="1895-12-28"
-            min="1895-12-28"
-            max="2025-12-31"
-          />
-          <input
-            id="Realisateur"
-            type="search"
-            name="#"
-            placeholder="Realisateur :"
-          />
-        </div>
-        <div id="carousels">
-        </div>
-        <button type="button" id="slideBtn"></button>
-      </section>
-      <div id="SearchResult">
-        <h3>resutat de la recherche :</h3>
-        <div id="ResultLinkToMovie">
-        </div>
-      </div>
-      <form id="addMovieForm">
-        <h3>Ajouter un nouveau film</h3>
-        <label for="movieTitle">Titre du film :</label>
-        <input type="text" id="movieTitle" name="movieTitle" required />
-
-        <label for="real">Réalisateur :</label>
-        <input type="text" id="real" name="director" required />
-        <div id="addActor">
-          <label for="addActorInput">Ajouter les acteurs :</label>
-          <input type="text" id="addActorInput"name="actorInput" required>
-          <button type="button" id="addActorBtn">ajouter</button>
-        </div>
-        <label for="releaseDate">Date de sortie :</label>
-        <input type="text" id="releaseDate" name="releaseDate" placeholder="AAAA" required />
-        <label for="genres">Genres :</label>
-        <select id="genres" name="genres" multiple size="5" required>
+        <select id="filterMenu" name="genres" multiple size="5">
           <option disabled>Sélectionne un ou plusieurs genres</option>
-            <option value="sf">Science-Fiction</option>
-            <option value="action">Action</option>
-            <option value="horreur">Horreur</option>
-            <option value="drame">Drame</option>
-            <option value="comedie">Comedie</option>
-            <option value="thriller">Thriller</option>
-            <option value="fantasy">Fantasy</option>
-            <option value="aventure">Aventure</option>
-            <option value="animation">Animation</option>
-            <option value="western">Western</option>
-            <option value="policier">Policier</option>
-            <option value="romance">Romance</option>
-            <option value="peplum">Peplum</option>
-            <option value="biopic">Biopic</option>
+          <option value="sf">Science-Fiction</option>
+          <option value="action">Action</option>
+          <option value="horreur">Horreur</option>
+          <option value="drame">Drame</option>
+          <option value="comedie">Comédie</option>
+          <option value="thriller">Thriller</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="aventure">Aventure</option>
+          <option value="western">Western</option>
+          <option value="policier">Policier</option>
+          <option value="romance">Romance</option>
+          <option value="peplum">Peplum</option>
+          <option value="biopic">Biopic</option>
         </select>
-        <label for="description">Description : </label>
-        <textarea id="description"></textarea>
-        <label for="posterUrl">URL du poster :</label>
-        <input type="url" id="posterUrl" name="posterUrl" required />
-        <button type="submit">Ajouter le film</button>
-      </form>
-    </main>
-    <footer>
-        <p>© 2024 Ecran Large. Tous droits réservés.</p>
-        </footer>
-    <script src="./JS/scripts.js"></script>
-    <script src="./JS/all_movies.js"></script>
-  </body>
+        <label for="Date">Date de sortie : </label>
+        <input class="date" type="date" id="Date" name="Sortie du film" value="1895-12-28" min="1895-12-28"
+          max="2025-12-31" />
+        <input id="Realisateur" type="search" name="#" placeholder="Realisateur :" />
+      </div>
+      <div id="carousels">
+      </div>
+      <button type="button" id="slideBtn"></button>
+    </section>
+    <div id="SearchResult">
+      <h3>resutat de la recherche :</h3>
+      <div id="ResultLinkToMovie">
+      </div>
+    </div>
+    <form id="addMovieForm">
+      <h3>Ajouter un nouveau film</h3>
+      <label for="movieTitle">Titre du film :</label>
+      <input type="text" id="movieTitle" name="movieTitle" required />
+
+      <label for="real">Réalisateur :</label>
+      <input type="text" id="real" name="director" required />
+      <div id="addActor">
+        <label for="addActorInput">Ajouter les acteurs :</label>
+        <input type="text" id="addActorInput" name="actorInput" required>
+        <button type="button" id="addActorBtn">ajouter</button>
+      </div>
+      <label for="releaseDate">Date de sortie :</label>
+      <input type="text" id="releaseDate" name="releaseDate" placeholder="AAAA" required />
+      <label for="genres">Genres :</label>
+      <select id="genres" name="genres" multiple size="5" required>
+        <option disabled>Sélectionne un ou plusieurs genres</option>
+        <option value="sf">Science-Fiction</option>
+        <option value="action">Action</option>
+        <option value="horreur">Horreur</option>
+        <option value="drame">Drame</option>
+        <option value="comedie">Comedie</option>
+        <option value="thriller">Thriller</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="aventure">Aventure</option>
+        <option value="animation">Animation</option>
+        <option value="western">Western</option>
+        <option value="policier">Policier</option>
+        <option value="romance">Romance</option>
+        <option value="peplum">Peplum</option>
+        <option value="biopic">Biopic</option>
+      </select>
+      <label for="description">Description : </label>
+      <textarea id="description"></textarea>
+      <label for="posterUrl">URL du poster :</label>
+      <input type="url" id="posterUrl" name="posterUrl" required />
+      <button type="submit">Ajouter le film</button>
+    </form>
+  </main>
+  <footer>
+    <p>© 2024 Ecran Large. Tous droits réservés.</p>
+  </footer>
+  <script src="./JS/scripts.js"></script>
+  <script src="./JS/all_movies.js"></script>
+</body>
+
 </html>
