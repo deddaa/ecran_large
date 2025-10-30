@@ -107,7 +107,10 @@ function carouselContainer (groupeMovies) {
     btnLeft.type = "button"
     btnLeft.id = `left${gender}`
     btnLeft.className = "left"
-    btnLeft.innerHTML = "<"
+    btnLeft.innerHTML = `<svg width="203" height="203" viewBox="0 0 203 203" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="101.5" cy="101.5" r="101.5" fill="#49306B"/>
+        <path d="M122 31L72 102.681L122 176" stroke="#C7B7E5" stroke-width="18" stroke-linecap="round"/>
+      </svg>`
     flexContainer.appendChild(btnLeft)
 
     const newCarousel = document.createElement("div")
@@ -125,7 +128,10 @@ function carouselContainer (groupeMovies) {
     btnRight.type = "button"
     btnRight.id = `right${gender}`
     btnRight.className = "right"
-    btnRight.innerHTML = ">"
+    btnRight.innerHTML = `<svg width="203" height="203" viewBox="0 0 203 203" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="101.5" cy="101.5" r="101.5" transform="rotate(-180 101.5 101.5)" fill="#49306B"/>
+        <path d="M81 172L131 100.319L81 27" stroke="#C7B7E5" stroke-width="18" stroke-linecap="round"/>
+      </svg>`
     flexContainer.appendChild(btnRight)
 
     btnLeft.addEventListener("click", () => instanceCarousel.moveLeft())
@@ -239,12 +245,15 @@ function infos() {
 
 function slideDown() {
   const container = document.getElementById("carousels")
-  if (container.classList.contains("slideDown")) {
+  const btn = document.getElementById("slideBtn")
+
+  if (container.classList.contains("slideDown")){
     container.classList.remove("slideDown")
     container.style.height = "59vh"
   } else {
     container.classList.add("slideDown")
     container.style.height = "auto"
+    btn.transform = "rotate(180deg)"
   }
 }
 
@@ -291,6 +300,36 @@ function displayForm() {
   const form = document.getElementById("addMovieForm")
 
   form.style.display = "block"
+}
+
+function smallPoster () {
+  const container = document.querySelectorAll("s-PosterItem")
+  
+  for (let e of container) {
+    const index = Math.floor(Math.random() * movies.length)
+    const a = document.createElement("a")
+    const img = document.createElement("img")
+    img.src = movies[index].image
+    img.alt = movies[index].titre
+    img.className = "s-posterImage"
+    e.prepend(a)
+    a.appendChild(img)
+  }
+}
+
+function bigPoster () {
+  const container = document.querySelectorAll("posterItem")
+  
+  for (let e of container) {
+    const index = Math.floor(Math.random() * movies.length)
+    const a = document.createElement("a")
+    const img = document.createElement("img")
+    img.src = movies[index].image
+    img.alt = movies[index].titre
+    img.className = "posterImage"
+    e.appendChild(a)
+    a.appendChild(img)
+  }
 }
 
 const slide = document.getElementById("slideBtn");
