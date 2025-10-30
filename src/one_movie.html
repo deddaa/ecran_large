@@ -12,9 +12,9 @@
   <header>
     <div id="boiteHeaderL">
       <a href="all_movies.html"><button id="btnMenu">Tous les films</button></a>
-    </div>
-    <div id="boiteHeaderC">
-      <a href="index.html"><img class="logo" src="../img/title.png" alt="Ecran Large Logo" /></a>
+      <a href="index.html"
+        ><img class="logo" src="../img/title.png" alt="Ecran Large Logo"
+      /></a>
       <input
         type="search"
         id="searchMenu"
@@ -22,83 +22,87 @@
       />
     </header>
     <main id="mainContent">
-      <div id="imageHolder">
-        <img id="imageContainerTop" src="" alt="Main Movie Image" />
-      </div>
-      <div id="moviePresentation">
-        <img id="presImage" src="" alt="presentation Movie Image" />
+      <div id="imageContainerTop"></div>
+      <section id="movieContainer">
+        <div id="imageContainer">
+          </div>
         <div id="synopsis">
-          <div id="synopsisTitle">
-            <h3 id="titleContainer">Titre du film</h3>
-            <div id="novieInfo">
-              <h4 id="dateContainer">Date de sortie :</h4>
-              <h4 id="realContainer">Réalisé par :</h4>
+          <div id="titleContainer">
             </div>
+            <div id="movieInfo">
+              <div id="dateContainer"></div>
+              <div id="realContainer"></div>
             </div>
-            <p id="descriptionContainer">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              quae aliquid nostrum voluptas eveniet incidunt at nesciunt tempora
-              iusto delectus aliquam impedit, magni ea, tempore quisquam
-              voluptatibus magnam, eum rerum. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Ipsa quibusdam alias, temporibus
-              delectus voluptate sit ut vero quod magni ducimus provident iste!
-              Commodi nemo ipsum voluptatum, vitae reiciendis perferendis quos.
+          <div id="descriptionContainer">
+          </div>
+          <div id="genreContainer"></div>
+          <div id="castingAndNote">
+            <h4>Casting</h4>
+            <div id="actorsContainer"></div>
+          </div>
+        </div>
+      </section>
+      <div id="popularReview">
+        <h3>Critiques populaires</h3>
+        <div class="reviewItem">
+          <img src="" alt="image du film" id="imageContainer" />
+          <div class="reviewText">
+            <h4>Avis de User1</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quae.
             </p>
-            <div class="theme">
-                <h4>Genres :</h4>
-                <ul id="genreContainer">
-                    <li>Genre 1</li>
-                    <li>Genre 2</li>
-                    <li>Genre 3</li>
-                </ul>
-            </div>
-            <div id="castingAndNote">
-                <h4 id="note">Note</h4>
-                <h4>Casting </h4>
-                <ul id="actorsContainer">
-                    <li>Acteur 1</li>
-                    <li>Acteur 2</li>
-                    <li>Acteur 3</li>
-                </ul>
-                <h4>Crédits</h4>
-            </div>
+          </div>
         </div>
-        <div id="popularReview">
-            <h3>Critiques populaires</h3>
-            <div class="reviewItem">
-                <img src="" alt="image du film" id="imageContainer">
-                <h4>Avis de User1</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-            </div>
+      </div>
+      <div id="otherReview">
+        <h3>Critiques récentes</h3>
+        <div class="reviewItem">
+          <img src="" alt="image du film" />
+          <div class="reviewText">
+            <h4>Avis de User2</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quae.
+            </p>
+          </div>
         </div>
-        <div id="otherReview">
-            <h3>Critiques récentes</h3>
-            <div class="reviewItem">
-                <img src="" alt="image du film">
-                <h4>Avis de User2</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-            </div>
-            <div class="reviewItem">
-                <img src="" alt="image du film">
-                <h4>Avis de User3</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-            </div>
-            <div class="reviewItem">
-                <img src="" alt="image du film">
-                <h4>Avis de User4</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-            </div>
-            <div class="reviewItem">
-                <img src="" alt="image du film">
-                <h4>Avis de User5</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-            </div>
+        <div class="reviewItem">
+          <img src="" alt="image du film" />
+          <div class="reviewText">
+            <h4>Avis de User3</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quae.
+            </p>
+          </div>
+        </div>
+        <div class="reviewItem">
+          <img src="" alt="image du film" />
+          <div class="reviewText">
+            <h4>Avis de User4</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quae.
+            </p>
+          </div>
+        </div>
+        <div class="reviewItem">
+          <img src="" alt="image du film" />
+          <div class="reviewText">
+            <h4>Avis de User5</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quae.
+            </p>
+          </div>
         </div>
       </div>
     </main>
     <footer>
-        <p>© 2024 Ecran Large. Tous droits réservés.</p>
-        </footer>
+      <p>© 2024 Ecran Large. Tous droits réservés.</p>
+    </footer>
     <script src="./JS/scripts.js"></script>
+    <script src="./JS/one_movie.js"></script>
   </body>
 </html>
