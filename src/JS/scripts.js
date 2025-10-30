@@ -37,7 +37,11 @@ class Carousel {
     const centering = this.viewportWidth / 2 - activeWidth / 2;
     const translate = previousWidth - centering;
 
-    this.container.style.transform = "translateX(-" + translate + "px)";
+    if (this.cards[this.currentIndex] == this.cards[0]) {
+      this.container.style.transform = "undefined";
+    } else {    
+      this.container.style.transform = "translateX(-" + translate + "px)";
+    }
   }
 
   moveRight() {
@@ -107,12 +111,14 @@ function carouselContainer (groupeMovies) {
     const btnLeft = document.createElement("button")
     btnLeft.type = "button"
     btnLeft.id = `left${gender}`
+    btnLeft.className = "left"
     btnLeft.innerHTML = "<"
     newContainer.appendChild(btnLeft)
 
     const btnRight = document.createElement("button")
     btnRight.type = "button"
     btnRight.id = `right${gender}`
+    btnRight.className = "right"
     btnRight.innerHTML = ">"
     newContainer.appendChild(btnRight)
 
@@ -226,8 +232,14 @@ function infos() {
 }
 
 function slideDown () {
-  const container = document.getElementById("carouselAllMovie")
-  container.classList.add("slideDown")
+  const container = document.getElementById("carousels")
+  if (container.classList.contains("slideDown")){
+    container.classList.remove("slideDown")
+    container.style.height = "59vh"
+  } else {
+    container.classList.add("slideDown")
+    container.style.height = "auto"
+  }
 }
 
 function allMovies() {
