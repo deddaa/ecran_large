@@ -10,6 +10,7 @@ $emphasis-color: #C21BFF;
     color: $couleur;
     border: 2px solid $couleurBg;
     padding: 0.5em 1.5em;
+    font-family: "Quicksand", sans-serif;
 }
 
 //Version PC ------------------------------------------------
@@ -17,6 +18,11 @@ body {
     padding: 0;
     margin: 0;
     background-color: $bg-color;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 header {
@@ -70,6 +76,7 @@ header {
             color: $primary-color;
         }
     }
+
     #addMovieForm {
         display: none;
         flex-flow: column nowrap;
@@ -82,6 +89,8 @@ header {
         z-index: 2;
         background-color: $primary-color;
     }
+
+    #form {}
 
     .logo {
         width: 100%;

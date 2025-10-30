@@ -2,6 +2,10 @@ body {
   padding: 0;
   margin: 0;
   background-color: #C8B6C6;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header {
@@ -17,6 +21,7 @@ header button {
   color: #49306B;
   border: 2px solid #C7B7E5;
   padding: 0.5em 1.5em;
+  font-family: "Quicksand", sans-serif;
 }
 header button:hover {
   background-color: #49306B;
@@ -86,6 +91,7 @@ main #imageContainerTop button {
   color: #C7B7E5;
   border: 2px solid #49306B;
   padding: 0.5em 1.5em;
+  font-family: "Quicksand", sans-serif;
   margin-bottom: 5em;
 }
 main #imageContainerTop button:hover {
@@ -147,6 +153,7 @@ main #flex-actuCategorie #btnMenu {
   color: #49306B;
   border: 2px solid #C7B7E5;
   padding: 0.5em 1.5em;
+  font-family: "Quicksand", sans-serif;
   margin: 2em;
   margin-left: 40%;
 }
