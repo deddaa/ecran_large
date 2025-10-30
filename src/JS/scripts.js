@@ -303,28 +303,32 @@ function displayForm() {
   form.style.display = "block"
 }
 function smallPoster () {
-  const container = document.querySelectorAll("s-PosterItem")
+  const container = document.querySelectorAll(".s-PosterItem")
+
+  console.log(container);
   
   for (let e of container) {
     const index = Math.floor(Math.random() * movies.length)
     
     const a = document.createElement("a")
+    a.href = "../HTML/one_movie.html"
     const img = document.createElement("img")
     img.src = `${movies[index].image}`
     img.alt = `${movies[index].titre}`
+    
     img.className = "s-posterImage"
     e.prepend(a)
     a.appendChild(img)
-    console.log(movies[index].image)
   }
 }
 
 function bigPoster () {
-  const container = document.querySelectorAll("posterItem")
+  const container = document.querySelectorAll(".posterItem")
 
   for (let e of container) {
     const index = Math.floor(Math.random() * movies.length)
     const a = document.createElement("a")
+    a.href = "../HTML/one_movie.html"
     const img = document.createElement("img")
     img.src = `${movies[index].image}`
     img.alt = `${movies[index].titre}`
