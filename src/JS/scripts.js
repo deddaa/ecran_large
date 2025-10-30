@@ -5,7 +5,7 @@ class Carousel {
     this.container = containerElement;
     this.currentIndex = 0;
     this.cards = this.container.querySelectorAll(".card");
-    this.viewportWidth = this.container.offsetWidth;
+    this.viewportWidth = this.container.parentElement.offsetWidth;
   }
 
   updatePosition() {
@@ -38,8 +38,8 @@ class Carousel {
     const translate = previousWidth - centering;
 
     if (this.cards[this.currentIndex] == this.cards[0]) {
-      this.container.style.transform = "undefined";
-    } else {    
+      this.container.style.transform = "translateX(0)";
+    } else {
       this.container.style.transform = "translateX(-" + translate + "px)";
     }
   }
@@ -69,7 +69,7 @@ function triGender() {
   for (let movie of movies) {
     if (!genderMovies[movie.genre]) {
       genderMovies[movie.genre] = []
-    } 
+    }
     genderMovies[movie.genre].push(movie)
   }
   return genderMovies
@@ -148,7 +148,7 @@ function card(movie) {
         <h4>${movie.titre}</h4>
     </div>
     `
-    return newCard
+  return newCard
 }
 
 function addActorFunction() {
@@ -211,14 +211,14 @@ function newMovie(e) {
 
 }
 
-function banner () {  
-  const imageContainerTop = document.getElementById("imageContainerTop");  
+function banner() {
+  const imageContainerTop = document.getElementById("imageContainerTop");
   const index = Math.floor(Math.random() * movies.length);
-  
+
   imageContainerTop.style.backgroundImage = `url(${movies[index].image})`;
   imageContainerTop.style.backgroundSize = "cover";
   imageContainerTop.style.backgroundPosition = "center";
-} 
+}
 
 function infos() {
   const titleContainer = document.getElementById("titleContainer");
@@ -243,7 +243,7 @@ function infos() {
   imageContainer.innerHTML = `<img src="${movies[index].image}" alt="${movies[index].titre}" class="">`;
 }
 
-function slideDown () {
+function slideDown() {
   const container = document.getElementById("carousels")
   const btn = document.getElementById("slideBtn")
 
@@ -263,7 +263,7 @@ function allMovies() {
   for (let movie of movies) {
     const linkContainer = document.createElement("div")
     linkContainer.className = "LinkToMovie"
-  
+
     container.appendChild(linkContainer)
 
     const newLink = document.createElement("a")
@@ -271,7 +271,7 @@ function allMovies() {
     newLink.className = "tendencePoster"
 
     linkContainer.appendChild(newLink)
-  
+
     const linkImg = document.createElement("img")
     linkImg.src = movie.image
     linkImg.alt = movie.titre
@@ -296,7 +296,7 @@ function allMovies() {
   }
 }
 
-function displayForm () {
+function displayForm() {
   const form = document.getElementById("addMovieForm")
 
   form.style.display = "block"
