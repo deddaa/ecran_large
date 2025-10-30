@@ -39,7 +39,7 @@ class Carousel {
 
     if (this.cards[this.currentIndex] == this.cards[0]) {
       this.container.style.transform = "translateX(0)";
-    } else {    
+    } else {
       this.container.style.transform = "translateX(-" + translate + "px)";
     }
   }
@@ -69,7 +69,7 @@ function triGender() {
   for (let movie of movies) {
     if (!genderMovies[movie.genre]) {
       genderMovies[movie.genre] = []
-    } 
+    }
     genderMovies[movie.genre].push(movie)
   }
   return genderMovies
@@ -97,15 +97,10 @@ function carouselContainer (groupeMovies) {
     const title = document.createElement("h3")
     title.innerHTML = gender
     newContainer.appendChild(title)
-
-    const newCarousel = document.createElement("div")
-    newCarousel.className = "carousel"
-    newContainer.appendChild(newCarousel)
-
-    displayMovies(groupeMovies[gender], newCarousel)
-
-    const instanceCarousel = new Carousel(newCarousel)
-    instanceCarousel.updatePosition()
+    
+    const flexContainer = document.createElement("div")
+    flexContainer.className = "flexContainer"
+    newContainer.appendChild(flexContainer)
 
 
     const btnLeft = document.createElement("button")
@@ -113,16 +108,25 @@ function carouselContainer (groupeMovies) {
     btnLeft.id = `left${gender}`
     btnLeft.className = "left"
     btnLeft.innerHTML = "<"
-    btnLeft.className ="left"
-    newContainer.appendChild(btnLeft)
+    flexContainer.appendChild(btnLeft)
+
+    const newCarousel = document.createElement("div")
+    newCarousel.className = "carousel"
+    flexContainer.appendChild(newCarousel)
+
+    displayMovies(groupeMovies[gender], newCarousel)
+
+    const instanceCarousel = new Carousel(newCarousel)
+    instanceCarousel.updatePosition()
+
+
 
     const btnRight = document.createElement("button")
     btnRight.type = "button"
     btnRight.id = `right${gender}`
     btnRight.className = "right"
     btnRight.innerHTML = ">"
-    btnRight.className ="right"
-    newContainer.appendChild(btnRight)
+    flexContainer.appendChild(btnRight)
 
     btnLeft.addEventListener("click", () => instanceCarousel.moveLeft())
     btnRight.addEventListener("click", () => instanceCarousel.moveRight())
@@ -138,7 +142,7 @@ function card(movie) {
         <h4>${movie.titre}</h4>
     </div>
     `
-    return newCard
+  return newCard
 }
 
 function addActorFunction() {
@@ -201,14 +205,14 @@ function newMovie(e) {
 
 }
 
-function banner () {  
-  const imageContainerTop = document.getElementById("imageContainerTop");  
+function banner() {
+  const imageContainerTop = document.getElementById("imageContainerTop");
   const index = Math.floor(Math.random() * movies.length);
-  
+
   imageContainerTop.style.backgroundImage = `url(${movies[index].image})`;
   imageContainerTop.style.backgroundSize = "cover";
   imageContainerTop.style.backgroundPosition = "center";
-} 
+}
 
 function infos() {
   const titleContainer = document.getElementById("titleContainer");
@@ -233,9 +237,9 @@ function infos() {
   imageContainer.innerHTML = `<img src="${movies[index].image}" alt="${movies[index].titre}" class="">`;
 }
 
-function slideDown () {
+function slideDown() {
   const container = document.getElementById("carousels")
-  if (container.classList.contains("slideDown")){
+  if (container.classList.contains("slideDown")) {
     container.classList.remove("slideDown")
     container.style.height = "59vh"
   } else {
@@ -250,7 +254,7 @@ function allMovies() {
   for (let movie of movies) {
     const linkContainer = document.createElement("div")
     linkContainer.className = "LinkToMovie"
-  
+
     container.appendChild(linkContainer)
 
     const newLink = document.createElement("a")
@@ -258,7 +262,7 @@ function allMovies() {
     newLink.className = "tendencePoster"
 
     linkContainer.appendChild(newLink)
-  
+
     const linkImg = document.createElement("img")
     linkImg.src = movie.image
     linkImg.alt = movie.titre
@@ -283,7 +287,7 @@ function allMovies() {
   }
 }
 
-function displayForm () {
+function displayForm() {
   const form = document.getElementById("addMovieForm")
 
   form.style.display = "block"

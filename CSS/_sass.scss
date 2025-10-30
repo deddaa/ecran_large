@@ -151,6 +151,13 @@ main {
             max-width: 35vw;
             padding: 0 1em;
         }
+
+        #btnMenu {
+            @include button($secondary-color, $primary-color );
+            margin: 2em;
+            margin-left: 40%;
+        }
+
     }
 
     // caroussels ----------------------------------------
@@ -160,23 +167,33 @@ main {
         width: 100%;
 
         .left {
-            position: relative;
-            bottom: 50%;
+            position: absolute;
+            left: 1em;
+            top: 40%;
+            z-index: 1;
         }
 
-        .right {}
+        .right {
+            position: absolute;
+            right: 1em;
+            top: 40%;
+        }
     }
 
-
+    .flexContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        position: relative;
+    }
 
     .carousel {
         display: inline-flex;
         flex-flow: row nowrap;
     }
 
-
     .card {
         position: relative;
+
         img {
             height: 10em;
             filter: brightness(50%);
@@ -199,6 +216,7 @@ main {
             filter: brightness(100%);
             z-index: 1;
         }
+
         h4 {
             color: #ffffff00;
         }
@@ -237,7 +255,23 @@ main {
     #ResultLinkToMovie {
         display: flex;
         flex-flow: row wrap;
+        align-self: center;
+    }
+
+    #btnContainer {
+        display: flex;
         justify-content: center;
+        padding: 2em 0;
+    }
+
+    #slideBtn {
+        background-color: $bg-color;
+        border: none;
+        justify-self: center;
+
+        :hover {
+            height: 110%;
+        }
     }
 
     .LinkToMovie {
@@ -255,7 +289,7 @@ main {
     }
 
     // one movie css --------------------------------------------
-    #moviePresentation {
+    #movieContainer {
         background-color: $primary-color;
         color: $secondary-color;
         display: flex;
@@ -297,6 +331,12 @@ main {
         margin: 2em;
         padding: 1em;
 
+        img {
+            height: 32px;
+            width: 32px;
+            background-color: aqua;
+            align-self: center;
+        }
         .reviewText {
             padding: 0 2em;
         }
@@ -347,6 +387,9 @@ footer {
         #flex-actuCategorie {
             display: block;
             padding: 1em 0;
+            #tendance {
+                max-width: none;
+            }
         }
 
         // all movies css -----------------------------------
@@ -356,14 +399,24 @@ footer {
         }
 
         .LinkToMovie {
-            display: block;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
             width: 100%;
         }
 
         // one movie css --------------------------------------
-        #moviePresentation {
+        #movieContainer {
             padding: 2em 2em;
             display: block;
+        }
+        #imageContainer {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            img {
+                padding: 0 3em;
+            }
         }
 
         #popularReview,

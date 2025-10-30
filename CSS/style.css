@@ -121,14 +121,34 @@ main #flex-actuCategorie #tendance {
   max-width: 35vw;
   padding: 0 1em;
 }
+main #flex-actuCategorie #btnMenu {
+  background-color: #C7B7E5;
+  color: #49306B;
+  border: 2px solid #C7B7E5;
+  padding: 0.5em 1.5em;
+  margin: 2em;
+  margin-left: 40%;
+}
 main #carousels {
   overflow: hidden;
   height: 59vh;
   width: 100%;
 }
 main #carousels .left {
+  position: absolute;
+  left: 1em;
+  top: 40%;
+  z-index: 1;
+}
+main #carousels .right {
+  position: absolute;
+  right: 1em;
+  top: 40%;
+}
+main .flexContainer {
+  display: flex;
+  flex-flow: row nowrap;
   position: relative;
-  bottom: 50%;
 }
 main .carousel {
   display: inline-flex;
@@ -184,7 +204,20 @@ main #SearchResult {
 main #ResultLinkToMovie {
   display: flex;
   flex-flow: row wrap;
+  align-self: center;
+}
+main #btnContainer {
+  display: flex;
   justify-content: center;
+  padding: 2em 0;
+}
+main #slideBtn {
+  background-color: #C8B6C6;
+  border: none;
+  justify-self: center;
+}
+main #slideBtn :hover {
+  height: 110%;
 }
 main .LinkToMovie {
   display: flex;
@@ -198,20 +231,20 @@ main .LinkToMovie {
 main .LinkToMovie img {
   height: 15em;
 }
-main #moviePresentation {
+main #movieContainer {
   background-color: #49306B;
   color: #C7B7E5;
   display: flex;
   flex-flow: row nowrap;
   padding: 2em 10em;
 }
-main #moviePresentation #presImage {
+main #movieContainer #presImage {
   width: 100%;
 }
-main #moviePresentation #synopsis {
+main #movieContainer #synopsis {
   padding: 2em;
 }
-main #moviePresentation #castingAndNote {
+main #movieContainer #castingAndNote {
   display: flex;
   flex-flow: row nowrap;
   gap: 5em;
@@ -234,6 +267,12 @@ main .reviewItem {
   flex-flow: row nowrap;
   margin: 2em;
   padding: 1em;
+}
+main .reviewItem img {
+  height: 32px;
+  width: 32px;
+  background-color: aqua;
+  align-self: center;
 }
 main .reviewItem .reviewText {
   padding: 0 2em;
@@ -272,17 +311,30 @@ footer p {
     display: block;
     padding: 1em 0;
   }
+  main #flex-actuCategorie #tendance {
+    max-width: none;
+  }
   main .ResultLinkToMovie {
     display: block;
     width: 100%;
   }
   main .LinkToMovie {
-    display: block;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
     width: 100%;
   }
-  main #moviePresentation {
+  main #movieContainer {
     padding: 2em 2em;
     display: block;
+  }
+  main #imageContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+  main #imageContainer img {
+    padding: 0 3em;
   }
   main #popularReview,
   main #otherReview {
