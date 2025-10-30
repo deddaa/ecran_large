@@ -12,6 +12,20 @@ header {
   padding: 0 1em;
   min-height: 3em;
 }
+header button {
+  background-color: #C7B7E5;
+  color: #49306B;
+  border: 2px solid #C7B7E5;
+  padding: 0.5em 1.5em;
+}
+header button:hover {
+  background-color: #49306B;
+  border: 2px solid #C7B7E5;
+  color: #C7B7E5;
+}
+header h1 {
+  color: #C7B7E5;
+}
 header #boiteHeaderL {
   width: 33vw;
   display: flex;
@@ -27,20 +41,6 @@ header #boiteHeaderR {
   display: flex;
   justify-content: end;
 }
-header button {
-  background-color: #C7B7E5;
-  color: #49306B;
-  border: 2px solid #C7B7E5;
-  padding: 0.5em 1.5em;
-}
-header button:hover {
-  background-color: #49306B;
-  border: 2px solid #C7B7E5;
-  color: #C7B7E5;
-}
-header h1 {
-  color: #C7B7E5;
-}
 header #searchMenu {
   background-color: #C7B7E5;
   border: none;
@@ -50,6 +50,18 @@ header #searchMenu {
 }
 header #searchMenu ::placeholder {
   color: #49306B;
+}
+header #addMovieForm {
+  display: none;
+  flex-flow: column nowrap;
+  position: fixed;
+  height: 50%;
+  width: 50%;
+  top: 25%;
+  left: 25%;
+  padding: 2em;
+  z-index: 2;
+  background-color: #49306B;
 }
 header .logo {
   width: 100%;
@@ -89,6 +101,9 @@ main #bigPoster {
   margin: 2em;
   padding: 1em;
 }
+main #bigPoster .posterImage {
+  height: 20em;
+}
 main #smallPoster {
   display: flex;
   flex-flow: row nowrap;
@@ -96,6 +111,9 @@ main #smallPoster {
   height: 20vh;
   margin: 2em;
   padding: 1em;
+}
+main #smallPoster .s-posterImage {
+  height: 20vh;
 }
 main #flex-actuCategorie {
   background-color: #49306B;
@@ -106,7 +124,7 @@ main #flex-actuCategorie {
 main #flex-actuCategorie #actu {
   padding-bottom: 1em;
 }
-main #flex-actuCategorie #actu .actuPoster {
+main #flex-actuCategorie #actu .s-PosterItem {
   background-color: #C7B7E5;
   color: #49306B;
   display: flex;
@@ -114,7 +132,10 @@ main #flex-actuCategorie #actu .actuPoster {
   margin: 2em;
   padding: 1em;
 }
-main #flex-actuCategorie #actu .actuPoster .actuText {
+main #flex-actuCategorie #actu .s-PosterItem img {
+  height: 10em;
+}
+main #flex-actuCategorie #actu .s-PosterItem .actuText {
   padding: 0 2em;
 }
 main #flex-actuCategorie #tendance {
@@ -134,15 +155,23 @@ main #carousels {
   height: 59vh;
   width: 100%;
 }
+main #carousels button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+main #carousels button svg {
+  width: fit-content;
+  height: 3em;
+}
 main #carousels .left {
   position: absolute;
-  left: 1em;
+  left: 1px;
   top: 40%;
   z-index: 1;
 }
 main #carousels .right {
   position: absolute;
-  right: 1em;
+  right: 1px;
   top: 40%;
 }
 main .flexContainer {
