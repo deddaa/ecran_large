@@ -97,10 +97,25 @@ function carouselContainer (groupeMovies) {
     const title = document.createElement("h3")
     title.innerHTML = gender
     newContainer.appendChild(title)
+    
+    const flexContainer = document.createElement("div")
+    flexContainer.className = "flexContainer"
+    newContainer.appendChild(flexContainer)
+
+
+    const btnLeft = document.createElement("button")
+    btnLeft.type = "button"
+    btnLeft.id = `left${gender}`
+    btnLeft.className = "left"
+    btnLeft.innerHTML = `<svg width="203" height="203" viewBox="0 0 203 203" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="101.5" cy="101.5" r="101.5" fill="#49306B"/>
+        <path d="M122 31L72 102.681L122 176" stroke="#C7B7E5" stroke-width="18" stroke-linecap="round"/>
+      </svg>`
+    flexContainer.appendChild(btnLeft)
 
     const newCarousel = document.createElement("div")
     newCarousel.className = "carousel"
-    newContainer.appendChild(newCarousel)
+    flexContainer.appendChild(newCarousel)
 
     displayMovies(groupeMovies[gender], newCarousel)
 
@@ -108,19 +123,16 @@ function carouselContainer (groupeMovies) {
     instanceCarousel.updatePosition()
 
 
-    const btnLeft = document.createElement("button")
-    btnLeft.type = "button"
-    btnLeft.id = `left${gender}`
-    btnLeft.className = "left"
-    btnLeft.innerHTML = "<"
-    newContainer.appendChild(btnLeft)
 
     const btnRight = document.createElement("button")
     btnRight.type = "button"
     btnRight.id = `right${gender}`
     btnRight.className = "right"
-    btnRight.innerHTML = ">"
-    newContainer.appendChild(btnRight)
+    btnRight.innerHTML = `<svg width="203" height="203" viewBox="0 0 203 203" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="101.5" cy="101.5" r="101.5" transform="rotate(-180 101.5 101.5)" fill="#49306B"/>
+        <path d="M81 172L131 100.319L81 27" stroke="#C7B7E5" stroke-width="18" stroke-linecap="round"/>
+      </svg>`
+    flexContainer.appendChild(btnRight)
 
     btnLeft.addEventListener("click", () => instanceCarousel.moveLeft())
     btnRight.addEventListener("click", () => instanceCarousel.moveRight())
@@ -233,12 +245,15 @@ function infos() {
 
 function slideDown () {
   const container = document.getElementById("carousels")
+  const btn = document.getElementById("slideBtn")
+
   if (container.classList.contains("slideDown")){
     container.classList.remove("slideDown")
     container.style.height = "59vh"
   } else {
     container.classList.add("slideDown")
     container.style.height = "auto"
+    btn.transform = "rotate(180deg)"
   }
 }
 
