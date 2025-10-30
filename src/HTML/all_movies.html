@@ -20,19 +20,26 @@
       <button id="addMovie">+</button>
     </div>
     <form id="addMovieForm">
+      <div id="form">
       <h3>Ajouter un nouveau film</h3>
+      <div>
       <label for="movieTitle">Titre du film :</label>
       <input type="text" id="movieTitle" name="movieTitle" required />
-
+      </div>
+      <div>
       <label for="real">Réalisateur :</label>
       <input type="text" id="real" name="director" required />
+      </div>
       <div id="formActor">
         <label for="addActorInput">Ajouter les acteurs :</label>
         <input type="text" id="addActorInput" name="actorInput" required>
         <button type="button" id="addActorBtn">ajouter</button>
       </div>
+      <div>
       <label for="releaseDate">Date de sortie :</label>
       <input type="text" id="releaseDate" name="releaseDate" placeholder="AAAA" required />
+      </div>
+      <div>
       <label for="genres">Genres :</label>
       <select id="genres" name="genres" multiple size="5" required>
         <option disabled>Sélectionne un ou plusieurs genres</option>
@@ -51,11 +58,17 @@
         <option value="peplum">Peplum</option>
         <option value="biopic">Biopic</option>
       </select>
+      </div>
+      <div>
       <label for="description">Description : </label>
       <textarea id="description"></textarea>
+      </div>
+      <div>
       <label for="posterUrl">URL du poster :</label>
       <input type="url" id="posterUrl" name="posterUrl" required />
+      </div>
       <button type="submit">Ajouter le film</button>
+      </div>
     </form>
   </header>
   <main id="mainContent">
