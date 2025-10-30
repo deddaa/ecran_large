@@ -218,6 +218,7 @@ function banner() {
   imageContainerTop.style.backgroundImage = `url(${movies[index].image})`;
   imageContainerTop.style.backgroundSize = "cover";
   imageContainerTop.style.backgroundPosition = "center";
+  console.log(movies[index].image)
 }
 
 function infos() {
@@ -301,31 +302,32 @@ function displayForm() {
 
   form.style.display = "block"
 }
-
 function smallPoster () {
   const container = document.querySelectorAll("s-PosterItem")
   
   for (let e of container) {
     const index = Math.floor(Math.random() * movies.length)
+    
     const a = document.createElement("a")
     const img = document.createElement("img")
-    img.src = movies[index].image
-    img.alt = movies[index].titre
+    img.src = `${movies[index].image}`
+    img.alt = `${movies[index].titre}`
     img.className = "s-posterImage"
     e.prepend(a)
     a.appendChild(img)
+    console.log(movies[index].image)
   }
 }
 
 function bigPoster () {
   const container = document.querySelectorAll("posterItem")
-  
+
   for (let e of container) {
     const index = Math.floor(Math.random() * movies.length)
     const a = document.createElement("a")
     const img = document.createElement("img")
-    img.src = movies[index].image
-    img.alt = movies[index].titre
+    img.src = `${movies[index].image}`
+    img.alt = `${movies[index].titre}`
     img.className = "posterImage"
     e.appendChild(a)
     a.appendChild(img)
