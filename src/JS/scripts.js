@@ -302,6 +302,36 @@ function displayForm () {
   form.style.display = "block"
 }
 
+function smallPoster () {
+  const container = document.querySelectorAll("s-PosterItem")
+  
+  for (let e of container) {
+    const index = Math.floor(Math.random() * movies.length)
+    const a = document.createElement("a")
+    const img = document.createElement("img")
+    img.src = movies[index].image
+    img.alt = movies[index].titre
+    img.className = "s-posterImage"
+    e.prepend(a)
+    a.appendChild(img)
+  }
+}
+
+function bigPoster () {
+  const container = document.querySelectorAll("posterItem")
+  
+  for (let e of container) {
+    const index = Math.floor(Math.random() * movies.length)
+    const a = document.createElement("a")
+    const img = document.createElement("img")
+    img.src = movies[index].image
+    img.alt = movies[index].titre
+    img.className = "posterImage"
+    e.appendChild(a)
+    a.appendChild(img)
+  }
+}
+
 const slide = document.getElementById("slideBtn");
 const add = document.getElementById("addActorBtn");
 const form = document.getElementById("addCard");

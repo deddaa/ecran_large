@@ -16,4 +16,8 @@ function initApp() {
     carouselContainer(groupeMovies)
 
     banner()
+
+    smallPoster()
+
+    bigPoster()
 }
