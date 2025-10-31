@@ -15,49 +15,52 @@
       <a href="all_movies.html"><button id="btnMenu">Tous les films</button></a>
     </div>
     <div id="boiteHeaderC">
-      <a href="index.html"><img class="logo" src="../../img/title.png" alt="Ecran Large Logo" /></a>
+      <a href="../index.html"><img class="logo" src="../img/title.png" alt="Ecran Large Logo" /></a>
     </div>
     <div id="boiteHeaderR">
       <button id="addMovie">+</button>
     </div>
     <form id="addMovieForm">
+      <button type="button" id="disableForm" class="disable">X</button>
       <div id="form">
       <h3>Ajouter un nouveau film</h3>
       <div>
       <label for="movieTitle">Titre du film :</label>
-      <input type="text" id="movieTitle" name="movieTitle" required />
+      <input type="text" id="title" name="movieTitle" required />
       </div>
       <div>
       <label for="real">Réalisateur :</label>
       <input type="text" id="real" name="director" required />
       </div>
       <div id="formActor">
-        <label for="addActorInput">Ajouter les acteurs :</label>
-        <input type="text" id="addActorInput" name="actorInput" required>
+        <div id="inputArea">
+          <label for="addActorInput">Ajouter les acteurs :</label>
+          <input type="text" id="addActorInput" name="actorInput" required>
+        </div>
         <button type="button" id="addActorBtn">ajouter</button>
       </div>
       <div>
       <label for="releaseDate">Date de sortie :</label>
-      <input type="text" id="releaseDate" name="releaseDate" placeholder="AAAA" required />
+      <input type="text" id="date" name="releaseDate" placeholder="AAAA" required maxlength="4" />
       </div>
       <div>
       <label for="genres">Genres :</label>
-      <select id="genres" name="genres" multiple size="5" required>
-        <option disabled>Sélectionne un ou plusieurs genres</option>
-        <option value="sf">Science-Fiction</option>
-        <option value="action">Action</option>
-        <option value="horreur">Horreur</option>
-        <option value="drame">Drame</option>
-        <option value="comedie">Comedie</option>
-        <option value="thriller">Thriller</option>
-        <option value="fantasy">Fantasy</option>
-        <option value="aventure">Aventure</option>
-        <option value="animation">Animation</option>
-        <option value="western">Western</option>
-        <option value="policier">Policier</option>
-        <option value="romance">Romance</option>
-        <option value="peplum">Peplum</option>
-        <option value="biopic">Biopic</option>
+      <select id="gender" name="genre" required>
+        <option value="" disabled selected>Sélectionne un ou plusieurs genres</option>
+        <option value="Science-Fiction">Science-Fiction</option>
+        <option value="Action">Action</option>
+        <option value="Horreur">Horreur</option>
+        <option value="Drame">Drame</option>
+        <option value="Comedie">Comedie</option>
+        <option value="Thriller">Thriller</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Aventure">Aventure</option>
+        <option value="Animation">Animation</option>
+        <option value="Western">Western</option>
+        <option value="Policier">Policier</option>
+        <option value="Romance">Romance</option>
+        <option value="Peplum">Peplum</option>
+        <option value="Biopic">Biopic</option>
       </select>
       </div>
       <div>
