@@ -143,25 +143,25 @@ main #imageContainerTop button:hover {
 }
 main #bigPoster {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
-  height: 50vh;
   margin: 2em;
   padding: 1em;
 }
 main #bigPoster .posterImage {
   height: 20em;
+  padding: 10px;
 }
 main #smallPoster {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
-  height: 20vh;
   margin: 2em;
   padding: 1em;
 }
 main #smallPoster .s-posterImage {
   height: 20vh;
+  padding: 10px;
 }
 main #flex-actuCategorie {
   background-color: #49306B;
@@ -179,6 +179,7 @@ main #flex-actuCategorie #actu .s-PosterItem {
   flex-flow: row nowrap;
   margin: 2em;
   padding: 1em;
+  align-items: center;
 }
 main #flex-actuCategorie #actu .s-PosterItem img {
   height: 10em;
@@ -231,9 +232,11 @@ main .flexContainer {
 main .carousel {
   display: inline-flex;
   flex-flow: row nowrap;
+  align-items: center;
 }
 main .card {
   position: relative;
+  margin: 0 2px;
 }
 main .card img {
   height: 10em;
@@ -248,6 +251,15 @@ main .card h4 {
   max-width: 5em;
   padding: 1em;
 }
+main .card :hover {
+  filter: brightness(100%);
+}
+main .card :hover h4 {
+  color: rgba(255, 255, 255, 0);
+}
+main .active {
+  margin: 0 1em;
+}
 main .active img {
   height: 11em;
   filter: brightness(100%);
@@ -260,7 +272,11 @@ main #carouselAllMovie {
   margin: 2em;
 }
 main #carouselAllMovie #searchAndFilter {
-  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 main #carouselAllMovie #searchAndFilter input {
   background-color: #C8B6C6;
@@ -273,6 +289,11 @@ main #carouselAllMovie #searchAndFilter #searchMenu {
   border-radius: 5em;
   height: 2em;
   width: 30em;
+}
+main #carouselAllMovie #searchAndFilter #filterMenu {
+  background-color: #C8B6C6;
+  border: none;
+  color: #49306B;
 }
 main #SearchResult {
   background-color: #49306B;
@@ -302,6 +323,7 @@ main .LinkToMovie {
   flex-flow: column nowrap;
   width: 25%;
   height: 20em;
+  min-width: 15em;
   align-items: center;
   justify-content: center;
   padding: 2em 0;
@@ -314,7 +336,7 @@ main #movieContainer {
   color: #C7B7E5;
   display: flex;
   flex-flow: row nowrap;
-  padding: 2em 10em;
+  padding: 2em 10%;
 }
 main #movieContainer #imageContainer {
   display: flex;
@@ -334,12 +356,12 @@ main #movieContainer #synopsis {
 main #movieContainer #castingAndNote {
   display: flex;
   flex-flow: row nowrap;
-  gap: 5em;
+  gap: 1em;
 }
 main #popularReview,
 main #otherReview {
   background-color: #49306B;
-  padding: 1px 10em;
+  padding: 1px 10%;
 }
 main #popularReview h3,
 main #otherReview h3 {
@@ -383,16 +405,30 @@ footer p {
   header #searchMenu {
     width: 9em;
   }
+  header #addMovieForm {
+    top: 5%;
+    left: 15%;
+  }
+  header #addMovieForm #disableForm {
+    right: 10px;
+    top: 10px;
+  }
+  header #addMovieForm #inputArea {
+    overflow-x: scroll;
+  }
   main #imageHolder {
     height: 40vh;
   }
   main #bigPoster {
-    flex-flow: column;
+    flex-flow: column nowrap;
     align-items: center;
+    height: fit-content;
+    gap: 1em;
   }
   main #smallPoster {
-    flex-flow: column;
+    flex-flow: row wrap;
     align-items: center;
+    height: fit-content;
   }
   main #flex-actuCategorie {
     display: block;
@@ -400,6 +436,9 @@ footer p {
   }
   main #flex-actuCategorie #tendance {
     max-width: none;
+  }
+  main #flex-actuCategorie .s-PosterItem {
+    align-items: center;
   }
   main .ResultLinkToMovie {
     display: block;

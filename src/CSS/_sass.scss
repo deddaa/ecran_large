@@ -178,27 +178,27 @@ main {
     // index css ------------------------------------------------
     #bigPoster {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: space-around;
-        height: 50vh;
         margin: 2em;
         padding: 1em;
 
         .posterImage {
             height: 20em;
+            padding: 10px;
         }
     }
 
     #smallPoster {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: space-around;
-        height: 20vh;
         margin: 2em;
         padding: 1em;
 
         .s-posterImage {
             height: 20vh;
+            padding: 10px;
         }
     }
 
@@ -218,6 +218,7 @@ main {
                 flex-flow: row nowrap;
                 margin: 2em;
                 padding: 1em;
+                align-items: center;
 
                 img {
                     height: 10em;
@@ -282,10 +283,12 @@ main {
     .carousel {
         display: inline-flex;
         flex-flow: row nowrap;
+        align-items: center;
     }
 
     .card {
         position: relative;
+        margin: 0 2px;
 
         img {
             height: 10em;
@@ -301,9 +304,19 @@ main {
             max-width: 5em;
             padding: 1em;
         }
+
+        :hover {
+            filter: brightness(100%);
+
+            h4 {
+                color: $transparent;
+            }
+        }
     }
 
     .active {
+        margin: 0 1em;
+
         img {
             height: 11em;
             filter: brightness(100%);
@@ -320,7 +333,11 @@ main {
         margin: 2em;
 
         #searchAndFilter {
-            text-align: center;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
 
             input {
                 background-color: $bg-color;
@@ -334,6 +351,12 @@ main {
                 border-radius: 5em;
                 height: 2em;
                 width: 30em;
+            }
+
+            #filterMenu {
+                background-color: $bg-color;
+                border: none;
+                color: $primary-color;
             }
         }
     }
@@ -372,6 +395,7 @@ main {
         flex-flow: column nowrap;
         width: 25%;
         height: 20em;
+        min-width: 15em;
         align-items: center;
         justify-content: center;
         padding: 2em 0;
@@ -387,7 +411,7 @@ main {
         color: $secondary-color;
         display: flex;
         flex-flow: row nowrap;
-        padding: 2em 10em;
+        padding: 2em 10%;
 
         #imageContainer {
             display: flex;
@@ -410,14 +434,14 @@ main {
         #castingAndNote {
             display: flex;
             flex-flow: row nowrap;
-            gap: 5em;
+            gap: 1em;
         }
     }
 
     #popularReview,
     #otherReview {
         background-color: $primary-color;
-        padding: 1px 10em;
+        padding: 1px 10%;
 
         h3 {
             color: $secondary-color;
@@ -468,6 +492,20 @@ footer {
         #searchMenu {
             width: 9em;
         }
+
+        #addMovieForm {
+            top: 5%;
+            left: 15%;
+
+            #disableForm {
+                right: 10px;
+                top: 10px;
+            }
+
+            #inputArea {
+                overflow-x: scroll;
+            }
+        }
     }
 
     main {
@@ -479,13 +517,16 @@ footer {
 
         // index css -----------------------------------------
         #bigPoster {
-            flex-flow: column;
+            flex-flow: column nowrap;
             align-items: center;
+            height: fit-content;
+            gap: 1em;
         }
 
         #smallPoster {
-            flex-flow: column;
+            flex-flow: row wrap;
             align-items: center;
+            height: fit-content;
         }
 
         #flex-actuCategorie {
@@ -494,6 +535,10 @@ footer {
 
             #tendance {
                 max-width: none;
+            }
+
+            .s-PosterItem {
+                align-items: center;
             }
         }
 
