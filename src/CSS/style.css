@@ -74,6 +74,11 @@ header #addMovieForm {
   border: 5px solid #49306B;
   border-radius: 2em;
 }
+header #disableForm {
+  position: absolute;
+  right: 2em;
+  top: 2em;
+}
 header #form {
   display: flex;
   flex-flow: column wrap;
@@ -95,6 +100,15 @@ header #form button {
 header #form :hover {
   background-color: #C7B7E5;
   color: #49306B;
+}
+header #form #formActor {
+  display: flex;
+  flex-flow: column wrap;
+}
+header #form #inputArea {
+  flex-flow: column wrap;
+  justify-content: start;
+  max-height: 5em;
 }
 header .logo {
   width: 100%;
