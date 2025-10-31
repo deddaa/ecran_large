@@ -10,6 +10,7 @@ $emphasis-color: #C21BFF;
     color: $couleur;
     border: 2px solid $couleurBg;
     padding: 0.5em 1.5em;
+    font-family: "Quicksand", sans-serif;
 }
 
 //Version PC ------------------------------------------------
@@ -17,6 +18,11 @@ body {
     padding: 0;
     margin: 0;
     background-color: $bg-color;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 header {
@@ -57,6 +63,10 @@ header {
         width: 33vw;
         display: flex;
         justify-content: end;
+        #addMovie {
+            border-radius: 50px;
+            height: 3em;
+        }
     }
 
     #searchMenu {
@@ -70,17 +80,37 @@ header {
             color: $primary-color;
         }
     }
+
     #addMovieForm {
         display: none;
         flex-flow: column nowrap;
         position: fixed;
-        height: 50%;
         width: 50%;
-        top: 25%;
+        top: 15%;
         left: 25%;
         padding: 2em;
         z-index: 2;
-        background-color: $primary-color;
+        background-color: $secondary-color;
+        color: $primary-color;
+        border: 5px solid $primary-color;
+        border-radius: 2em;
+    }
+
+    #form {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+        gap: 1em;
+        div {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+        button {
+            background-color: $primary-color;
+            color: $secondary-color;
+        }
     }
 
     .logo {
@@ -331,12 +361,22 @@ main {
         flex-flow: row nowrap;
         padding: 2em 10em;
 
+        #imageContainer{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+        }
+
         #presImage {
             width: 100%;
         }
 
         #synopsis {
+            margin: 2em;
             padding: 2em;
+            background-color: $secondary-color;
+            color: $primary-color;
         }
 
         #castingAndNote {

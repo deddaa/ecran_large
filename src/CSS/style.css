@@ -2,6 +2,10 @@ body {
   padding: 0;
   margin: 0;
   background-color: #C8B6C6;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header {
@@ -17,6 +21,7 @@ header button {
   color: #49306B;
   border: 2px solid #C7B7E5;
   padding: 0.5em 1.5em;
+  font-family: "Quicksand", sans-serif;
 }
 header button:hover {
   background-color: #49306B;
@@ -41,6 +46,10 @@ header #boiteHeaderR {
   display: flex;
   justify-content: end;
 }
+header #boiteHeaderR #addMovie {
+  border-radius: 50px;
+  height: 3em;
+}
 header #searchMenu {
   background-color: #C7B7E5;
   border: none;
@@ -55,13 +64,31 @@ header #addMovieForm {
   display: none;
   flex-flow: column nowrap;
   position: fixed;
-  height: 50%;
   width: 50%;
-  top: 25%;
+  top: 15%;
   left: 25%;
   padding: 2em;
   z-index: 2;
+  background-color: #C7B7E5;
+  color: #49306B;
+  border: 5px solid #49306B;
+  border-radius: 2em;
+}
+header #form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 1em;
+}
+header #form div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+header #form button {
   background-color: #49306B;
+  color: #C7B7E5;
 }
 header .logo {
   width: 100%;
@@ -86,6 +113,7 @@ main #imageContainerTop button {
   color: #C7B7E5;
   border: 2px solid #49306B;
   padding: 0.5em 1.5em;
+  font-family: "Quicksand", sans-serif;
   margin-bottom: 5em;
 }
 main #imageContainerTop button:hover {
@@ -147,6 +175,7 @@ main #flex-actuCategorie #btnMenu {
   color: #49306B;
   border: 2px solid #C7B7E5;
   padding: 0.5em 1.5em;
+  font-family: "Quicksand", sans-serif;
   margin: 2em;
   margin-left: 40%;
 }
@@ -267,11 +296,20 @@ main #movieContainer {
   flex-flow: row nowrap;
   padding: 2em 10em;
 }
+main #movieContainer #imageContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+}
 main #movieContainer #presImage {
   width: 100%;
 }
 main #movieContainer #synopsis {
+  margin: 2em;
   padding: 2em;
+  background-color: #C7B7E5;
+  color: #49306B;
 }
 main #movieContainer #castingAndNote {
   display: flex;
