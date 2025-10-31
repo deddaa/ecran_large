@@ -90,7 +90,7 @@ function carouselContainer (groupeMovies) {
 
   for (let gender in groupeMovies) {
     const newContainer = document.createElement("div")
-    newContainer.className = ''
+    newContainer.className = 'carouselAllMovie'
     newContainer.id = `${gender}`
     container.appendChild(newContainer)
 
@@ -247,11 +247,18 @@ function infos() {
 function slideDown() {
   const container = document.getElementById("carousels")
   const btn = document.getElementById("slideBtn")
+  const carousel = document.getElementById("Drame")
+  const computedStyle = window.getComputedStyle(carousel)
+  const marginTop = parseFloat(computedStyle.marginTop);
+  const marginBottom = parseFloat(computedStyle.marginBottom)
+  const minHeight = (carousel.offsetHeight + marginBottom + marginTop) * 2 + 30
+  const upWindowAnchor = document.getElementById("searchMenu")
 
   if (container.classList.contains("slideDown")){
     container.classList.remove("slideDown")
-    container.style.height = "59vh"
+    container.style.height = `${minHeight}px`
     btn.style.transform = ""
+    upWindowAnchor.scrollIntoView()
   } else {
     container.classList.add("slideDown")
     container.style.height = "auto"
@@ -340,7 +347,7 @@ function bigPoster () {
 
 const slide = document.getElementById("slideBtn");
 const add = document.getElementById("addActorBtn");
-const form = document.getElementById("addCard");
+const form = document.getElementById("addMovie");
 const btnForm = document.getElementById("submitCard");
 
 if (add) {
@@ -348,7 +355,7 @@ if (add) {
 }
 
 if (btnForm) {
-  btnForm.addEventListener("submit", newMovie);
+  btnForm.addEventListener("click", newMovie);
 }
 
 if (slide) {
