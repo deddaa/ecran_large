@@ -3,6 +3,7 @@ $bg-color : #C8B6C6;
 $primary-color: #49306B;
 $secondary-color: #C7B7E5;
 $emphasis-color: #C21BFF;
+$transparent : #ffffff00;
 
 //Classes ---------------------------------------------------
 @mixin button($couleurBg, $couleur) {
@@ -63,6 +64,7 @@ header {
         width: 33vw;
         display: flex;
         justify-content: end;
+
         #addMovie {
             border-radius: 50px;
             height: 3em;
@@ -96,20 +98,46 @@ header {
         border-radius: 2em;
     }
 
+    #disableForm {
+        position: absolute;
+        right: 2em;
+        top: 2em;
+    }
+
     #form {
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         align-content: center;
         gap: 1em;
+
         div {
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
         }
+
         button {
             background-color: $primary-color;
             color: $secondary-color;
+            border: 2px solid $primary-color;
+            margin: 5px;
+        }
+
+        :hover {
+            background-color: $secondary-color;
+            color: $primary-color;
+        }
+
+        #formActor {
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        #inputArea {
+            flex-flow: column wrap;
+            justify-content: start;
+            max-height: 5em;
         }
     }
 
@@ -150,27 +178,27 @@ main {
     // index css ------------------------------------------------
     #bigPoster {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: space-around;
-        height: 50vh;
         margin: 2em;
         padding: 1em;
 
         .posterImage {
             height: 20em;
+            padding: 10px;
         }
     }
 
     #smallPoster {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: space-around;
-        height: 20vh;
         margin: 2em;
         padding: 1em;
 
         .s-posterImage {
             height: 20vh;
+            padding: 10px;
         }
     }
 
@@ -190,6 +218,7 @@ main {
                 flex-flow: row nowrap;
                 margin: 2em;
                 padding: 1em;
+                align-items: center;
 
                 img {
                     height: 10em;
@@ -222,7 +251,7 @@ main {
         width: 100%;
 
         button {
-            background-color: transparentize($color: #000000, $amount: 1);
+            background-color: $transparent;
             border: none;
 
             svg {
@@ -254,10 +283,12 @@ main {
     .carousel {
         display: inline-flex;
         flex-flow: row nowrap;
+        align-items: center;
     }
 
     .card {
         position: relative;
+        margin: 0 2px;
 
         img {
             height: 10em;
@@ -273,9 +304,19 @@ main {
             max-width: 5em;
             padding: 1em;
         }
+
+        :hover {
+            filter: brightness(100%);
+
+            h4 {
+                color: $transparent;
+            }
+        }
     }
 
     .active {
+        margin: 0 1em;
+
         img {
             height: 11em;
             filter: brightness(100%);
@@ -283,7 +324,7 @@ main {
         }
 
         h4 {
-            color: #ffffff00;
+            color: $transparent;
         }
     }
 
@@ -292,7 +333,11 @@ main {
         margin: 2em;
 
         #searchAndFilter {
-            text-align: center;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
 
             input {
                 background-color: $bg-color;
@@ -306,6 +351,12 @@ main {
                 border-radius: 5em;
                 height: 2em;
                 width: 30em;
+            }
+
+            #filterMenu {
+                background-color: $bg-color;
+                border: none;
+                color: $primary-color;
             }
         }
     }
@@ -344,6 +395,7 @@ main {
         flex-flow: column nowrap;
         width: 25%;
         height: 20em;
+        min-width: 15em;
         align-items: center;
         justify-content: center;
         padding: 2em 0;
@@ -359,9 +411,9 @@ main {
         color: $secondary-color;
         display: flex;
         flex-flow: row nowrap;
-        padding: 2em 10em;
+        padding: 2em 10%;
 
-        #imageContainer{
+        #imageContainer {
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
@@ -382,14 +434,14 @@ main {
         #castingAndNote {
             display: flex;
             flex-flow: row nowrap;
-            gap: 5em;
+            gap: 1em;
         }
     }
 
     #popularReview,
     #otherReview {
         background-color: $primary-color;
-        padding: 1px 10em;
+        padding: 1px 10%;
 
         h3 {
             color: $secondary-color;
@@ -440,6 +492,20 @@ footer {
         #searchMenu {
             width: 9em;
         }
+
+        #addMovieForm {
+            top: 5%;
+            left: 15%;
+
+            #disableForm {
+                right: 10px;
+                top: 10px;
+            }
+
+            #inputArea {
+                overflow-x: scroll;
+            }
+        }
     }
 
     main {
@@ -451,13 +517,16 @@ footer {
 
         // index css -----------------------------------------
         #bigPoster {
-            flex-flow: column;
+            flex-flow: column nowrap;
             align-items: center;
+            height: fit-content;
+            gap: 1em;
         }
 
         #smallPoster {
-            flex-flow: column;
+            flex-flow: row wrap;
             align-items: center;
+            height: fit-content;
         }
 
         #flex-actuCategorie {
@@ -466,6 +535,10 @@ footer {
 
             #tendance {
                 max-width: none;
+            }
+
+            .s-PosterItem {
+                align-items: center;
             }
         }
 
