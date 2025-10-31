@@ -3,6 +3,7 @@ $bg-color : #C8B6C6;
 $primary-color: #49306B;
 $secondary-color: #C7B7E5;
 $emphasis-color: #C21BFF;
+$transparent : #ffffff00;
 
 //Classes ---------------------------------------------------
 @mixin button($couleurBg, $couleur) {
@@ -110,6 +111,12 @@ header {
         button {
             background-color: $primary-color;
             color: $secondary-color;
+            border: 2px solid $primary-color;
+            margin: 5px;
+        }
+        :hover {
+            background-color: $secondary-color;
+            color: $primary-color;
         }
     }
 
@@ -222,7 +229,7 @@ main {
         width: 100%;
 
         button {
-            background-color: transparentize($color: #000000, $amount: 1);
+            background-color: $transparent;
             border: none;
 
             svg {
@@ -283,7 +290,7 @@ main {
         }
 
         h4 {
-            color: #ffffff00;
+            color: $transparent;
         }
     }
 

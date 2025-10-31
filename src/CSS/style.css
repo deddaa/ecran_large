@@ -89,6 +89,12 @@ header #form div {
 header #form button {
   background-color: #49306B;
   color: #C7B7E5;
+  border: 2px solid #49306B;
+  margin: 5px;
+}
+header #form :hover {
+  background-color: #C7B7E5;
+  color: #49306B;
 }
 header .logo {
   width: 100%;
@@ -185,7 +191,7 @@ main #carousels {
   width: 100%;
 }
 main #carousels button {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
   border: none;
 }
 main #carousels button svg {
