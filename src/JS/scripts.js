@@ -177,6 +177,7 @@ function newMovie(e) {
   const picture = document.getElementById("posterUrl").value;
   const actorsListe = document.querySelectorAll('input[name="actorInput"]');
   const actorsArray = [];
+  const form = document.getElementById("addMovieForm");
 
   for (let actor of actorsListe) {
     const actorValue = actor.value.trim();
@@ -204,10 +205,9 @@ function newMovie(e) {
     movies.push(movie);
     initApp()
     e.target.reset();
+    form.style.display = "none";
   }
 
-  const form = document.getElementById("addMovieForm");
-  form.style.display = "none";
 
 }
 
@@ -251,10 +251,11 @@ function slideDown() {
   if (container.classList.contains("slideDown")){
     container.classList.remove("slideDown")
     container.style.height = "59vh"
+    btn.style.transform = ""
   } else {
     container.classList.add("slideDown")
     container.style.height = "auto"
-    btn.transform = "rotate(180deg)"
+    btn.style.transform = "rotate(180deg)"
   }
 }
 
@@ -302,6 +303,7 @@ function displayForm() {
 
   form.style.display = "block"
 }
+
 function smallPoster () {
   const container = document.querySelectorAll(".s-PosterItem")
   
@@ -339,20 +341,20 @@ function bigPoster () {
 const slide = document.getElementById("slideBtn");
 const add = document.getElementById("addActorBtn");
 const form = document.getElementById("addCard");
-const btnForm = document.getElementById("addMovie")
+const btnForm = document.getElementById("submitCard");
 
 if (add) {
   add.addEventListener("click", addActorFunction);
 }
 
-if (form) {
-  form.addEventListener("submit", newMovie);
+if (btnForm) {
+  btnForm.addEventListener("submit", newMovie);
 }
 
 if (slide) {
   slide.addEventListener("click", slideDown);
 }
 
-if (btnForm) {
-  btnForm.addEventListener("click", displayForm);
+if (form) {
+  form.addEventListener("click", displayForm);
 }
