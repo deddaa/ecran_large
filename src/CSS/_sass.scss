@@ -27,6 +27,20 @@ header {
     padding: 0 1em;
     min-height: 3em;
 
+    button {
+        @include button($secondary-color, $primary-color);
+    }
+
+    button:hover {
+        background-color: $primary-color;
+        border: 2px solid $secondary-color;
+        color: $secondary-color ;
+    }
+
+    h1 {
+        color: $secondary-color;
+    }
+
     #boiteHeaderL {
         width: 33vw;
         display: flex;
@@ -45,20 +59,6 @@ header {
         justify-content: end;
     }
 
-    button {
-        @include button($secondary-color, $primary-color);
-    }
-
-    button:hover {
-        background-color: $primary-color;
-        border: 2px solid $secondary-color;
-        color: $secondary-color ;
-    }
-
-    h1 {
-        color: $secondary-color;
-    }
-
     #searchMenu {
         background-color: $secondary-color;
         border: none;
@@ -70,10 +70,23 @@ header {
             color: $primary-color;
         }
     }
+    #addMovieForm {
+        display: none;
+        flex-flow: column nowrap;
+        position: fixed;
+        height: 50%;
+        width: 50%;
+        top: 25%;
+        left: 25%;
+        padding: 2em;
+        z-index: 2;
+        background-color: $primary-color;
+    }
 
     .logo {
         width: 100%;
     }
+
 }
 
 main {
@@ -112,6 +125,10 @@ main {
         height: 50vh;
         margin: 2em;
         padding: 1em;
+
+        .posterImage {
+            height: 20em;
+        }
     }
 
     #smallPoster {
@@ -121,6 +138,10 @@ main {
         height: 20vh;
         margin: 2em;
         padding: 1em;
+
+        .s-posterImage {
+            height: 20vh;
+        }
     }
 
     #flex-actuCategorie {
@@ -132,13 +153,17 @@ main {
         #actu {
             padding-bottom: 1em;
 
-            .actuPoster {
+            .s-PosterItem {
                 background-color: $secondary-color;
                 color: $primary-color;
                 display: flex;
                 flex-flow: row nowrap;
                 margin: 2em;
                 padding: 1em;
+
+                img {
+                    height: 10em;
+                }
 
                 .actuText {
                     padding: 0 2em;
@@ -166,16 +191,26 @@ main {
         height: 59vh;
         width: 100%;
 
+        button {
+            background-color: transparentize($color: #000000, $amount: 1);
+            border: none;
+
+            svg {
+                width: fit-content;
+                height: 3em;
+            }
+        }
+
         .left {
             position: absolute;
-            left: 1em;
+            left: 1px;
             top: 40%;
             z-index: 1;
         }
 
         .right {
             position: absolute;
-            right: 1em;
+            right: 1px;
             top: 40%;
         }
     }
@@ -337,6 +372,7 @@ main {
             background-color: aqua;
             align-self: center;
         }
+
         .reviewText {
             padding: 0 2em;
         }
@@ -387,6 +423,7 @@ footer {
         #flex-actuCategorie {
             display: block;
             padding: 1em 0;
+
             #tendance {
                 max-width: none;
             }
@@ -410,10 +447,12 @@ footer {
             padding: 2em 2em;
             display: block;
         }
+
         #imageContainer {
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
+
             img {
                 padding: 0 3em;
             }
