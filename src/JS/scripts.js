@@ -88,6 +88,8 @@ function displayMovies(filmsArray, container) {
 function carouselContainer (groupeMovies) {
   const container = document.getElementById("carousels")
 
+  container.innerHTML = ""
+
   for (let gender in groupeMovies) {
     const newContainer = document.createElement("div")
     newContainer.className = 'carouselAllMovie'
@@ -154,7 +156,7 @@ function card(movie) {
 function addActorFunction() {
   const maxActors = 10;
   const inputs = document.querySelectorAll('input[name="actorInput"]');
-  const container = document.getElementById("formActor");
+  const container = document.getElementById("inputArea");
 
   if (inputs.length < maxActors) {
     const newInput = document.createElement("input");
@@ -208,6 +210,8 @@ function newMovie(e) {
     form.style.display = "none";
   }
 
+  console.log(movies);
+  
 
 }
 
@@ -269,6 +273,8 @@ function slideDown() {
 function allMovies() {
   const container = document.getElementById("ResultLinkToMovie")
 
+  container.innerHTML = ""
+
   for (let movie of movies) {
     const linkContainer = document.createElement("div")
     linkContainer.className = "LinkToMovie"
@@ -305,10 +311,22 @@ function allMovies() {
   }
 }
 
-function displayForm() {
+function displayBlockForm() {
   const form = document.getElementById("addMovieForm")
 
   form.style.display = "block"
+}
+
+function displayNoneForm() {
+  const form = document.getElementById("addMovieForm")
+
+  form.reset()
+
+  const actorsContainer = document.getElementById("inputArea")
+  actorsContainer.innerHTML = `<label for="addActorInput">Ajouter les acteurs :</label>
+          <input type="text" id="addActorInput" name="actorInput" required></input>`
+
+  form.style.display = "none"
 }
 
 function smallPoster () {
@@ -348,14 +366,15 @@ function bigPoster () {
 const slide = document.getElementById("slideBtn");
 const add = document.getElementById("addActorBtn");
 const form = document.getElementById("addMovie");
-const btnForm = document.getElementById("submitCard");
+const addMovieForm = document.getElementById("addMovieForm");
+const disableBtn = document.getElementById("disableForm")
 
 if (add) {
   add.addEventListener("click", addActorFunction);
 }
 
-if (btnForm) {
-  btnForm.addEventListener("click", newMovie);
+if (addMovieForm) {
+  addMovieForm.addEventListener("submit", newMovie);
 }
 
 if (slide) {
@@ -363,5 +382,9 @@ if (slide) {
 }
 
 if (form) {
-  form.addEventListener("click", displayForm);
+  form.addEventListener("click", displayBlockForm);
+}
+
+if (disableBtn) {
+  disableBtn.addEventListener("click", displayNoneForm)
 }
