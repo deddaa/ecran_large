@@ -144,14 +144,28 @@ function carouselContainer (groupeMovies) {
 function card(movie) {
   const newCard = document.createElement("div");
   newCard.className = "card";
-  newCard.innerHTML = `
-    <img src="${movie.image}" alt="${movie.titre}" class="">
-    <div>
-        <h4>${movie.titre}</h4>
-    </div>
-    `
+  if (window.location.pathname == "/src/index.html") {
+    newCard.innerHTML = `
+    <a href="./HTML/one_movie.html">
+      <img src="${movie.image}" alt="${movie.titre}">
+      <div>
+          <h4>${movie.titre}</h4>
+      </div>
+    </a>
+      `
+  } else {
+    newCard.innerHTML = `
+    <a href="./one_movie.html">
+      <img src="${movie.image}" alt="${movie.titre}">
+      <div>
+          <h4>${movie.titre}</h4>
+      </div>
+    </a>
+      `
+  }
   return newCard
 }
+
 
 function addActorFunction() {
   const maxActors = 10;
@@ -209,10 +223,6 @@ function newMovie(e) {
     e.target.reset();
     form.style.display = "none";
   }
-
-  console.log(movies);
-  
-
 }
 
 function banner() {
@@ -222,7 +232,6 @@ function banner() {
   imageContainerTop.style.backgroundImage = `url(${movies[index].image})`;
   imageContainerTop.style.backgroundSize = "cover";
   imageContainerTop.style.backgroundPosition = "center";
-  console.log(movies[index].image)
 }
 
 function infos() {
@@ -336,7 +345,7 @@ function smallPoster () {
     const index = Math.floor(Math.random() * movies.length)
     
     const a = document.createElement("a")
-    a.href = "../HTML/one_movie.html"
+    a.href = "./HTML/one_movie.html"
     const img = document.createElement("img")
     img.src = `${movies[index].image}`
     img.alt = `${movies[index].titre}`
@@ -353,7 +362,7 @@ function bigPoster () {
   for (let e of container) {
     const index = Math.floor(Math.random() * movies.length)
     const a = document.createElement("a")
-    a.href = "../HTML/one_movie.html"
+    a.href = "./HTML/one_movie.html"
     const img = document.createElement("img")
     img.src = `${movies[index].image}`
     img.alt = `${movies[index].titre}`
