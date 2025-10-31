@@ -48,7 +48,7 @@
       <div>
       <label for="genres">Genres :</label>
       <select id="gender" name="genre" required>
-        <option value="" disabled selected>Sélectionne un ou plusieurs genres</option>
+        <option value="" disabled selected>Sélectionne un genres</option>
         <option value="Science-Fiction">Science-Fiction</option>
         <option value="Action">Action</option>
         <option value="Horreur">Horreur</option>
@@ -83,21 +83,22 @@
         <input type="search" id="searchMenu" placeholder="rechercher un film..." />
         <label for="filterMenu">🎬 Filtrer par genres :</label><br />
 
-        <select id="filterMenu" name="genres" multiple size="5">
-          <option disabled>Sélectionne un ou plusieurs genres</option>
-          <option value="sf">Science-Fiction</option>
-          <option value="action">Action</option>
-          <option value="horreur">Horreur</option>
-          <option value="drame">Drame</option>
-          <option value="comedie">Comédie</option>
-          <option value="thriller">Thriller</option>
-          <option value="fantasy">Fantasy</option>
-          <option value="aventure">Aventure</option>
-          <option value="western">Western</option>
-          <option value="policier">Policier</option>
-          <option value="romance">Romance</option>
-          <option value="peplum">Peplum</option>
-          <option value="biopic">Biopic</option>
+        <select id="filterMenu" name="genres">
+        <option value="" disabled selected>Sélectionne un genres</option>
+        <option value="Science-Fiction">Science-Fiction</option>
+        <option value="Action">Action</option>
+        <option value="Horreur">Horreur</option>
+        <option value="Drame">Drame</option>
+        <option value="Comedie">Comedie</option>
+        <option value="Thriller">Thriller</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Aventure">Aventure</option>
+        <option value="Animation">Animation</option>
+        <option value="Western">Western</option>
+        <option value="Policier">Policier</option>
+        <option value="Romance">Romance</option>
+        <option value="Peplum">Peplum</option>
+        <option value="Biopic">Biopic</option>
         </select>
         <label for="Date">Date de sortie : </label>
         <input class="date" type="date" id="Date" name="Sortie du film" value="1895-12-28" min="1895-12-28"
