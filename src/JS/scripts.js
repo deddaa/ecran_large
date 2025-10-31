@@ -264,7 +264,7 @@ function slideDown() {
   const computedStyle = window.getComputedStyle(carousel)
   const marginTop = parseFloat(computedStyle.marginTop);
   const marginBottom = parseFloat(computedStyle.marginBottom)
-  const minHeight = (carousel.offsetHeight + marginBottom + marginTop) * 2 + 30
+  const minHeight = (carousel.offsetHeight + marginBottom + marginTop) * 2 + 35
   const upWindowAnchor = document.getElementById("searchMenu")
 
   if (container.classList.contains("slideDown")){
