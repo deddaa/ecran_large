@@ -200,6 +200,20 @@ main #flex-actuCategorie #btnMenu {
   margin: 2em;
   margin-left: 40%;
 }
+main #btnMenu2 {
+  background-color: #C7B7E5;
+  color: #49306B;
+  border: 2px solid #C7B7E5;
+  padding: 0.5em 1.5em;
+  font-family: "Quicksand", sans-serif;
+  margin: 2em;
+  margin-left: 40%;
+}
+main #btnMenu2:hover {
+  background-color: #49306B;
+  border: 2px solid #C7B7E5;
+  color: #C7B7E5;
+}
 main #carousels {
   overflow: hidden;
   height: 59vh;
@@ -273,7 +287,7 @@ main #carouselAllMovie {
 }
 main #carouselAllMovie #searchAndFilter {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   gap: 5px;
