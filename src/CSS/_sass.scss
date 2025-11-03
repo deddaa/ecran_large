@@ -242,6 +242,20 @@ main {
             margin-left: 40%;
         }
 
+
+
+    }
+
+    #btnMenu2 {
+        @include button($secondary-color, $primary-color );
+        margin: 2em;
+        margin-left: 40%;
+
+    }
+    #btnMenu2:hover {
+    background-color: $primary-color;
+        border: 2px solid $secondary-color;
+        color: $secondary-color ;
     }
 
     // caroussels ----------------------------------------
